@@ -1,13 +1,12 @@
 
-<nav class="glass z-10">
+<nav class="glass z-10 py-8">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <div class="flex-shrink-0">
-        <img class="mt-8 w-[150px]" src="../resources/img/logowhite.svg" alt="Logo">
-      </div>
+      <img class="mt-8 w-[150px]" src="../resources/img/logowhite.svg" alt="Logo">
+      
       <!-- Información de contacto y botón -->
-      <div class="flex items-center">
+      <div class="flex items-end">
         <div class="mr-4">
           <a
           class="flex items-center justify-center sm:justify-start gap-1.5 group"
@@ -27,9 +26,7 @@
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <span class="text-white transition">
-            presidencia@kinesiologosmza.com
-          </span>
+          <span class="text-white transition">presidencia@kinesiologosmza.com</span>
         </a>
         </div>
         <div class="mr-4">
