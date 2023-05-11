@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="resources/css/app.css">
-    @vite('resources/css/app.css')
-</head>
+@extends('layout')
+@section('title', 'Registro | CKFM')
+@section('content')
 <!-- Body le da el fondo gradiente de amarillo a naranja. -->
 <body class="bg-gradient-to-r from-yellow-500 to-orange-500">
      <!-- Clase Padre Grid. Para dividir el card en 2. -->
@@ -56,6 +49,4 @@
         </div>
         
     </div>
-    
-</body>
-</html>
+    @endsection

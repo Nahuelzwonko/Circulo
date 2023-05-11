@@ -5,30 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Eudoxus Sans", sans-serif;
-    scroll-behavior: smooth;
-  }
-  :root {
-    --black-gradient: linear-gradient(
-      144.39deg,
-      #ffffff4a -278.56%,
-      #6d6d6d26 -78.47%,
-      #11101d8d 91.61%
-    );
-    --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  }
-  /* muestra de lo que se puede hacer */
-  .gradient-01 {
-    background-image: linear-gradient(
-      270deg,
-      #b3ff00e9 0%,
-      #b3ff00c5 26%,
-      #b3ff0097 39%,
-      #b3ff0077 50%,
-      #b3ff004f 61%,
-      #b3ff0098 74%,
-      #b4ff00 100%
-    );
-    filter: blur(125px);
-  }
-  
+}
+
+.glass {
+  background: rgba( 44, 44, 44, 0.3 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+}
