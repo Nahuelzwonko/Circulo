@@ -2,7 +2,6 @@
 @section('title', 'Inicio | CKFM')
 @section('content')
 @include('include.nav')
-@include('include.header')
-
+@include('include.cta')
 @include('include.footer') 
 @endsection

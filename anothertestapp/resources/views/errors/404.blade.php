@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'ERROR 404')
+@section('title', 'Ups')
 @section('content')
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"/>
 
@@ -17,7 +17,7 @@
 
             <button
                 class="inline px-4 py-2 text-sm font-medium leading-5 text-white uppercase transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue active:bg-blue-600 hover:bg-blue-700">
-               Volver a la pagina de inicio
+               <a href="../public">Volver a la pagina de inicio</a> 
             </button>
         </div>
 
