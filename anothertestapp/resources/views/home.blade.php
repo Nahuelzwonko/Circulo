@@ -3,5 +3,6 @@
 @section('content')
 @include('include.nav')
 @include('include.header')
-{{-- @include('include.footer') --}}
+
+@include('include.footer') 
 @endsection
