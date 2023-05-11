@@ -14,9 +14,9 @@ export default {
       //medida de mas 
       'lg':'1024px',
       //medida de mas 
-      'xl':'1024px',
-      //medida de mas 
-      'xxl':'1536px',
+      'xl':'1080px',
+      // //medida de mas 
+      '2xl':'1536px',
       //medida de mas 
     },
     extend: {},

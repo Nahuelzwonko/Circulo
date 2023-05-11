@@ -8,7 +8,7 @@
         <!-- Div 1, primer hijo. Contenido Principal: título, form. -->
         <div class="left flex flex-col gap-10 items-center bg-white rounded-l-xl">
                <!--Título  -->
-            <h1 class="text-2xl w-3/4 font-bold text-4xl text-blue-600 mt-8">Bienvenido, Registrate!</h1>
+            <h1 class="text-2xl w-3/4 font-bold text-blue-600 mt-8">Bienvenido, Registrate!</h1>
             <!-- Formulario -->
             <!-- Separe el form en tres divs para poder ordenarlos y espaciarlos de diferentes maneras. -->
             <form action="POST" class="flex flex-col w-10/12 gap-8 justify-center mb-10 text-lg ">
@@ -45,7 +45,7 @@
         </div>
         <!-- Div 2, Segundo hijo. Contiene la imagen de la derecha. -->
         <div class="right h-full">
-            <img class="rounded-r-xl h-full"src="./img/login-bg.svg" alt="">
+            <img class="rounded-r-xl h-full"src="../resources/img/login-bg.svg" alt="">
         </div>
         
     </div>
