@@ -1,4 +1,4 @@
-<div class="h-[730px] bg-hero-bg" >
+<div class="h-[750px] bg-hero-bg" >
     <!-- Incluyo navbar -->
     @include('include.nav')
     <!-- Padre grid para dividir en dos columnas el contenido: queda el texto a la derecha y la imagen a la izquierda. -->
