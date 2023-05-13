@@ -1,0 +1,10 @@
+@extends('layout')
+@section('title', 'Quienes somos')
+@section('content')
+@include('include.nav')
+@include('quienes.mision')
+@include('quienes.valores')
+@include('quienes.comision')
+@include('include.cta')
+@include('include.footer') 
+@endsection

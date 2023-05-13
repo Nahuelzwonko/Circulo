@@ -19,7 +19,14 @@ export default {
       '2xl':'1536px',
       //medida de mas 
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 }

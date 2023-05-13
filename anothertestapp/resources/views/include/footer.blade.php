@@ -5,7 +5,7 @@
         <div>
           <ul class="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
             <li>
-               <img src="../resources/img/logo.svg" alt="">
+               <img src="../resources/img/ckfm-logo.svg" alt="">
             </li>
           </ul>
         </div>
