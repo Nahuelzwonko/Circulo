@@ -25,9 +25,14 @@ export default {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+      backgroundImage:{
+        'hero-bg': "url('/resources/img/hero-bg.svg')",
       }
     },
+    
   },
   plugins: [],
+  
 }
 
