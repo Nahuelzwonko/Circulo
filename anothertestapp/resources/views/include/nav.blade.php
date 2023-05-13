@@ -1,9 +1,9 @@
 
-<nav class="glass z-10 py-8 z-10">
+<nav class="glass z-10 py-8">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <img class="mt-8 w-[150px]" src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-8 w-[200px]" src="../resources/img/logowhite.svg" alt="Logo">
       
       <!-- Información de contacto y botón -->
       <div class="flex items-end">
