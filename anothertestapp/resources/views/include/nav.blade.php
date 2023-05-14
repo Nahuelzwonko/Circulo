@@ -1,12 +1,12 @@
 
 <nav class="glass z-10 py-8">
-  <div class="max-w-[85%] mx-auto ">
+  <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto lg:mx-4 ">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <img class="mt-8 w-[200px]" src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-8 2xl:w-[200px] lg:w-[190px]" src="../resources/img/logowhite.svg" alt="Logo">
       
       <!-- Información de contacto y botón -->
-      <div class="flex items-end text-lg gap-10">
+      <div class="flex items-end text-lg 2xl:gap-10 xl:gap-6 lg:gap-14">
         <div class="mr-4">
           <a
           class="flex items-center justify-center sm:justify-start gap-1.5 group"
@@ -60,9 +60,9 @@
   </div>
 
   <!-- Menú de navegación -->
-  <div class="max-w-[85%] mx-auto ">
+  <div class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4  ">
     <div class="flex justify-end">
-      <div class="flex gap-4 border-blue-600 border-t-[0.5px]">
+      <div class="flex gap-4 border-blue-600 border-t-[0.5px] 2xl:mr-0 xl:mr-4">
 
         <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Inicio</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>

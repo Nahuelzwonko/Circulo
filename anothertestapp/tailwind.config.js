@@ -8,16 +8,13 @@ export default {
   ],
   theme: {
     screens:{
+      //dispositivos pequeños y medianos: celulares, tablets.
       'sm':'320px',
-      //medida de mas chico
       'md':'768px',
-      //medida de mas 
+      //dispositivos grandes: notebook, monitores, tvs.
       'lg':'1024px',
-      //medida de mas 
       'xl':'1080px',
-      // //medida de mas 
       '2xl':'1536px',
-      //medida de mas 
     },
     extend: {
       fontFamily: {
