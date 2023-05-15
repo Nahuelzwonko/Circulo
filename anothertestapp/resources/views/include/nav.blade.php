@@ -3,7 +3,7 @@
   <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
     <div class="flex items-center md:justify-between sm:justify-center h-16 ">
       <!-- Logo -->
-      <img class="mt-12 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 " src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 " src="../resources/img/logowhite.svg" alt="Logo">
       
       <!-- Información de contacto y botón -->
       <div class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">

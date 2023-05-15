@@ -137,10 +137,11 @@
               </div>
               <li>
                 <div class='flex gap-4 p-2 rounded-md social-wrapper'>
-      <img onclick="relocate('facebook.com')" src="https://img.icons8.com/material/24/000000/instagram-new--v1.png" alt="Facebook">
-      <img onclick="relocate('instagram.com')" src="https://img.icons8.com/material/24/000000/instagram-new--v1.png" alt="Instagram">
-      <img onclick="relocate('twitter.com')" src="https://img.icons8.com/material/24/000000/instagram-new--v1.png" alt="twitter ">
-    </div>
+                  <a href=""><img src="../resources/img/ig.svg"></a>
+                  <a href=""><img src="../resources/img/fb.svg"></a>
+                  <a href=""><img src="../resources/img/tw.svg"></a>
+                  <a href=""><img src="../resources/img/lk.svg"></a>
+                </div>
               </li>
             </ul>
           </div>

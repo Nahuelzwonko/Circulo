@@ -12,7 +12,7 @@
       </div>
       
       <div class="flex justify-center w-full">
-        <button class=" bounce-top-icons bg-blue-700 text-white px-5  py-2 rounded-[10px] ">Saber mas</button>
+        <button class=" bounce-top-icons bg-blue-700 hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Saber Más</a></button>
       </div>
       
     </div>

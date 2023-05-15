@@ -13,7 +13,7 @@
       </p>
     </div>
       <div class="flex justify-center w-full ">
-        <button class="fade-in bounce-top-icons bg-blue-700 text-white px-5  py-2 rounded-[10px] ">Quiero ser parte</button>
+        <button class="fade-in bounce-top-icons bg-blue-700  hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Quiero ser parte</a></button>
       </div>
     </div>
   </div>
