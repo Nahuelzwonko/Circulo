@@ -17,6 +17,14 @@
       
     </div>
     <div class="md:4/10 lg:w-1/2 flex justify-center">
-      <img class="w-[60%]" src="../resources/img/png/imagen.png" alt="image" loading="lazy" width="" height="" class="w-full">
+      <img class="start-0 absolute wobble-hor-bottom" src="../resources/img/png/geometric/rectangle.svg" alt="">
+      <div class="end-[50%] top-[150%] absolute wobble-ver-right">
+        <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
+          </svg>
+      </div>
+      <img class="w-[60%] z-0" src="../resources/img/png/imagen.png" alt="image" loading="lazy" width="" height="" class="w-full">
+      
+
     </div>
   </div>
