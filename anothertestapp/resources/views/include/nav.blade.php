@@ -1,12 +1,12 @@
 
-<nav class="glass z-10 py-8">
-  <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto lg:mx-4 ">
-    <div class="flex items-center justify-between h-16">
+<nav class="glass z-10 lg:py-8 md:pb-0">
+  <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
+    <div class="flex items-center md:justify-between sm:justify-center h-16 ">
       <!-- Logo -->
-      <img class="mt-8 2xl:w-[200px] lg:w-[190px]" src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-8 2xl:w-[200px] lg:w-[190px] md:w-1/5 sm:w-0 invisible md:visible" src="../resources/img/logowhite.svg" alt="Logo">
       
       <!-- Información de contacto y botón -->
-      <div class="flex items-end text-lg 2xl:gap-10 xl:gap-6 lg:gap-14">
+      <div class="flex items-end lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
         <div class="mr-4">
           <a
           class="flex items-center justify-center sm:justify-start gap-1.5 group"
@@ -60,19 +60,19 @@
   </div>
 
   <!-- Menú de navegación -->
-  <div class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4  ">
-    <div class="flex justify-end">
-      <div class="flex gap-4 border-blue-600 border-t-[0.5px] 2xl:mr-0 xl:mr-4">
+  <div class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4 border-blue-600 border-t-[0.5px] lg:border-none lg:mt-0 md:mt-8  ">
+    <div class="flex lg:justify-end md:justify-center">
+      <div class="flex items-center lg:border-blue-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem] ">
 
-        <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Inicio</a>
+        <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Inicio</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
-        <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Quiénes somos</a>
+        <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Quiénes somos</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
-        <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Kine Club</a>
+        <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Kine Club</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
-        <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Noticias</a>
+        <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Noticias</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
-        <a href="#" class="text-white px-3 py-2 text-lg font-extralight mt-2 hover:underline">Obras sociales y prepagas</a>
+        <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Obras sociales y prepagas</a>
        
         
       </div>
