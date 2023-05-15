@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  <button class="hamburger block visible lg:hidden py-3 px-5 ml-auto rounded focus:outline-none hover:bg-gray-200 sm:text-5xl group sm:-translate-y-8">
+  <button class="hamburger block visible lg:hidden py-3 px-5 ml-auto rounded focus:outline-none text-gray-500 hover:text-gray-200 sm:text-5xl group sm:-translate-y-8">
     &#9776
     <div class="hamburger-items absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 ">
       <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
