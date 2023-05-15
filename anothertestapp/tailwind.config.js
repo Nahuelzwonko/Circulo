@@ -25,7 +25,10 @@ export default {
       },
       backgroundImage:{
         'hero-bg': "url('/resources/img/hero-bg.svg')",
-      }
+      },
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
     },
     
   },

@@ -3,10 +3,10 @@
   <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
     <div class="flex items-center md:justify-between sm:justify-center h-16 ">
       <!-- Logo -->
-      <img class="mt-8 2xl:w-[200px] lg:w-[190px] md:w-1/5 sm:w-0 invisible md:visible" src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-12 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 " src="../resources/img/logowhite.svg" alt="Logo">
       
       <!-- Información de contacto y botón -->
-      <div class="flex items-end lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
+      <div class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
         <div class="mr-4">
           <a
           class="flex items-center justify-center sm:justify-start gap-1.5 group"
@@ -60,24 +60,45 @@
   </div>
 
   <!-- Menú de navegación -->
-  <div class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4 border-blue-600 border-t-[0.5px] lg:border-none lg:mt-0 md:mt-8  ">
+  <div class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4 border-blue-600 border-t-[0.5px] lg:border-none  mt-0 invisible lg:visible h-0 lg:h-auto">
+    
     <div class="flex lg:justify-end md:justify-center">
-      <div class="flex items-center lg:border-blue-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem] ">
+      <div id="items" class="flex items-center lg:border-blue-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
 
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Inicio</a>
-        <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
+        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:invisible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Quiénes somos</a>
-        <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
+        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Kine Club</a>
-        <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
+        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Noticias</a>
-        <div class="h-[60%] w-[1px] bg-gray-400 mt-3"></div>
+        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Obras sociales y prepagas</a>
        
         
       </div>
     </div>
   </div>
+
+  <button class="hamburger block visible lg:hidden py-3 px-5 ml-auto rounded focus:outline-none hover:bg-gray-200 sm:text-5xl group sm:-translate-y-8">
+    &#9776
+    <div class="hamburger-items absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 ">
+      <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Inicio</a>
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Quiénes somos</a>
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Kine Club</a>
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Noticias</a>
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Obras sociales y prepagas</a>
+        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Iniciar Sesión</a>
+      </div>
+    </div>
+  </button>
+  
+  
+
+
+
+    
 </nav>
 
 
