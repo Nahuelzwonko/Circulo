@@ -3,7 +3,7 @@
     <div class="w-[60%] h-[60%] rounded-[20px] glass1">
         <div class="flex">
             <div class="w-1/2">
-              <img src="../resources/img/kineclub.svg" alt="Tarjetakineclub" class="w-full h-full object-cover" />
+              <img src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" class="w-full h-full object-cover" />
             </div>
             <div class="w-1/2 ">
                 <div class="flex justify-center">

@@ -226,32 +226,32 @@ backdrop-filter: blur( 5px );
     }
 }
 .bgKine{
-  background-image: url(../img/fondo/kinefondo.svg);
+  background-image: url(../../public/storage/fondo/kinefondo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
 }
 .unefondo{
-  background-image:url(../img/fondo/unefondo.svg) ;
+  background-image:url(../../public/storage/fondo/unefondo.svg) ;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .tarjetafondo{
-    background-image:url(../img/fondo/tarjetafondo.svg) ;
+    background-image:url(../../public/storage/fondo/tarjetafondo.svg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 /* formas */
 .circulo{
-    background-image: url(../img/formas/circulo.svg);
+    background-image: url(../../public/storage/formas/circulo.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .circulo2{
-    background-image: url(../img/formas/circulo2.svg);
+    background-image: url(../../public/storage/formas/circulo2.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;

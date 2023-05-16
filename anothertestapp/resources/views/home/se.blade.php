@@ -1,7 +1,7 @@
 {{-- Se parte de CKFM --}}
 <div class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
     <div class="md:4/10 lg:w-1/2 flex justify-center">
-      <img class="w-[60%]" src="../resources/img/png/imagen2.png" alt="image" loading="lazy" width="" height="" class="w-full">
+      <img class="w-[60%]" src="{{('storage/png/imagen2.png')}}" alt="image" loading="lazy" width="" height="" class="w-full">
     </div>
     <div class=" md:7/12 lg:w-1/2">
       <h2 class="slide-in-bottom-h1 text-3xl text-center font-bold text-black md:text-4xl">

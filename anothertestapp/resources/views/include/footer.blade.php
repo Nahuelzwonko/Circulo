@@ -5,7 +5,7 @@
         <div>
           <ul class="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
             <li>
-               <img src="../resources/img/ckfm-logo.svg" alt="">
+               <img src="{{asset('storage/logo/ckfm-logo.svg')}}" alt="foto">
             </li>
           </ul>
         </div>
@@ -137,10 +137,10 @@
               </div>
               <li>
                 <div class='flex gap-4 p-2 rounded-md social-wrapper'>
-                  <a href=""><img src="../resources/img/ig.svg"></a>
-                  <a href=""><img src="../resources/img/fb.svg"></a>
-                  <a href=""><img src="../resources/img/tw.svg"></a>
-                  <a href=""><img src="../resources/img/lk.svg"></a>
+                  <a href=""><img src="{{asset('storage/iconos/ig.svg')}}"></a>
+                  <a href=""><img src="{{asset('storage/iconos/fb.svg')}}"></a>
+                  <a href=""><img src="{{asset('storage/iconos/lk.svg')}}"></a>
+                  <a href=""><img src="{{asset('storage/iconos/tw.svg')}}"></a>
                 </div>
               </li>
             </ul>

@@ -7,12 +7,16 @@ use App\Http\Controllers\KineclubController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\QuienesController;
-use App\Http\Controllers\QuieresController;
+use App\Http\Controllers\ImagenController;
+
 
 //Controlador de inicio
 Route::get('/', HomeContoller::class);
 //Controlller Register
-Route::get ('register', [RegisterController::class, 'index']); 
+Route::get('/register', [RegisterController::class, 'show']);
+
+Route::get('/register', [RegisterController::class, 'register']);
+
 //Controller Login
  Route::get ('login', [LoginController::class, 'index']); 
 //Contoller paginas secuendarias

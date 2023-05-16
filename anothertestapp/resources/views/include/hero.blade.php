@@ -13,7 +13,7 @@
         <!-- Hijo 2, contiene la imagen de la derecha. -->
         <div>
             <!-- Imagen -->
-            <img class="h-[90%] lg:w-auto md:w-[33.7%] m-auto lg:mt-0 md:mt-4 sm:w-[300px] sm:mt-16 rounded-tl-[160px] rounded-tr-3xl rounded-br-[160px] rounded-bl-3xl "src="../resources/img/hero-img.svg" alt="">
+            <img class="h-[90%] lg:w-auto md:w-[33.7%] m-auto lg:mt-0 md:mt-4 sm:w-[300px] sm:mt-16 rounded-tl-[160px] rounded-tr-3xl rounded-br-[160px] rounded-bl-3xl "src="{{asset ('storage/img-personas/hero-img.svg')}}" alt="">
         </div>
         <div class="visible lg:invisible">
             <button class="w-full h-16 bg-blue-900 hover:bg-blue-700  text-white text-2xl">Conocénos!</button>

@@ -3,7 +3,7 @@
   <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
     <div class="flex items-center md:justify-between sm:justify-center h-16 ">
       <!-- Logo -->
-      <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 " src="../resources/img/logowhite.svg" alt="Logo">
+      <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 " src="{{asset('storage/logo/logowhite.svg')}}" alt="Logo">
       
       <!-- Información de contacto y botón -->
       <div class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
@@ -86,7 +86,7 @@
 <nav class="glass fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 visible lg:invisible">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <!-- Logo -->
-    <img src="../resources/img/logowhite.svg" class="h-8 mr-3" alt=" Logo">
+    <img src="{{asset('storage/logo/logowhite.svg')}}" class="h-8 mr-3" alt="Logo">
     <!-- Div 1, contiene botones responsive. -->
     <div class="flex gap-4">
       <button class=" flex flex-row items-center gap-2 bg-blue-800 text-white px-3 py-0 rounded-lg font-extralight hover:bg-blue-600">
