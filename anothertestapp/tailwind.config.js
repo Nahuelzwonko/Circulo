@@ -24,7 +24,7 @@ export default {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
       backgroundImage:{
-        'hero-bg': "url('/resources/img/hero-bg.svg')",
+        'hero-bg': "url('/public/storage/fondo/hero-bg.svg')",
       },
       display: ['group-focus'],
       opacity: ['group-focus'],
