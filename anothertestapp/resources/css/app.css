@@ -383,6 +383,3 @@ backdrop-filter: blur( 5px );
     }
   }
   
-.hamburger:focus ~ .hamburger-items{
-    transform: translateX(100%);
-}

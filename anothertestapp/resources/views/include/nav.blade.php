@@ -1,5 +1,5 @@
-
-<nav class="glass z-10 lg:py-8 md:pb-0">
+<!-- ESTE NAVBAR SOLO SE VE A PARTIR DE DISPOSITIVOS LARGE -->
+<nav class="glass z-10 lg:py-8 md:pb-0 invisible lg:visible">
   <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
     <div class="flex items-center md:justify-between sm:justify-center h-16 ">
       <!-- Logo -->
@@ -80,25 +80,42 @@
     </div>
   </div>
 
-  <button class="hamburger block visible lg:hidden py-3 px-5 ml-auto rounded focus:outline-none text-gray-500 hover:text-gray-200 sm:text-5xl group sm:-translate-y-8">
-    &#9776
-    <div class="hamburger-items absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 ">
-      <div class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Inicio</a>
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Quiénes somos</a>
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Kine Club</a>
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Noticias</a>
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Obras sociales y prepagas</a>
-        <a href="#" class="hover:bg-gray-200 py-4 px-6 w-full">Iniciar Sesión</a>
-      </div>
-    </div>
-  </button>
-  
-  
-
-
-
-    
 </nav>
+
+<!-- Este navbar es el responsive y es visible sólo para dispositivos medianos y pequeños. -->
+<nav class="glass fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 visible lg:invisible">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <img src="../resources/img/logowhite.svg" class="h-8 mr-3" alt=" Logo">
+    <div class="flex gap-4">
+      <button class=" flex flex-row items-center gap-2 bg-blue-800 text-white px-3 py-0 rounded-lg font-extralight hover:bg-blue-600">
+        <span class="font-extralight">Iniciar Sesión</span>            
+      </button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+  </div>
+  <div class="items-center justify-between hidden w-full " id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg  ">
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Quienes Somos</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kine Club</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Noticias</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Obras Sociales y Prepagas</a>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+
 
 
