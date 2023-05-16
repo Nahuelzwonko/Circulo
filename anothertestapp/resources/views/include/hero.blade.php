@@ -2,7 +2,7 @@
     <!-- Incluyo navbar -->
     @include('include.nav')
     <!-- Padre grid para dividir en dos columnas el contenido: queda el texto a la derecha y la imagen a la izquierda. -->
-    <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:mt-10 sm:mt-8 mb:mb-8 sm:mb-0">
+    <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:mt-10 sm:mt-8 mb:mb-8 sm:mb-0 md:gap-8 lg:gap-0">
         <!-- Hijo 1, ordena el contenido -->
         <div class="flex flex-col lg:items-baseline sm:items-center lg:w-3/4 sm:w-full sm:h-28 gap-8 2xl:ml-64 lg:ml-48 mt-15">
             <!-- Título, subtitulo, botón. -->
