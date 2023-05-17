@@ -83,8 +83,8 @@
 </nav>
 
 <!-- Este navbar es el responsive y es visible sólo para dispositivos medianos y pequeños. -->
-<nav class="glass fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 visible lg:invisible">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 visible lg:invisible">
+  <div class="w-screen flex flex-wrap items-center justify-between  mx-auto p-4">
     <!-- Logo -->
     <img src="{{asset('storage/logo/logowhite.svg')}}" class="h-8 mr-3" alt="Logo">
     <!-- Div 1, contiene botones responsive. -->
@@ -98,7 +98,7 @@
       </button>
   </div>
   <!-- Div 2, items responsive. -->
-  <div class="items-center justify-between hidden w-full " id="navbar-sticky">
+  <div class="items-center justify-between hidden  w-screen" id="navbar-sticky">
     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg  ">
       <li>
         <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
