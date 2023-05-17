@@ -19,22 +19,22 @@
               <ul class="space-y-4 text-sm">
                 <li>
                   <a class="font-Poppins text-black transition" href="/">
-                    Home
+                    Inicio
                   </a>
                 </li>
                 <li>
                     <a class="font-Poppins text-black transition" href="/">
-                      About
+                      Quienes somos
                     </a>
                   </li>
                   <li>
                     <a class="font-Poppins  text-black transition" href="/">
-                      Work
+                      Suscribite
                     </a>
                   </li>
                   <li>
                     <a class="font-Poppins  text-black transition" href="/">
-                      Pricing
+                      Contactanos
                     </a>
                   </li>
               </ul>
@@ -42,7 +42,7 @@
           </div>
         {{-- Contacto --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-custom text-black">Contact Us</p>
+            <p class="text-lg font-custom text-black">Contacto</p>
             <ul class="mt-8 space-y-4 text-sm">
               <li>
                 <a
@@ -131,7 +131,7 @@
             <p class="text-lg font-custom text-black">Newsletter</p>
             <ul class="mt-3 space-y-4 text-sm">
               <div class="pt-3 flex items-center">
-                <input type="text" class="font-Poppins rounded-[30px] border border-black-600 p-2 w-[40]" placeholder="Enter your mail..">
+                <input type="text" class="font-Poppins rounded-[30px] border border-black-600 p-2 w-[40]" placeholder="Ingresa tu correo..">
                 <button class="font-Poppins bg-black text-white px-3 p-2 rounded-[30px] ">Submit</button>
               </div>
               <li>
