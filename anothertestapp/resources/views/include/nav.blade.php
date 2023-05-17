@@ -66,7 +66,7 @@
       <div id="items" class="flex items-center lg:border-blue-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
 
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Inicio</a>
-        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:invisible"></div>
+        <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Quiénes somos</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
         <a href="#" class="text-white px-3 py-2 lg:text-lg md:text-[0.9rem] font-extralight mt-2 hover:underline">Kine Club</a>
