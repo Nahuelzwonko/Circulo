@@ -18,7 +18,5 @@
         <div class="visible lg:invisible">
             <button class="w-full h-16 bg-[#0051A7] hover:bg-blue-700  text-white text-2xl">Conocénos!</button>
         </div>
-
     </div>
-    
 </div>
