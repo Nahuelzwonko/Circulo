@@ -21,7 +21,7 @@
       <div class="end-[50%] lg:top-[150%] md:top-[190%] absolute wobble-ver-right z-[2] lg:right-96 2xl:right-[45rem] ">
         <svg class="2xl:w-[240px] lg:w-3/5 sm:w-[55%]"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
-          </svg>
+        </svg>
       </div>
       <img class="w-[60%] z-0 lg:mr-0 sm:mr-24" src="{{asset ('storage/png/imagen.png')}}" alt="image" loading="lazy" width="" height="" class="w-full">
       

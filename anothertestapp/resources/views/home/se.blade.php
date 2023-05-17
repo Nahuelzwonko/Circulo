@@ -1,6 +1,6 @@
 {{-- Se parte de CKFM --}}
 <div class="space-y-6 justify-between text-gray-600 flex sm:flex-col-reverse lg:flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center mt-8 lg:mt-0">
-    <button class=" visible lg:invisible bg-blue-700 hover:bg-blue-500 text-white text-2xl py-8 mb-8 mt-0"><a href="../quienes/index.blade.php">Saber Más</a></button>
+    <button class=" visible lg:invisible bg-blue-700 hover:bg-blue-500 text-white text-2xl py-8 mb-8 mt-0"><a href="../quienes/index.blade.php">Quiero Ser Parte</a></button>
     <div class="md:4/10 lg:w-1/2 flex justify-center pb-8 lg:pb-0">
       <img class="w-[60%]" src="{{('storage/png/imagen2.png')}}" alt="image" loading="lazy" width="" height="" class="w-full">
       
