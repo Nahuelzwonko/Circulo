@@ -41,7 +41,7 @@
       </a>
           
         </div>
-          <button class=" flex flex-row items-center gap-2 bg-blue-800 text-white px-3 py-1 pl-1 rounded-lg font-extralight hover:bg-blue-600">
+          <button class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 pl-1 rounded-lg font-extralight hover:bg-blue-600">
             <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_30_76)">
               <path d="M15.0018 0.466797H9.05177C7.87863 0.468224 6.92806 1.4188 6.92677 2.5918V4.29178C6.92677 4.52654 7.11704 4.71681 7.35179 4.71681C7.58642 4.71681 7.77682 4.52654 7.77682 4.29178V2.5918C7.77747 1.88792 8.34789 1.3175 9.05177 1.31672H15.0018C15.7055 1.3175 16.2759 1.88792 16.2767 2.5918V15.3418C16.2759 16.0456 15.7055 16.616 15.0018 16.6168H9.05177C8.34789 16.616 7.77747 16.0456 7.77669 15.3418V13.6417C7.77669 13.4071 7.58642 13.2168 7.35166 13.2168C7.11691 13.2168 6.92664 13.4071 6.92664 13.6417V15.3418C6.92806 16.5148 7.87863 17.4654 9.05164 17.4668H15.0018C16.1748 17.4654 17.1253 16.5148 17.1268 15.3418V2.5918C17.1253 1.4188 16.1748 0.468224 15.0018 0.466797Z" fill="white"/>
@@ -65,15 +65,15 @@
     <div class="flex lg:justify-end md:justify-center">
       <div id="items" class="flex items-center lg:border-white-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
 
-        <a href="#" class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2">Inicio</a>
+        <a href="#" class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Inicio</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2">Quiénes somos</a>
+        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Quiénes somos</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2">Kine Club</a>
+        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Kine Club</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2">Noticias</a>
+        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
         <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2">Obras sociales y prepagas</a>
+        <a href="#" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras sociales y prepagas</a>
        
         
       </div>
@@ -89,7 +89,7 @@
     <img src="{{asset('storage/logo/logowhite.svg')}}" class="h-8 mr-3" alt="Logo">
     <!-- Div 1, contiene botones responsive. -->
     <div class="flex gap-4">
-      <button class=" flex flex-row items-center gap-2 bg-blue-800 text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
+      <button class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
         <span class="font-Poppins">Iniciar Sesión</span>            
       </button>
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">

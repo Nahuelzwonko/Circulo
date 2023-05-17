@@ -16,7 +16,7 @@
                     Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.</p>
             </div>
             <div class="flex justify-center w-full mt-10 ">
-                <button class=" bg-blue-700 hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../kineClub/index.blade.php">Quiero mi KineClub.</a></button>
+                <button class=" bg-[#0051A7] hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../kineClub/index.blade.php">Quiero mi KineClub.</a></button>
               </div>
             </div>
             
@@ -39,5 +39,5 @@
     <img class="z-[3] relative pulse" src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" />
     
   </div>
-  <button class=" w-full bg-blue-700 hover:bg-blue-500 text-white text-2xl py-8 rounded-br-[40px] rounded-bl-[40px] mt-8 "><a href="../quienes/index.blade.php">Quiero Ser Parte</a></button>
+  <button class=" w-full bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 rounded-br-[40px] rounded-bl-[40px] mt-8 "><a href="../quienes/index.blade.php">Quiero Ser Parte</a></button>
 </div>  

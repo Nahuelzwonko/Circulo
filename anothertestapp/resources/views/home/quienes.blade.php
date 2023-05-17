@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="flex justify-center w-full">
-        <button class=" font-Poppins invisible lg:visible bounce-top-icons bg-blue-700 hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Saber Más</a></button>
+        <button class=" font-Poppins invisible lg:visible bounce-top-icons bg-[#0051A7] hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Saber Más</a></button>
       </div>      
     </div>
     {{-- Lo que hice fue fracturar todo y pasar a depender de mis box predeterminadas para poder llegar al objetivo utilizando solamente y div que tiene posicion absoluta con un right pero 
@@ -35,6 +35,6 @@
         <img class="wobble lg:w-[40%] sm:w-[60%]" src="{{asset ('storage/png/geometric/Circle.svg')}}" alt="">
       </div>
     </div>
-    <button class="font-Poppins visible lg:invisible bg-blue-700 hover:bg-blue-500 text-white text-2xl py-8 mb-8 mt-0"><a href="../quienes/index.blade.php">Saber Más</a></button>
+    <button class="font-Poppins visible lg:invisible bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 mb-8 mt-0"><a href="../quienes/index.blade.php">Saber Más</a></button>
   </div>
   </div>

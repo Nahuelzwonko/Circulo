@@ -14,7 +14,7 @@
           </p>
         </div>
           <div class="flex justify-center w-full ">
-            <button class="fade-in bounce-top-icons bg-blue-700 hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Conocer</a></button>
+            <button class="fade-in bounce-top-icons bg-[#0051A7] hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="../quienes/index.blade.php">Conocer</a></button>
           </div>
         </div>
       </div>
@@ -36,5 +36,5 @@
   </div>
     
   </div>
-  <button class=" font-Poppins w-full bg-blue-700 hover:bg-blue-500 text-white text-2xl py-8 mt-8 "><a href="../quienes/index.blade.php">Conocer</a></button>
+  <button class=" font-Poppins w-full bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 mt-8 "><a href="../quienes/index.blade.php">Conocer</a></button>
 </div>  
