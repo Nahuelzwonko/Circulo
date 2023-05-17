@@ -25,15 +25,15 @@
    </div>
 </div>
 <!-- Responsive pantallas medianas y pequeñas -->
-<div class=" lg:hidden lg:w-0 lg:h-0 flex flex-col w-4/5 bg-gray-800 rounded-[40px] mx-auto items-center">
-  <h1 class="mt-32 mb-9 font-bold"><span class="text-[#F28F1C] text-[4rem]">KINE</span><span class="text-[#546EF3] text-[4rem]">CLUB</span></h1>
-  <p class="text-white text-justify px-12 leading-8">
+<div class=" lg:hidden lg:w-0 lg:h-0 flex flex-col w-[95%] md:w-4/5 bg-gray-800 rounded-[40px] mx-auto items-center">
+  <h1 class="mt-32 mb-9 font-bold"><span class="text-[#F28F1C] text-[2.5rem] md:text-[4rem]">KINE</span><span class="text-[#546EF3] text-[2.5rem] md:text-[4rem]">CLUB</span></h1>
+  <p class="text-white text-justify px-5 md:px-12 md:leading-8">
     Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar beneficios y facilidades para nuestros socios.
     Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.
   </p>
   <div class="my-6">
-    <img class="skew-x-[10deg] absolute z-0 left-60 w-3/12" src="{{asset ('storage/png/geometric/rectangle.svg')}}" alt="">
-    <svg class="absolute z-0 top-[340%] right-[35%] w-3/12"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <img class="skew-x-[10deg] absolute z-0 left-20 md:left-60 w-3/12" src="{{asset ('storage/png/geometric/rectangle.svg')}}" alt="">
+    <svg class="absolute z-0 top-[540%] md:top-[340%] right-[35%] w-3/12"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
     </svg>
     <img class="z-[3] relative" src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" />
