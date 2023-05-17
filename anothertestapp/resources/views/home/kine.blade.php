@@ -1,5 +1,5 @@
 <!-- Tamaño para grandes pantallas. -->
-<div class="hidden lg:block lg:visible lg:w-[full] lg:h-[100vh] fade-in  ">
+<div class="hidden lg:block lg:visible lg:w-[full] lg:h-[110vh] fade-in  ">
    <div class="bgKine w-full h-full flex justify-center items-center rounde">
     <div class="w-[60%] h-[60%] rounded-[20px] glass1">
         <div class="flex">
@@ -8,10 +8,10 @@
             </div>
             <div class="w-1/2 ">
                 <div class="flex justify-center">
-                <h1 class="text-[50px] font-bold text-[#F28F1C]">KINE</h1>
+                <h1 class=" text-[50px] font-bold text-[#F28F1C]">KINE</h1>
                 <h1 class="text-[50px] font-bold text-white">CLUB</h1><br>
             </div>
-            <div class="flex justify-center text-white font-light">
+            <div class="flex justify-center text-white font-Poppins">
                 <p>Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar beneficios y facilidades para nuestros socios.
                     Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.</p>
             </div>

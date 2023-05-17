@@ -14,27 +14,26 @@
         >
         {{-- Pages --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-black">Paginas</p>
-  
+            <p class="font-custom text-lg  text-black">Paginas</p>
             <nav class="mt-8">
               <ul class="space-y-4 text-sm">
                 <li>
-                  <a class="text-black transition hover:text-white/75" href="/">
+                  <a class="font-Poppins text-black transition" href="/">
                     Home
                   </a>
                 </li>
                 <li>
-                    <a class="text-black transition hover:text-white/75" href="/">
+                    <a class="font-Poppins text-black transition" href="/">
                       About
                     </a>
                   </li>
                   <li>
-                    <a class="text-black transition hover:text-white/75" href="/">
+                    <a class="font-Poppins  text-black transition" href="/">
                       Work
                     </a>
                   </li>
                   <li>
-                    <a class="text-black transition hover:text-white/75" href="/">
+                    <a class="font-Poppins  text-black transition" href="/">
                       Pricing
                     </a>
                   </li>
@@ -43,7 +42,7 @@
           </div>
         {{-- Contacto --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-black">Contact Us</p>
+            <p class="text-lg font-custom text-black">Contact Us</p>
             <ul class="mt-8 space-y-4 text-sm">
               <li>
                 <a
@@ -65,7 +64,7 @@
                     />
                   </svg>
   
-                  <span class="text-black transition group-hover:text-white/75">
+                  <span class="font-Poppins text-black transition group-hover:text-white/75">
                     {{-- presidencia@kinesiologosmza.com --}}
                     pruebas
                   </span>
@@ -92,7 +91,7 @@
                     />
                   </svg>
   
-                  <span class="text-black transition group-hover:text-white/75">
+                  <span class="text-black font-Poppins transition group-hover:text-white/75">
                     0123456789
                   </span>
                 </a>
@@ -121,7 +120,7 @@
                   />
                 </svg>
   
-                <address class="-mt-0.5 not-italic text-black">
+                <address class="-mt-0.5 font-Poppins text-black">
                     Eusebio Blanco 148, Mendoza.
                 </address>
               </li>
@@ -129,11 +128,11 @@
           </div>
           {{-- newsletter --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-black">Newsletter</p>
+            <p class="text-lg font-custom text-black">Newsletter</p>
             <ul class="mt-3 space-y-4 text-sm">
               <div class="pt-3 flex items-center">
-                <input type="text" class="rounded-[30px] border border-black-600 p-2 w-[40]" placeholder="Enter your mail..">
-                <button class="bg-black text-white px-3 p-2 rounded-[30px] ">Submit</button>
+                <input type="text" class="font-Poppins rounded-[30px] border border-black-600 p-2 w-[40]" placeholder="Enter your mail..">
+                <button class="font-Poppins bg-black text-white px-3 p-2 rounded-[30px] ">Submit</button>
               </div>
               <li>
                 <div class='flex gap-4 p-2 rounded-md social-wrapper'>

@@ -4,7 +4,7 @@
   <div class="w-full h-[150vh] tarjetafondo flex justify-center items-center">
     <div class="w-[90%] h-[90vh] flex">
       <div class="w-1/2 flex items-center justify-center">
-        <img src="../resources/img/png/tarjeta.png" alt="Imagen">
+        <img src="{{ asset('storage/png/tarjeta.png')}}" alt="Imagen">
       </div>
       <div class="w-1/2 flex items-center justify-center">
         <div class="flex flex-wrap ">
