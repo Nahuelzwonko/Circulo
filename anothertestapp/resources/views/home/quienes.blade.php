@@ -1,11 +1,11 @@
 <div class="flex justify-center align-center lg:block lg:visible lg:w-[full] lg:h-[70vh] fade-in items-center">
 <div class="space-y-6 justify-between text-gray-600 lg:flex flex-row-reverse lg:gap-6 lg:space-y-0 xl:gap-12 lg:items-center sm:grid sm:grid-rows-1 sm:mt-8 lg:mt-0">
     <div class=" lg:w-1/2 sm:h-fit">
-      <h2 class="font-custom slide-in-bottom-h1 text-3xl text-center font-bold text-black md:text-4xl">
-        Quienes somos
+      <h2 class="font-custom slide-in-bottom-h1 text-3xl text-center font-bold text-black md:text-5xl">
+        Quienes Somos
       </h2>
       <div class="w-full justify-center flex">
-        <p class=" font-Poppins w-[80%] my-8 text-gray-500 dark:text-black">
+        <p class=" text-base lg:text-xl font-Poppins w-[80%] my-8 text-gray-500 dark:text-black text-justify">
           Somos una asociación civil que agrupa a profesionales kinesiólogos, fisioterapeutas, terapistas físicos y licenciados en kinesiología. Nuestra tarea principal es generar convenios colectivos de prestación con las obras sociales, mutuales y prepagas en nombre y representación de nuestros socios buscando el aumento continuo de los aranceles.
         </p>
       </div>

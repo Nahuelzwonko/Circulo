@@ -6,12 +6,12 @@
             <div class="w-1/2">
               <img src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" class="w-full h-full object-cover pulse" />
             </div>
-            <div class="w-1/2 ">
+            <div class="w-1/2 py-4">
                 <div class="flex justify-center">
                 <h1 class=" text-[50px] font-bold text-[#F28F1C]">KINE</h1>
                 <h1 class="text-[50px] font-bold text-white">CLUB</h1><br>
             </div>
-            <div class="flex justify-center text-white font-Poppins">
+            <div class="flex justify-center text-white font-Poppins text-justify px-8 text-lg">
                 <p>Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar beneficios y facilidades para nuestros socios.
                     Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.</p>
             </div>
@@ -25,8 +25,8 @@
    </div>
 </div>
 <!-- Responsive pantallas medianas y pequeñas -->
-<div class=" lg:hidden lg:w-0 lg:h-0 flex flex-col w-[95%] md:w-4/5 bg-gray-800 rounded-[40px] mx-auto items-center">
-  <h1 class="mt-32 mb-9 font-bold"><span class="text-[#F28F1C] text-[2.5rem] md:text-[4rem]">KINE</span><span class="text-[#546EF3] text-[2.5rem] md:text-[4rem]">CLUB</span></h1>
+<div class=" lg:hidden lg:w-0 lg:h-0 flex flex-col w-[95%] md:w-4/5 bg-[#3D3D3E] rounded-[40px] mx-auto items-center">
+  <h1 class="mt-12 mb-9 font-bold"><span class="text-[#F28F1C] text-[2.5rem] md:text-[4rem]">KINE</span><span class="text-[#546EF3] text-[2.5rem] md:text-[4rem]">CLUB</span></h1>
   <p class="text-white text-justify px-5 md:px-12 md:leading-8">
     Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar beneficios y facilidades para nuestros socios.
     Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.

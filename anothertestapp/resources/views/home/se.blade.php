@@ -6,11 +6,11 @@
       <div class=""></div>
     </div>
     <div class=" md:7/12 lg:w-1/2">
-      <h2 class=" text-3xl text-center font-bold text-black md:text-4xl font-custom">
+      <h2 class=" text-3xl text-center font-bold text-black md:text-5xl font-custom">
         Se parte del C.K.F.M
       </h2>
       <div class="flex justify-center">
-      <p class=" font-Poppins w-[80%] my-8 sm:mb-0 lg:mb-8  text-gray-600 dark:text-black">
+      <p class=" font-Poppins w-[80%] my-8 sm:mb-0 lg:mb-8  text-gray-600 dark:text-black text-justify lg:text-xl">
         En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más personas a recuperar su bienestar.
       </p>
     </div>
