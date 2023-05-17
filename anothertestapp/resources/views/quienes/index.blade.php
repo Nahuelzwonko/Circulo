@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Quienes somos')
+@section('title', 'Nosotros')
 @section('content')
 @extends('generico')
 @section('titulo', 'QUIENES SOMOS')
