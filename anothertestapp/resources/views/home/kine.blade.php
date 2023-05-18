@@ -4,7 +4,7 @@
     <div class="w-[60%] h-[60%] rounded-[20px] glass1">
         <div class="flex">
             <div class="w-1/2">
-              <img src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" class="w-full h-full object-cover pulse" />
+              <img src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" class="w-full h-full object-cover" />
             </div>
             <div class="w-1/2 py-4">
                 <div class="flex justify-center">
@@ -36,8 +36,8 @@
     <svg class="absolute z-0 top-[540%] md:top-[340%] right-[35%] w-3/12"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
     </svg>
-    <img class="z-[3] relative pulse" src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" />
+    <img class="z-[3] relative" src="{{ asset('storage/kineclub/kineclub.svg')}}" alt="Tarjetakineclub" />
     
   </div>
-  <button class=" w-full bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 rounded-br-[40px] rounded-bl-[40px] mt-8 "><a href="../quienes/index.blade.php">Quiero Ser Parte</a></button>
+  <button class=" w-full bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 rounded-br-[40px] rounded-bl-[40px] mt-8 "><a href="../quienes/index.blade.php">La Quiero!</a></button>
 </div>  
