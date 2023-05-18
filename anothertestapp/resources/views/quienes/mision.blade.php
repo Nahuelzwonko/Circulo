@@ -3,7 +3,7 @@
 <div class="hidden lg:flex flex-col justify-center items-center gap-20 mb-40">
   <h1 class="text-black font-bold text-[80px] font-sans">MISIÓN Y VISIÓN</h1>
   <div class="flex flex-row text-[1.6rem] justify-center items-baseline">
-    <div class="bg-[#546EF3] rounded-[20px] w-1/5 p-8 mx-20">
+    <div class="bg-[#546EF3] rounded-[20px]  xl:w-1/5 p-8 mx-20">
       <p class="text-justify font-Poppins text-white">Nuestra tarea principal es <span class="font-extrabold">negociar convenios</span> colectivos de prestación con obras sociales, mutuales y prepagas en nombre y representación de sus socios, buscando aumentar continuamente los aranceles.</p>
     </div>
     <div class="flex flex-col w-2/4 gap-20">

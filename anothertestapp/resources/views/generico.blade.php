@@ -7,7 +7,7 @@
             
             
         </div>
-        <button class="text-xl text-white p-4 lg:w-[10%] lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none  mb-12">Conocénos!</button>
+        <button class="text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none  mb-12">Conocénos!</button>
     </div>
     
 </div>
