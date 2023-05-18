@@ -8,3 +8,4 @@ Circulo de Kinesiologos y Fisioterapeutas Mendoza
 php artisan cache:clear
 
 php artisan view:clear
+composer require laravel/breeze --dev

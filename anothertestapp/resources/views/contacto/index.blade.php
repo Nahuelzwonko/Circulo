@@ -71,6 +71,7 @@
     </div>
     
   </section>
+  @include('contacto.acordion')
 <div class="mt-10">
     @include('include.cta')
 </div>
