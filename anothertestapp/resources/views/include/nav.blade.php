@@ -83,7 +83,7 @@
 </nav>
 
 <!-- Este navbar es el responsive y es visible sólo para dispositivos medianos y pequeños. -->
-<nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 visible lg:invisible">
+<nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 visible lg:invisible">
   <div class="w-screen flex flex-wrap items-center justify-between  mx-auto p-4">
     <!-- Logo -->
     <img src="{{asset('storage/logo/logowhite.svg')}}" class="h-8 mr-3" alt="Logo">
@@ -92,7 +92,7 @@
       <button class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
         <span class="font-Poppins">Iniciar Sesión</span>            
       </button>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
@@ -104,16 +104,16 @@
         <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
       </li>
       <li>
-        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Quienes Somos</a>
+        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Quienes Somos</a>
       </li>
       <li>
-        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kine Club</a>
+        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Kine Club</a>
       </li>
       <li>
-        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Noticias</a>
+        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Noticias</a>
       </li>
       <li>
-        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Obras Sociales y Prepagas</a>
+        <a href="#" class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Obras Sociales y Prepagas</a>
       </li>
     </ul>
   </div>

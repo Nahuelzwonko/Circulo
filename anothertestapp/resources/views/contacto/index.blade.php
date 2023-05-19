@@ -42,28 +42,28 @@
                     <div class="grid grid-cols-2 gap-4">
                       <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-black font-Poppins">Nombre*</label>
-                        <input type="text" id="name" class="shadow-sm border border-gray-300 text-black text-sm rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Tu nombre" required>
+                        <input type="text" id="name" class="shadow-sm border border-gray-300 text-black text-sm rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="Tu nombre" required>
                       </div>
                       <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-black font-Poppins">Email*</label>
-                        <input type="email" id="email" class="shadow-sm border border-gray-300 text-black text-sm rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="tucorreo@correo.com" required>
+                        <input type="email" id="email" class="shadow-sm border border-gray-300 text-black text-sm rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="tucorreo@correo.com" required>
                       </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                     <div>
                       <label for="number" class="block mb-2 text-sm font-medium text-black font-Poppins">Numero*</label>
-                      <input type="text" id="number" class="block p-3 w-full text-sm text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Tu numero" required>
+                      <input type="text" id="number" class="block p-3 w-full text-sm text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Tu numero" required>
                     </div>
                     <div>
                       <label for="subject" class="block mb-2 text-sm font-medium text-black font-Poppins">Asunto*</label>
-                      <input type="text" id="subject" class="block p-3 w-full text-sm text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                      <input type="text" id="subject" class="block p-3 w-full text-sm text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how we can help you" required>
                     </div>
                 </div>
                     <div>
                       <label for="message" class="block mb-2 text-sm font-medium text-black font-Poppins">Dejanos tu mensaje*</label>
-                      <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-black rounded-[30px] shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Hola, me gustaría hablar sobre cómo..."></textarea>
+                      <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-black rounded-[30px] shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Hola, me gustaría hablar sobre cómo..."></textarea>
                     </div>
-                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-[30px] bg-black sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Enviar</button>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-[30px] bg-black sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300">Enviar</button>
                   </form>
                   
             </div>

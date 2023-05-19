@@ -5,7 +5,7 @@
         Quienes Somos
       </h2>
       <div class="w-full justify-center flex">
-        <p class=" text-base lg:text-xl font-Poppins w-[80%] my-8 text-gray-500 dark:text-black text-justify">
+        <p class=" text-base lg:text-xl font-Poppins w-[80%] my-8 text-gray-500 text-justify">
           Somos una asociación civil que agrupa a profesionales kinesiólogos, fisioterapeutas, terapistas físicos y licenciados en kinesiología. Nuestra tarea principal es generar convenios colectivos de prestación con las obras sociales, mutuales y prepagas en nombre y representación de nuestros socios buscando el aumento continuo de los aranceles.
         </p>
       </div>

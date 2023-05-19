@@ -10,7 +10,7 @@
         Se parte del C.K.F.M
       </h2>
       <div class="flex justify-center">
-      <p class=" font-Poppins w-[80%] my-8 sm:mb-0 lg:mb-8  text-gray-600 dark:text-black text-justify lg:text-xl">
+      <p class=" font-Poppins w-[80%] my-8 sm:mb-0 lg:mb-8  text-gray-600 text-justify lg:text-xl">
         En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más personas a recuperar su bienestar.
       </p>
     </div>

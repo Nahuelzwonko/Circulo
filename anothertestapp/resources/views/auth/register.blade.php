@@ -1,58 +1,52 @@
-@extends('layout')
-@section('title', 'Registro | CKFM')
-@section('content')
-<!-- Body le da el fondo gradiente de amarillo a naranja. -->
-<body class="bg-gradient-to-r from-yellow-500 to-orange-500">
-     <!-- Clase Padre Grid. Para dividir el card en 2. -->
-    <div class="2xl:w-2/3 xl:4/5 lg:w-4/5 lg:grid lg:grid-cols-2 lg:mx-auto lg:mt-20 lg:rounded-xl  lg:shadow-2xl shadow-black">
-        <!-- Div 1, primer hijo. Contenido Principal: título, form. -->
-        <div class="left flex flex-col gap-10 items-center bg-white rounded-l-xl max[374px]:w-fit">
-            <img class="rounded-2xl w-full h-2/5 lg:hidden"src="../resources/img/login-bg.svg" alt="">
-               <!--Título  -->
-            <h1 class="text-2xl w-3/4 font-bold text-blue-600 mt-8">Bienvenido, Registrate!</h1>
-            <!-- Formulario -->
-            <!-- Separe el form en tres divs para poder ordenarlos y espaciarlos de diferentes maneras. -->
-           
-            <form action="/" method="post" class="flex flex-col w-10/12 gap-8 justify-center mb-10 text-lg max[374px]:w-fit">
-                <!-- Este div contiene los label e inputs. -->
-                @csrf
-                <div class="flex flex-col gap-2">
-                    {{-- <label for="phone" class="font-medium text-blue-600">User name</label> --}}
-                    <input type="text" name="username"  class="p-2 border border-blue-200 rounded-lg">
-                    {{-- <label for="email" class="font-medium text-blue-600">Email</label> --}}
-                    <input type="email" name="email"  class="p-2 border border-blue-200 rounded-lg">
-                    {{-- <label for="password" class="font-medium text-blue-600">Contraseña</label> --}}
-                    <input type="password" name="password"  class="p-2 border border-blue-200 rounded-lg">
-                    {{-- <label for="password" class="font-medium text-blue-600">Confirmar Contraseña</label> --}}
-                    <input type="password" name="password_confirmation"  class="p-2 border border-blue-200 rounded-lg">
-                    <input type="submit" value="Registrarse" class="border border-blue-500 rounded-lg py-3 px-12 bg-blue-500 text-white hover:bg-blue-700  md:py-3 sm:py-1"/>
-                    
-                </div>
-                <!-- Este div ordena el checkbox con su label con respecto al link de recuperar contraseña -->
-                <div class="flex flex-row gap-36 text-base justify-center 2xl:gap-24 xl:gap-8 lg:gap-4 sm:items-center sm:gap-8">
-                    <!-- Este div ordena SOLAMENTE el checkbox y el label. -->
-                    {{-- <div class="flex flex-row gap-2">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox" class="mr-10 hover:cursor-pointer">Recordarme</label>
-                    </div>
-                    
-                    <a href="#" class="underline sm:text-sm md:text-base">Olvidaste tu contraseña?</a> --}}
-                </div>
-                
-                <!-- Este div ordena los botones. -->
-                <div class="flex flex-row justify-center gap-10 mb-4 text-base font-medium">
-                    {{-- boton de registrarme --}}
-                    {{-- <input type="submit" value="Registrarse" class="border border-blue-500 rounded-lg py-3 px-12 bg-blue-500 text-white hover:bg-blue-700  md:py-3 sm:py-1"/>
-                    <button class="border border-blue-500 rounded-lg py-3 px-12 text-blue-500   md:py-3 sm:py-1"><a href="/pages/login.php">Iniciar Sesión</a></button> --}}
-                </div>
-                
-                <span class="flex flex-row gap-8 justify-center 2xl:gap-4 xl:gap-3.5 xl:text-base lg:text-sm lg:gap-4 sm:text-xs sm:gap-2"><span class="font-light">O, Inicia Sesión con</span> <a href="#" class="text-blue-400 hover:underline">Facebook</a> <a href="#" class="text-blue-400 hover:underline">Linked In</a> <a href="#" class="text-blue-400 hover:underline">Google</a></span>
-            </form>
+<x-guest-layout>
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+
+        <!-- Name -->
+        <div>
+            <x-input-label for="name" :value="__('Name')" />
+            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
-        <!-- Div 2, Segundo hijo. Contiene la imagen de la derecha. -->
-        <div class="right h-full invisible lg:visible">
-            <img class="rounded-r-xl h-full w-full"src="../resources/img/login-bg.svg" alt="">
+
+        <!-- Email Address -->
+        <div class="mt-4">
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
-        
-    </div>
-    @endsection
+
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
+
+            <x-text-input id="password" class="block mt-1 w-full"
+                            type="password"
+                            name="password"
+                            required autocomplete="new-password" />
+
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mt-4">
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+
+            <x-text-input id="password_confirmation" class="block mt-1 w-full"
+                            type="password"
+                            name="password_confirmation" required autocomplete="new-password" />
+
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+                {{ __('Already registered?') }}
+            </a>
+
+            <x-primary-button class="ml-4">
+                {{ __('Register') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>

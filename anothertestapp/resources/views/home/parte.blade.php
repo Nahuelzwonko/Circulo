@@ -9,7 +9,7 @@
             El circulo te conecta
           </h2>
           <div class="flex justify-center">
-          <p class=" w-[80%] my-8 text-gray-600 dark:text-black font-Poppins text-justify text-xl ">
+          <p class=" w-[80%] my-8 text-gray-600 font-Poppins text-justify text-xl ">
             En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más personas a recuperar su bienestar
           </p>
         </div>
