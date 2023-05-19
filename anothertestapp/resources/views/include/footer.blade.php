@@ -1,5 +1,6 @@
-<footer class="bg-white">
-    <div class="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+
+<footer class="bg-white lg:hidden">
+    <div class="w-[70%] pt-4 pb-6 mx-auto lg:px-8 lg:pt-24">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {{-- logo --}}
         <div>
@@ -10,11 +11,11 @@
           </ul>
         </div>
         <div
-          class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
+          class="grid grid-cols-1 gap-8 lg:gap-60 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
         >
         {{-- Pages --}}
           <div class="text-center sm:text-left">
-            <p class="font-custom text-lg  text-black">Paginas</p>
+            <p class="font-custom text-3xl  text-black font-bold">Paginas</p>
             <nav class="mt-8">
               <ul class="space-y-4 text-sm">
                 <li>
@@ -42,7 +43,7 @@
           </div>
         {{-- Contacto --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-custom text-black">Contacto</p>
+            <p class="text-3xl font-bold font-custom text-black">Contacto</p>
             <ul class="mt-8 space-y-4 text-sm">
               <li>
                 <a
@@ -128,11 +129,11 @@
           </div>
           {{-- newsletter --}}
           <div class="text-center sm:text-left">
-            <p class="text-lg font-custom text-black">Newsletter</p>
+            <p class="text-3xl font-bold font-custom text-black">Newsletter</p>
             <ul class="mt-3 space-y-4 text-sm">
               <div class="pt-3 flex items-center">
-                <input type="text" class="font-Poppins rounded-[30px] border border-black-600 p-2 w-[40]" placeholder="Ingresa tu correo..">
-                <button class="font-Poppins bg-black text-white px-3 p-2 rounded-[30px] ">Submit</button>
+                <input type="text" class="font-Poppins rounded-[30px] border border-black-600 py-[0.5] pr-8 lg:pr-20 mr-4" placeholder="Ingresa tu correo..">
+                <button class="font-Poppins bg-black hover:bg-slate-700 text-white px-3 p-2 rounded-[30px] ">Submit</button>
               </div>
               <li>
                 <div class='flex gap-4 p-2 rounded-md social-wrapper'>
@@ -172,4 +173,96 @@
         </div>
       </div>
     </div>
-  </footer>
+</footer>
+
+<footer class="my-4 pt-8 hidden lg:inline h-100%">
+  <div class="flex flex-col justify-center gap-10 font-Poppins">
+    <div class="flex flex-col lg:flex-row justify-evenly">
+      <img src="{{asset('storage/logo/ckfm-logo.svg')}}" alt="foto">
+      <div class="flex flex-col gap-8">
+            <h1 class="font-bold text-4xl font-sans">Páginas</h1>
+            <ul class="flex flex-col gap-4 text-lg font-bold">
+              <li><a class="hover:text-slate-500" href="../home.blade.php">Inicio</a></li>
+              <li><a class="hover:text-slate-500" href="../quienes/index.blade.php">Quienes Somos</a></li>
+              <li><a class="hover:text-slate-500" href="../kineClub/index.blade.php">Kine Club</a></li>
+              <li><a class="hover:text-slate-500" href="../contacto/index.blade.php">Contactate</a></li>
+            </ul>
+          </div>
+      <div class="flex flex-col gap-6">
+      <h1 class="font-bold text-4xl font-sans">Contacto</h1>
+      <ul class="flex flex-col gap-4 text-lg font-bold">
+        <li><a class="hover:text-slate-500" href=""><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-black shrink-0 inline mr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>presidencia@kinesiologosmza.com</a></li>
+        <li><a class="hover:text-slate-500" href=""><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-black shrink-0 inline mr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg> +54123654789</a></li>
+        <li><a class="hover:text-slate-500" href=""><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-black shrink-0 inline mr-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>Eusebio Blanco 148, Mendoza.</a></li>
+        
+      </ul>
+      
+
+    </div>
+    <div class="flex flex-col gap-8">
+        <h1 class="font-bold text-4xl font-sans">Newsletter</h1>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row">
+            <input type="text" class="font-Poppins rounded-[30px] border border-black-600 py-[0.5] pr-8 lg:pr-20 mr-4" placeholder="Ingresa tu correo..">
+            <button class="font-Poppins bg-black hover:bg-slate-700 text-white px-3 p-2 rounded-[30px] ">Submit</button>
+          </div>
+          <div class="flex flex-row gap-4">
+            <a href=""><img src="{{asset('storage/iconos/ig.svg')}}"></a>
+            <a href=""><img src="{{asset('storage/iconos/fb.svg')}}"></a>
+            <a href=""><img src="{{asset('storage/iconos/lk.svg')}}"></a>
+            <a href=""><img src="{{asset('storage/iconos/tw.svg')}}"></a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    <p class="font-Poppins font-bold mx-auto">Copyright circulo de kinesiólogos y fisioterapeutas Mendoza ©  - Powered by Code<span class="text-[#741CF9] font-bold">Huit.</span></p>
+  </div>
+</footer>
+
