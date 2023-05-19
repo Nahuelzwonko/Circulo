@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeContoller;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\QuienesController;
+use  App\Http\Controllers\KineclubController;
 use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ use App\Models\Post;
 //rutas publicas
 
 Route::get('/', HomeContoller::class);
+Route::get('/kineClub', [KineclubController::class, 'index' ]);
 
 //Contoller paginas secuendarias
 Route::get('contacto', [ContactoController::class, 'index']);
