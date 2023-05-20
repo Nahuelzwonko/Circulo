@@ -34,12 +34,18 @@ class PostController extends Controller
         $post = new Post;
         $post->title = $request->title;
         $post->body = $request->body;
+        $post->cuerpo = $request->input('cuerpo', '');
         if($request->hasFile('image')){
             $file = $request->file('image');
             $path = Storage::putFile('public/images', $request->file('image'));
             $nuevo_path = str_replace('public/', '', $path);
             $post->image_url = $nuevo_path;
         }
+        if ($request->hasFile('pdf')) {
+        $pdf = $request->file('pdf');
+        $pdfPath = $pdf->store('public/pdfs');
+        $post->pdf_url = str_replace('public/', '', $pdfPath);
+    }
         $post->save();
     }
 

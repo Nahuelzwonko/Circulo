@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
+            $table->text('cuerpo');
             $table->text('image_url')->nullable();
             $table->boolean('active')->default(true);
+            $table->string('pdf_url')->nullable();
             $table->timestamps();
-            
         });
     }
 
