@@ -12,8 +12,9 @@ use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\ProfecionalesController;
 use App\Http\Controllers\PublicController;
 use App\Models\Post;
-//rutas publicas
 
+
+//rutas publicas
 Route::get('/', HomeContoller::class);
 Route::get('kineClub', [KineclubController::class, 'index' ])->name('kine.index');
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
@@ -27,23 +28,15 @@ Route::get('/allPost', function(){
     ]);
 })->name('allPost');
 
-
-
 Route::get('/people', [PublicController::class, 'index'])->name('people.index');
 Route::get('/people/create', [PublicController::class, 'create'])->name('people.create');
 Route::post('/people', [PublicController::class, 'store'])->name('people.store');
-// Route::get('/table/{id}', [PublicController::class, 'show'])->name('table.show');
-
-
-
-
+Route::get('/table/{id}', [PublicController::class, 'show'])->name('people.show');
 
 //Rutas privadas
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

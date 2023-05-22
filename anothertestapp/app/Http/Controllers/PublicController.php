@@ -27,15 +27,12 @@ class PublicController extends Controller
         $person->telefono = $request->input('telefono');
         $person->especialidad = $request->input('especialidad');
         $person->save();
-
         return redirect()->route('people.index')->with('success', 'Persona agregada exitosamente.');
     }
     
     public function show($id)
     {
         $person = Person::find($id);
-
-        return view('table', compact('person'));
+        return view('profesionales.index', ['person' => $person]);
     }
-
 }
