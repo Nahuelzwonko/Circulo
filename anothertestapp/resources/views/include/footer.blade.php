@@ -21,7 +21,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins text-black transition" href="{{route('quienes.index')}}">
+                                <a class="font-Poppins text-black transition" href="{{ route('quienes.index') }}">
                                     Quienes somos
                                 </a>
                             </li>
@@ -31,7 +31,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins  text-black transition" href="{{route('contacto.index')}}">
+                                <a class="font-Poppins  text-black transition" href="{{ route('contacto.index') }}">
                                     Contactanos
                                 </a>
                             </li>
@@ -140,9 +140,9 @@
                 <h1 class="font-bold text-4xl font-sans">Páginas</h1>
                 <ul class="flex flex-col gap-4 text-lg font-bold">
                     <li><a class="hover:text-slate-500" href="/">Inicio</a></li>
-                    <li><a class="hover:text-slate-500" href="{{route('quienes.index')}}">Quienes Somos</a></li>
-                    <li><a class="hover:text-slate-500" href="{{route('kine.index')}}">Kine Club</a></li>
-                    <li><a class="hover:text-slate-500" href="{{route('contacto.index')}}">Contactate</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('quienes.index') }}">Quienes Somos</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('kine.index') }}">Kine Club</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('contacto.index') }}">Contactate</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-6">
@@ -194,8 +194,15 @@
 
             </div>
         </div>
-
-        <p class="font-Poppins font-bold mx-auto">Copyright circulo de kinesiólogos y fisioterapeutas Mendoza © -
-            Powered by Code<span class="text-[#741CF9] font-bold">Huit.</span></p>
+        <div class="w-full flex flex-col justify-center items-center">
+            <div>
+                <p class="font-Poppins font-bold mx-auto ">© Copyright circulo de kinesiólogos y fisioterapeutas
+                    Mendoza </p>
+            </div>
+            <div>
+                <p class="text-black font-bold">-Powered by Code <span class="text-[#741CF9] font-bold">Huit.</span>
+                </p>
+            </div>
+        </div>
     </div>
 </footer>

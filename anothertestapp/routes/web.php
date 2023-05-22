@@ -14,7 +14,7 @@ use App\Models\Post;
 //rutas publicas
 
 Route::get('/', HomeContoller::class);
-Route::get('/kineClub', [KineclubController::class, 'index' ])->name('kine.index');
+Route::get('kineClub', [KineclubController::class, 'index' ])->name('kine.index');
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
 Route::get('quienes', [QuienesController::class, 'index'])->name('quienes.index');
 Route::get('obras', [ObrasController::class, 'index'])->name('obras.index');

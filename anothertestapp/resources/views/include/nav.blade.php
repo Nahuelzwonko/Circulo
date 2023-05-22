@@ -2,10 +2,10 @@
 <nav class="glass z-10 lg:py-8 md:pb-0 invisible lg:visible">
     <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
         <div class="flex items-center md:justify-between sm:justify-center h-16 ">
-            <!-- Logo -->
+            <a href="/">
             <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 "
                 src="{{ asset('storage/logo/logowhite.svg') }}" alt="Logo">
-            <!-- Información de contacto y botón -->
+            </a>
             <div
                 class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
                 <div class="mr-4">
@@ -29,7 +29,6 @@
                         </svg>
                         <span class="text-white hover:text-gray-300 font-Poppins">123-456-7890</span>
                     </a>
-
                 </div>
                 <button
                     class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 pl-1 rounded-lg font-extralight hover:bg-blue-600">
@@ -55,15 +54,11 @@
             </div>
         </div>
     </div>
-
-    <!-- Menú de navegación -->
     <div
         class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4 border-white-600 border-t-[0.5px] lg:border-none  mt-0 invisible lg:visible h-0 lg:h-auto">
-
         <div class="flex lg:justify-end md:justify-center">
             <div id="items"
                 class="flex items-center lg:border-white-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
-
                 <a href="/"
                     class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Inicio</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
@@ -81,20 +76,15 @@
                 <a href="{{route('obras.index')}}"
                     class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras
                     sociales y prepagas</a>
-
-
             </div>
         </div>
     </div>
-
 </nav>
-
-<!-- Este navbar es el responsive y es visible sólo para dispositivos medianos y pequeños. -->
 <nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 visible lg:invisible">
     <div class="w-screen flex flex-wrap items-center justify-between  mx-auto p-4">
-        <!-- Logo -->
+        <a href="/">
         <img src="{{ asset('storage/logo/logowhite.svg') }}" class="h-8 mr-3" alt="Logo">
-        <!-- Div 1, contiene botones responsive. -->
+        </a>
         <div class="flex gap-4">
             <button
                 class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
@@ -112,7 +102,6 @@
                 </svg>
             </button>
         </div>
-        <!-- Div 2, items responsive. -->
         <div class="items-center justify-between hidden  w-screen" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4  border-gray-100 rounded-lg  ">
                 <li>
@@ -141,5 +130,4 @@
                 </li>
             </ul>
         </div>
-
 </nav>
