@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'KINE CLUB')
+@section('title', 'KINE CLUB | CKFM')
 @section('content')
 @include('include.nav')
 @include('kineClub.tarjeta')

@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Quienes somos')
+@section('titulo', 'Quienes somos | CKFM')
 @section('Encabezado', 'Quienes somos')
 @section('cont', 'aca va el encabezado ')
 @section('content')

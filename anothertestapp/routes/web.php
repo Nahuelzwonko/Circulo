@@ -21,12 +21,11 @@ use App\Models\Post;
 //rutas publicas
 
 Route::get('/', HomeContoller::class);
-Route::get('/kineClub', [KineclubController::class, 'index' ]);
+Route::get('/kineClub', [KineclubController::class, 'index' ])->name('kine.index');
 
 //Contoller paginas secuendarias
-Route::get('contacto', [ContactoController::class, 'index']);
-Route::get('quienes', [QuienesController::class, 'index']);
-
+Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
+Route::get('quienes', [QuienesController::class, 'index'])->name('quienes.index');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -35,7 +34,7 @@ Route::get('/allPost', function(){
     return view('allPost',[
         'posts' => Post::where('active', true)->get()
     ]);
-});
+})->name('allPost');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

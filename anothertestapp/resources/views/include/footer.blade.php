@@ -21,7 +21,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins text-black transition" href="/">
+                                <a class="font-Poppins text-black transition" href="{{route('quienes.index')}}">
                                     Quienes somos
                                 </a>
                             </li>
@@ -31,7 +31,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins  text-black transition" href="/">
+                                <a class="font-Poppins  text-black transition" href="{{route('contacto.index')}}">
                                     Contactanos
                                 </a>
                             </li>
@@ -139,10 +139,10 @@
             <div class="flex flex-col gap-8">
                 <h1 class="font-bold text-4xl font-sans">Páginas</h1>
                 <ul class="flex flex-col gap-4 text-lg font-bold">
-                    <li><a class="hover:text-slate-500" href="../home.blade.php">Inicio</a></li>
-                    <li><a class="hover:text-slate-500" href="../quienes/index.blade.php">Quienes Somos</a></li>
-                    <li><a class="hover:text-slate-500" href="../kineClub/index.blade.php">Kine Club</a></li>
-                    <li><a class="hover:text-slate-500" href="../contacto/index.blade.php">Contactate</a></li>
+                    <li><a class="hover:text-slate-500" href="/">Inicio</a></li>
+                    <li><a class="hover:text-slate-500" href="{{route('quienes.index')}}">Quienes Somos</a></li>
+                    <li><a class="hover:text-slate-500" href="{{route('kine.index')}}">Kine Club</a></li>
+                    <li><a class="hover:text-slate-500" href="{{route('contacto.index')}}">Contactate</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-6">
