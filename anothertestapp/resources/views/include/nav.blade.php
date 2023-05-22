@@ -78,7 +78,7 @@
                 <a href="{{route('allPost')}}"
                     class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="#"
+                <a href="{{route('obras.index')}}"
                     class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras
                     sociales y prepagas</a>
 
@@ -135,7 +135,7 @@
                         class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Noticias</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{{route('obras.index')}}"
                         class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Obras
                         Sociales y Prepagas</a>
                 </li>
