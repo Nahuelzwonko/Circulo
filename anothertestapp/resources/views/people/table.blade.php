@@ -1,8 +1,3 @@
-@extends('master')
-@section('titulo', 'Profecionales asociados | CKFM')
-@section('Encabezado', 'Personal asociado')
-@section('cont', '')
-@section('content')
 <section class="h-[100vh] flex justify-center mt-20">
 
     <div class="w-[80%] relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -57,6 +52,3 @@
         </table>
     </div>
 </section>
-
-
-@endsection

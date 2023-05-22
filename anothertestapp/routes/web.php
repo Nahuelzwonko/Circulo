@@ -10,6 +10,7 @@ use App\Http\Controllers\QuienesController;
 use  App\Http\Controllers\KineclubController;
 use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\ProfecionalesController;
+use App\Http\Controllers\PublicController;
 use App\Models\Post;
 //rutas publicas
 
@@ -25,6 +26,17 @@ Route::get('/allPost', function(){
         'posts' => Post::where('active', true)->get()
     ]);
 })->name('allPost');
+
+
+
+Route::get('/people', [PublicController::class, 'index'])->name('people.index');
+Route::get('/people/create', [PublicController::class, 'create'])->name('people.create');
+Route::post('/people', [PublicController::class, 'store'])->name('people.store');
+// Route::get('/table/{id}', [PublicController::class, 'show'])->name('table.show');
+
+
+
+
 
 //Rutas privadas
 Route::get('/dashboard', function () {
