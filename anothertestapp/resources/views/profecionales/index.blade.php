@@ -4,8 +4,7 @@
 @section('cont', '')
 @section('content')
     <section class="h-[100vh] flex justify-center mt-20">
-
-        <div class="w-[80%] relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="w-[80%] relative overflow-x-auto  sm:rounded-lg">
             <div class="flex items-center justify-between py-4 bg-white dark:bg-gray-800">
                 <div>
                 </div>
@@ -21,52 +20,69 @@
                     </div>
                     <input type="text" id="table-search-users"
                         class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Search for users">
+                        placeholder="Buscar por nombre">
                 </div>
             </div>
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 py-4">
                             Nombre
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 py-4">
                             Domicilio
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 py-4">
                             Especialidad
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 py-4">
                             Telefono
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    @if (isset($person))
-                        <td>
-                            <p>Nombre: {{ $person->nombre }}</p>
-                        </td>
-                        <td>
-                            <p>Domicilio: {{ $person->domicilio }}</p>
-                        </td>
-                        <td>
-                            <p>Teléfono: {{ $person->telefono }}</p>
-                        </td>
-                        <td>
-                            <p>Especialidad: {{ $person->especialidad }}</p>
-                        </td>
-                    @else
-                        <td>
-                            <p>No se encontraron datos de la persona.</p>
-                        </td>
-                    @endif
+                    @foreach ($people as $person)
+                        <tr class="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 ">
+                            <td class="px-6 py-4 uppercase">
+                                <p>{{ $person->nombre }}</p>
+                            </td>
+                            <td class="px-6 py-4 uppercase">
+                                <p>{{ $person->domicilio }}</p>
+                            </td>
+                            <td class="px-6 py-4 uppercase">
+                                <p>{{ $person->especialidad }}</p>
 
+                            </td>
+                            <td class="px-6 py-4 uppercase">
+                                <p>{{ $person->telefono }}</p>
+
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
-
             </table>
+
         </div>
     </section>
+    <script>
+        const searchInput = document.getElementById('table-search-users');
+        const rows = document.querySelectorAll('tbody tr');
+
+        searchInput.addEventListener('input', function(event) {
+            const searchValue = event.target.value.toLowerCase();
+
+            rows.forEach(function(row) {
+                const name = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+                const specialty = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+
+                if (name.includes(searchValue) || specialty.includes(searchValue)) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 
 @endsection

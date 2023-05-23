@@ -11,6 +11,7 @@ use  App\Http\Controllers\KineclubController;
 use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\ProfecionalesController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\DatosController;
 use App\Models\Post;
 
 
@@ -32,8 +33,17 @@ Route::get('/people', [PublicController::class, 'index'])->name('people.index');
 Route::get('/people/create', [PublicController::class, 'create'])->name('people.create');
 Route::post('/people', [PublicController::class, 'store'])->name('people.store');
 Route::get('/table/{id}', [PublicController::class, 'show'])->name('people.show');
+Route::delete('/people/{id}', [PublicController::class, 'destroy'])->name('people.destroy');
+Route::get('/people/{id}/edit', [PublicController::class, 'edit'])->name('people.edit');
+Route::put('/people/{id}', [PublicController::class, 'update'])->name('people.update');
+
 
 //Rutas privadas
+Route::get('/datos', [DatosController::class, 'index'])->name('datos.index');
+Route::post('/datos',[DatosController::class, 'store'])->name('datos.store');
+Route::delete('/datos/{dato}', [DatosController::class, 'destroy'])->name('datos.destroy');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
