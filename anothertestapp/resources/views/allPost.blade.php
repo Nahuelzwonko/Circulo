@@ -3,6 +3,7 @@
 @section('contenido')
 @section('Encabezado', 'Nuestro blog')
 @section('content')
+@section('Boton', 'Informate!')
 @include('posts.blog')
 @include('include.cta')
 @include('include.footer')
