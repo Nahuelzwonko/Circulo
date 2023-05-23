@@ -325,7 +325,7 @@ backdrop-filter: blur( 5px );
     background-image:url(../../public/storage/fondo/tarjetafondo.svg) ;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
 }
 /* formas */
 .circulo{
