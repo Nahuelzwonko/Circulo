@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
 .glass {
     background: rgba(44, 44, 44, 0.3);
     backdrop-filter: blur(5.5px);
