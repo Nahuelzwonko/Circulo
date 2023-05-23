@@ -31,7 +31,7 @@
 
 <!-- Responsive -->
 <div class="block lg:hidden">
-  <button class="text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none mt-16">Conocénos!</button>
+  
   <div class="flex flex-col justify-center items-center mt-16">
     <h1 class="text-2xl font-bold">TARJETA DE BENEFICIOS</h1>
     

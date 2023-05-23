@@ -2,6 +2,7 @@
 @section('titulo', 'Quienes somos | CKFM')
 @section('Encabezado', 'Quienes somos')
 @section('cont', 'aca va el encabezado ')
+@section('Boton', 'Conocénos')
 @section('content')
   @include('quienes.mision')
   @include('quienes.valores')

@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center mt-20">
+<div class="flex flex-col justify-center items-center mt-40">
     <h1 class="text-black font-sans font-bold text-3xl lg:text-[80px]">BENEFICIOS KINECLUB</h1>
     <div class="swiper my-6 md:my-10">
         <div class="swiper-wrapper flex">
