@@ -6,7 +6,7 @@
     <div class="bg-[#546EF3] rounded-[20px]  xl:w-1/5 p-8 mx-20">
       <p class="text-justify font-Poppins text-white">Nuestra tarea principal es <span class="font-extrabold">negociar convenios</span> colectivos de prestación con obras sociales, mutuales y prepagas en nombre y representación de sus socios, buscando aumentar continuamente los aranceles.</p>
     </div>
-    <div class="flex flex-col w-2/4 gap-20">
+    <div class="flex flex-col w-2/4 gap-20 z-[1]">
       <p class="text-justify font-Poppins">Asimismo, estamos en la constante búsqueda para <span class="font-extrabold">generar un espacio de pertenencia, unión y consenso</span> entre los profesionales para lograr un crecimiento conjunto basado en la solidaridad y formación profesional.</p>
       <p class="text-justify font-Poppins">Es vital para nosotros <span class="font-extrabold">difundir</span> los beneficios de la kinesiología y fisioterapia en la sociedad, al mismo tiempo que <span class="font-extrabold">concientizar</span> acerca del intrusismo y la práctica ilegal de la profesión.</p>
     
