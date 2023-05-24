@@ -2,7 +2,9 @@
 @section('titulo', 'Obras sociales | CKFM')
 @section('Encabezado', 'obras sociales')
 @section('cont', '')
+@section('Boton', '')
 @section('content')
+@include('obras.sociales')
 <section class="w-full h-screen flex justify-center items-center">
   <div class="flex flex-wrap justify-center w-[70%] ">
     @foreach ($datos as $dato)
