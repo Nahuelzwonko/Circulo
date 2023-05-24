@@ -2,6 +2,7 @@
 @section('titulo', 'Asociate | CKFM')
 @section('Encabezado', 'Asóciate')
 @section('cont', 'Para ser parte del Círculo de Kinesiólogos y Fisioterapeutasde Mendoza')
+@section('Boton', '')
 @section('content')
 @include('asociate.form')
 @include('include.cta')
