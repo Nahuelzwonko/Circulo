@@ -3,7 +3,9 @@
 @section('Encabezado', 'Personal asociado')
 @section('cont', '')
 @section('content')
-    <section class="h-[100vh] flex justify-center mt-20">
+    <section class="h-[100vh] flex flex-col items-center mt-20">
+        <h1 class="font-hammersmith text-7xl">Búsqueda</h1>
+        
         <div class="w-[80%] relative overflow-x-auto  sm:rounded-lg">
             <div class="flex items-center justify-between py-4 bg-white dark:bg-gray-800">
                 <div>
@@ -23,24 +25,24 @@
                         placeholder="Buscar por nombre">
                 </div>
             </div>
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
+            <table class="w-full text-left text-gray-500 dark:text-gray-400 text-lg">
+                <thead class="text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-b-[1px] border-slate-300">
+                    <tr class="">
                         <th scope="col" class="px-6 py-4">
-                            Nombre
+                            <i class="fa-solid fa-user mr-2"></i>Nombre
                         </th>
                         <th scope="col" class="px-6 py-4">
-                            Domicilio
+                            <i class="fa-solid fa-sharp fa-location-dot mr-2"></i>Dirección Consultorio
                         </th>
                         <th scope="col" class="px-6 py-4">
-                            Especialidad
+                            <i class="fa-solid fa-phone mr-2"></i>Especialidad
                         </th>
                         <th scope="col" class="px-6 py-4">
-                            Telefono
+                            <i class="fa-solid fa-tag fa-flip-horizontal mr-2"></i>Contacto
                         </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="mt-8">
                     @foreach ($people as $person)
                         <tr class="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 ">
                             <td class="px-6 py-4 uppercase">

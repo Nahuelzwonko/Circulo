@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{asset('storage/favicon/favicon.png')}}" /> 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
   @vite('resources/css/app.css')
+  <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 </head>
     <body > 
       <header class="h-[100vh] mb-[40px]">
