@@ -47,6 +47,7 @@ class PostController extends Controller
         $post->pdf_url = str_replace('public/', '', $pdfPath);
     }
         $post->save();
+        return redirect()->route('posts.index')->with('success', 'Post creado exitosamente.');
     }
 
     /**

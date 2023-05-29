@@ -20,7 +20,7 @@
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                         Subir empresa
                     </h3>
-                                        <div class="px-6 py-6 lg:px-8">
+                    <div class="px-6 py-6 lg:px-8">
                         <form class="space-y-6" action="{{ route('datos.store') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
@@ -75,35 +75,42 @@
             <table class="w-[80%] text-sm text-left text-black dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th class="px-20 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
                             Nombre
                         </th>
-                        <th class="px-20 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
                             Imagen
                         </th>
-                        <th class="px-20 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
                             Descripcion</th>
-                        <th class="px-20 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
                             Eliminar
+                        </th>
+                        <th class="px-10 py-5 text-left text-xs font-medium text-black uppercase tracking-wider">
+                            Editar
                         </th>
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y ">
                     @foreach ($datos as $dato)
                         <tr>
-                            <td class="px-20 py-5 whitespace-nowrap">{{ $dato->nombre }}</td>
-                            <td class="px-20 py-5 whitespace-nowrap">
-                                <img src="{{ asset($dato->imagen) }}" alt="{{ $dato->nombre }}"
-                                    class="h-10 w-15">
+                            <td class="px-10 py-5 whitespace-nowrap">{{ $dato->nombre }}</td>
+                            <td class="px-10 py-5 whitespace-nowrap">
+                                <img src="{{ asset($dato->imagen) }}" alt="{{ $dato->nombre }}" class="h-10 w-15">
                             </td>
-                            <td class="px-20 py-5 whitespace-nowrap">{{ $dato->descripcion }}</td>
-                            <td class="px-20 py-5 whitespace-nowrap">
+                            <td class="px-10 py-5 whitespace-nowrap">{{ Str::limit($dato->descripcion, 50) }}</td>
+                            <td class="px-10 py-5 whitespace-nowrap">
                                 <form action="{{ route('datos.destroy', $dato->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
                                         class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
                                 </form>
+                            </td>
+                            <td class="px-10 py-5 whitespace-nowrap">
+                                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                    <a href="{{ route('datos.edit', $dato->id) }}" class="btn btn-primary">Editar</a>
+                                </button>
                             </td>
                         </tr>
                     @endforeach

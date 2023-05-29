@@ -41,7 +41,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     //Agregar y quitar empresas
     Route::get('/datos', [DatosController::class, 'index'])->name('datos.index');
     Route::post('/datos', [DatosController::class, 'store'])->name('datos.store');
+    Route::get('/datos/{dato}/edit', [DatosController::class, 'edit'])->name('datos.edit');
     Route::delete('/datos/{dato}', [DatosController::class, 'destroy'])->name('datos.destroy');
+    Route::put('/datos/{dato}', [DatosController::class, 'update'])->name('datos.update');
+
     //seccion de noticias
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
     Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
