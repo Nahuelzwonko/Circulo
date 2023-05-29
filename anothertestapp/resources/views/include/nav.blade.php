@@ -67,7 +67,7 @@
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
                 <a href="{{route('allPost')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('obras.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras sociales y prepagas</a>
+                <a href="{{route('obras.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras Sociales y Prepagas</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
                 <a href="{{route('profesionales.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Profesionales Asociados</a>
             </div>

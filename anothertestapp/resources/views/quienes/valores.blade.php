@@ -1,6 +1,6 @@
 <div class="w-full  mb-20">
     <div class="w-full flex justify-center">
-        <h1 class="text-black font-sans font-bold text-4xl lg:text-[80px] text-center">NUESTROS VALORES</h1>
+        <h1 class="text-black font-hammersmith font-bold text-4xl lg:text-[80px] text-center">NUESTROS VALORES</h1>
     </div>
     <div class="lg:mt-[100px] mt-8 w-full flex justify-center items-center">
         <div class="w-[70%] ">
