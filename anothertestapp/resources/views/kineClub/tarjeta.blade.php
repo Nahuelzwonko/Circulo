@@ -1,6 +1,6 @@
 <div class="hidden lg:block">
   <div class="w-full flex justify-center">
-    <h1 class="text-black font-sans font-bold text-[80px]">TARJETA DE BENEFICIOS</h1>
+    <h1 class="text-black font-hammersmith font-bold text-[80px]">TARJETA DE BENEFICIOS</h1>
   </div>
   <div class="w-full h-[150vh] tarjetafondo flex justify-center items-center">
     <div class="w-[80%] h-[80vh] flex">
@@ -33,7 +33,7 @@
 <div class="block lg:hidden">
   
   <div class="flex flex-col justify-center items-center mt-16">
-    <h1 class="text-2xl font-bold">TARJETA DE BENEFICIOS</h1>
+    <h1 class="text-2xl font-bold font-hammersmith">TARJETA DE BENEFICIOS</h1>
     
     <img src="{{ asset('storage/kineclub/kineclub-responsive.svg')}}" alt="Imagen">
     <p class="font-Poppins text-justify px-4">

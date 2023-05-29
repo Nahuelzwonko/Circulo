@@ -1,5 +1,5 @@
 <section class="container mx-auto font-Poppins">
-    <h1 class="lg:text-7xl font-extrabold text-center">Noticias</h1>
+    <h1 class="lg:text-7xl font-extrabold text-center font-hammersmith">NOTICIAS</h1>
     @if ($posts->isNotEmpty())
         <div class="bg-white p-6 flex items-center justify-between">
         
@@ -38,7 +38,7 @@
     @endif
     <div class="w-full flex justify-center border-t-[1.5px] bg-gradient-to-r border-black to-gray-400 mt-10"></div>
     <div class="w-full flex justify-start mb-20">
-        <h2 class="text-[40px] ">Últimas noticias</h2>
+        <h2 class="text-[40px] font-hammersmith ">Últimas noticias</h2>
     </div>
     {{-- Mostrar las demás noticias --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-30 gap-8">
