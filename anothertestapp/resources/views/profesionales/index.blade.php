@@ -35,14 +35,14 @@
                             <i class="fa-solid fa-sharp fa-location-dot mr-2"></i>Dirección Consultorio
                         </th>
                         <th scope="col" class="px-6 py-4">
-                            <i class="fa-solid fa-phone mr-2"></i>Especialidad
+                            <i class="fa-solid fa-tag fa-flip-horizontal mr-2"></i>Especialidad
                         </th>
                         <th scope="col" class="px-6 py-4">
-                            <i class="fa-solid fa-tag fa-flip-horizontal mr-2"></i>Contacto
+                            <i class="fa-solid fa-phone mr-2"></i>Contacto
                         </th>
                     </tr>
                 </thead>
-                <tbody class="mt-8">
+                <tbody class="mt-8 ">
                     @foreach ($people as $person)
                         <tr class="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 ">
                             <td class="px-6 py-4 uppercase">
