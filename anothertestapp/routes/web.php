@@ -9,7 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\QuienesController;
 use App\Http\Controllers\KineclubController;
 use App\Http\Controllers\ObrasController;
-use App\Http\Controllers\ProfecionalesController;
+use App\Http\Controllers\ProfesionalesController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
 use App\Models\Post;
@@ -21,7 +21,7 @@ Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.ind
 Route::get('quienes', [QuienesController::class, 'index'])->name('quienes.index');
 Route::get('obras', [ObrasController::class, 'index'])->name('obras.index');
 Route::get('asociate', [AsociateController::class, 'index'])->name('asociate.index');
-Route::get('profecionales', [ProfecionalesController::class, 'index'])->name('profecionales.index');
+Route::get('profesionales', [ProfesionalesController::class, 'index'])->name('profesionales.index');
 Route::get('/allPost', function () {
     return view('allPost', [
         'posts' => Post::where('active', true)->get()

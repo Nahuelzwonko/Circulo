@@ -21,7 +21,9 @@ export default {
         //fuente principal
         custom: ['MiFuentePersonalizada', 'sans-serif'],
         //fuente secundaria
-        Poppins:['Poppins', 'sans-serif']
+        Poppins:['Poppins', 'sans-serif'],
+        //titulos
+        hammersmith:['Hammersmith One', 'sans-serif']
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',

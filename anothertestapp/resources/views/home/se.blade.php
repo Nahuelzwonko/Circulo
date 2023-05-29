@@ -6,7 +6,7 @@
       <div class=""></div>
     </div>
     <div class=" md:7/12 lg:w-1/2">
-      <h2 class=" text-3xl text-center font-bold text-black md:text-5xl font-custom">
+      <h2 class=" text-3xl text-center font-bold text-black md:text-5xl font-hammersmith">
         Se parte del C.K.F.M
       </h2>
       <div class="flex justify-center">

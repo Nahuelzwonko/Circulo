@@ -5,7 +5,7 @@
           <img class="w-[100%] " src="{{ asset('storage/png/imagen3.png')}}" alt="image" loading="lazy" width="" height="" class="w-full">
         </div>
         <div class=" md:7/12 lg:w-1/2">
-          <h2 class="text-3xl text-center font-bold text-black md:text-5xl font-custom">
+          <h2 class="text-3xl text-center font-bold text-black md:text-5xl font-hammersmith">
             El circulo te conecta
           </h2>
           <div class="flex justify-center">

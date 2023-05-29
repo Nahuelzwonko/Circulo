@@ -6,12 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Person;
 
-class ProfecionalesController extends Controller
+class ProfesionalesController extends Controller
 {
     //
             public function index()
     {
         $people = Person::all();
-        return view('profecionales.index', ['people' => $people]);;
+        return view('profesionales.index', ['people' => $people]);;
     }
 }

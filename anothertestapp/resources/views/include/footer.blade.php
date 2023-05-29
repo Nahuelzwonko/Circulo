@@ -12,7 +12,7 @@
             <div class="grid grid-cols-1 gap-8 lg:gap-60 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
                 {{-- Pages --}}
                 <div class="text-center sm:text-left">
-                    <p class="font-custom text-3xl  text-black font-bold">Paginas</p>
+                    <p class="font-hammersmith text-3xl  text-black font-bold">Páginas</p>
                     <nav class="mt-8">
                         <ul class="space-y-4 text-sm">
                             <li>
@@ -40,7 +40,7 @@
                 </div>
                 {{-- Contacto --}}
                 <div class="text-center sm:text-left">
-                    <p class="text-3xl font-bold font-custom text-black">Contacto</p>
+                    <p class="text-3xl font-bold font-hammersmith text-black">Contacto</p>
                     <ul class="mt-8 space-y-4 text-sm">
                         <li>
                             <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
@@ -88,7 +88,7 @@
                 </div>
                 {{-- newsletter --}}
                 <div class="text-center sm:text-left">
-                    <p class="text-3xl font-bold font-custom text-black">Newsletter</p>
+                    <p class="text-3xl font-bold font-hammersmith text-black">Newsletter</p>
                     <ul class="mt-3 space-y-4 text-sm">
                         <div class="pt-3 flex items-center">
                             <input type="text"

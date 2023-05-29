@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=MiFuentePersonalizada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import 'swiper/swiper-bundle.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

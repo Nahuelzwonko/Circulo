@@ -7,7 +7,7 @@
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="w-1/2 py-4">
-                    <div class="flex justify-center">
+                    <div class="flex justify-center font-hammersmith">
                         <h1 class=" text-[50px] font-bold text-[#F28F1C]">KINE</h1>
                         <h1 class="text-[50px] font-bold text-white">CLUB</h1><br>
                     </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="flex justify-center w-full mt-10 ">
                         <button class=" bg-[#0051A7] hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a
-                                href="{{ route('kine.index') }}">Quiero mi KineClub</a></button>
+                                href="{{ route('kine.index') }}" class="font-Poppins">Quiero mi KineClub</a></button>
                     </div>
                 </div>
 
