@@ -31,7 +31,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins  text-black transition" href="{{ route('contacto.index') }}">
+                                <a class="font-Poppins text-black transition" href="{{ route('contacto.index') }}">
                                     Contactanos
                                 </a>
                             </li>
