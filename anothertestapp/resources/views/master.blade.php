@@ -18,7 +18,6 @@
                 <p class=" text-white text-[1.4rem] font-extralight mt-8 ">@yield('cont', 'aca va todo el contenido que sea dirigido hacia el heading generico')</p>
                 <button class="hidden lg:block lg:mt-20 text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none">@yield('Boton', 'boton generico')</button>
             </div>
-             
           </div>
         </div>
         <button class="block lg:hidden text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none">@yield('Boton', 'boton generico')</button>

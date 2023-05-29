@@ -9,8 +9,7 @@ class HomeContoller extends Controller
 {
     public function __invoke()
     {
-        $showAdvertisementModal = true; // Cambia esto según tus criterios para mostrar el modal
-
+        $showAdvertisementModal = true; 
         return view('home')->with('showAdvertisementModal', $showAdvertisementModal);
     }
 

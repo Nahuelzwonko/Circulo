@@ -5,8 +5,6 @@
         <form action="{{ route('people.update', $person->id) }}" method="POST">
             @csrf
             @method('PUT')
-
-            <!-- Aquí puedes mostrar los campos de edición para los datos de la persona -->
             <div class="mb-4">
                 <label for="nombre" class="block mb-2">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" value="{{ $person->nombre }}"

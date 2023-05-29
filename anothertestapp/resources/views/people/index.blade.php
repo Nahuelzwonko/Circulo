@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto">
+    <div class="mx-auto">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead>
                 <tr>

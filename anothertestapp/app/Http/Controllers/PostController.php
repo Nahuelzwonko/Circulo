@@ -65,6 +65,7 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         //
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -72,7 +73,26 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->cuerpo = $request->input('cuerpo', '');
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $path = Storage::putFile('public/images', $file);
+            $nuevo_path = str_replace('public/', '', $path);
+            $post->image_url = $nuevo_path;
+        }
+
+        if ($request->hasFile('pdf')) {
+            $pdf = $request->file('pdf');
+            $pdfPath = $pdf->store('public/pdfs');
+            $post->pdf_url = str_replace('public/', '', $pdfPath);
+        }
+
+        $post->save();
+
+        return redirect()->route('posts.index')->with('success', 'Post actualizado exitosamente.');
     }
 
     /**
