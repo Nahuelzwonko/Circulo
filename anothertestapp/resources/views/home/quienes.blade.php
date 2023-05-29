@@ -2,7 +2,7 @@
     <div
         class="space-y-6 justify-between text-gray-600 lg:flex flex-row-reverse lg:gap-6 lg:space-y-0 xl:gap-12 lg:items-center sm:grid sm:grid-rows-1 sm:mt-8 lg:mt-0">
         <div class=" lg:w-1/2 sm:h-fit">
-            <h2 class="font-custom slide-in-bottom-h1 text-3xl text-center font-bold text-black md:text-5xl">
+            <h2 class="font-hammersmith slide-in-bottom-h1 text-3xl text-center font-bold text-black md:text-5xl">
                 Quienes Somos
             </h2>
             <div class="w-full justify-center flex">
