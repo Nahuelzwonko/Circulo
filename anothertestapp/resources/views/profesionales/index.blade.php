@@ -110,4 +110,6 @@
             });
         });
     </script>
+  @include('include.cta')
+  @include('include.footer')
 @endsection
