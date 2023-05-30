@@ -60,8 +60,8 @@
                     @foreach ($people as $person)
                         <tr class="bg-white border-b dark:bg-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 ">
                             <td class="px-6 py-4 uppercase">
-                                <p>{{ $person->nombre }}</p>
-                                <p>{{ $person->email }}</p>
+                                <p class="font-bold">{{ $person->nombre }}</p>
+                                <p class="lowercase text-md">{{ $person->email }}</p>
                             </td>
                             <td class="px-6 py-4 uppercase">
                                 <p>{{ $person->domicilio }}</p>
