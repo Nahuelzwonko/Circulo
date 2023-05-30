@@ -4,32 +4,32 @@
 @section('cont', '')
 @section('content')
     <section class="bg-white">
-        <div class="grid grid-cols-2">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class=" lg:py-16  mx-auto max-w-screen-md">
                 <div class="flex justify-center items-center">
                     <h1 class="text-black font-hammersmith text-[50px]">HABLEMOS</h1>
                 </div>
                 <div class="py-4  flex justify-center ">
-                    <div class="w-[50%] font-Poppins text-black text-lg font-bold text-justify ">
+                    <div class="w-[80%] lg:w-[50%] font-Poppins text-black text-lg font-bold text-justify ">
                         <p>Envíanos un correo electrónico o inicia una conversación llenando el siguiente formulario.</p>
                     </div>
                 </div>
                 <div class="py-4 flex justify-center items-center">
-                    <div class="w-[50%]">
+                    <div class="w-[90%] lg:w-[50%]">
                         <h2 class="font-hammersmith text-black text-[20px]">¡Contáctenos directamente!</h2>
                     </div>
                 </div>
                 <div class="space-y-4 ">
                     <div class="flex w-full justify-center items-center py-2">
-                        <div class="py-8 flex flex-col justify-center items-center rounded-[10px] w-[50%] h-[80px] bg-[#273D8C]">
-                            <h1 class="text-center text-white font-Poppins text-xl">Email</h1>
-                            <p class="text-center text-white font-Poppins ">administracion@kinesiologosmza.com.ar</p>
+                        <div class="py-8 flex flex-col justify-center items-center rounded-[10px] w-[90%] lg:w-[50%] h-[80px] bg-[#273D8C]">
+                            <h1 class="text-center text-white font-Poppins lg:text-xl">Email</h1>
+                            <p class="text-center text-white font-Poppins text-sm">administracion@kinesiologosmza.com.ar</p>
                         </div>
                     </div>
                     <div class="flex w-full justify-center items-center py-2">
-                        <div class="py-8 flex flex-col items-center justify-center rounded-[10px] w-[50%] h-[80px] bg-[#273D8C]">
-                            <h1 class="text-center text-white font-Poppins text-xl">Teléfono</h1>
-                            <p class="text-center text-white font-Poppins ">0261 4298915</p>
+                        <div class="py-8 flex flex-col items-center justify-center rounded-[10px] w-[90%] lg:w-[50%] h-[80px] bg-[#273D8C]">
+                            <h1 class="text-center text-white font-Poppins lg:text-xl">Teléfono</h1>
+                            <p class="text-center text-white font-Poppins text-sm">0261 4298915</p>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             <div>
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <form action="#" class="space-y-8 flex flex-col">
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div>
                                 <label for="name"
                                     class="block mb-2 text-xl text-black font-Poppins font-bold">Nombre*</label>
@@ -53,7 +53,7 @@
                                     placeholder="tucorreo@correo.com" required>
                             </div>
                         </div>
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div>
                                 <label for="number"
                                     class="block mb-2 text-xl font-bold text-black font-Poppins">Numero*</label>
