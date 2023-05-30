@@ -8,7 +8,7 @@
     <section class="h-[100vh] flex flex-col items-center mt-20">
         <h1 class="font-hammersmith text-7xl">Búsqueda</h1>
         <div class="w-[80%] relative overflow-x-auto  sm:rounded-lg">
-            <div class="flex flex-col lg:flex-row-reverse justify-evenly items-center p-8">
+            <div class="flex flex-col lg:flex-row-reverse justify-evenly items-center px-8 py-20">
                 <div class="flex items-center mb-4">
                     <input id="default-checkbox" type="checkbox" value=""
                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
