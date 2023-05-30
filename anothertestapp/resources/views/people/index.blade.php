@@ -35,17 +35,58 @@
                         @csrf
                         <div>
                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                for="nombre">Nombre</label>
+                                for="nombre">Nombre y Apellido*</label>
                             <input
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                 type="text" name="nombre" id="nombre">
                         </div>
+                        {{-- domicilio --}}
                         <div>
                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                for="domicilio">Domicilio</label>
+                                for="domicilio">Domicilio (Consultorio)</label>
                             <input
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                 type="text" name="domicilio" id="domicilio">
+                        </div>
+                        {{-- atencion domiciliaria --}}
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                for="at">Atencion domicilaria</label>
+
+                            <select name="accion" id="accion"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+                                @foreach ($accion as $item)
+                                    <option value="{{ $item }}" {{ old('accion') == $item ? 'selected' : '' }}>
+                                        @if ($item)
+                                            Sí
+                                        @else
+                                            No
+                                        @endif
+                                    </option>
+                                @endforeach
+                            </select>
+
+                        </div>
+                        {{-- email --}}
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                for="email">email</label>
+                            <input
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                for="localidad">Localidad</label>
+                            <select
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                name="localidad" id="localidad">
+                                @foreach ($localidades as $localidad)
+                                    <option value="{{ $localidad }}"
+                                        {{ old('localidad') == $localidad ? 'selected' : '' }}>{{ $localidad }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                         <div>
                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -79,6 +120,9 @@
                 <tr>
                     <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Nombre</th>
                     <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Domicilio</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Atencion domiciliaria</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Email</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Localidad</th>
                     <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Teléfono</th>
                     <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Especialidad</th>
                     <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Eliminar</th>
@@ -91,6 +135,10 @@
                         class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->nombre }}</td>
                         <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->domicilio }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->at }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->email }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->localidad }}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->telefono }}
                         </td>

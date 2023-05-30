@@ -13,7 +13,11 @@ class PublicController extends Controller
     public function index()
     {
         $people = Person::all();
-        return view('people.index', ['people' => $people]);
+        $localidades = ['Capital', 'Guaymallén', 'Las Heras', 'Lavalle', 'Junín', ' La Paz', 'Maipu', 'Rivadavia', 'Santa Rosa', 'San Martin', 'Godoy Cruz', 'Luján de Cuyo', 'San Carlos', 'Tunuyán', 'Tupungato', 'General Alvear', 'Malargüe', 'San Rafael'];
+        $accion = [true, false];
+
+
+        return view('people.index', compact('people', 'localidades', 'accion'));
 
     }
     public function create()
@@ -26,6 +30,9 @@ class PublicController extends Controller
         $person = new Person();
         $person->nombre = $request->input('nombre');
         $person->domicilio = $request->input('domicilio');
+        $person->email = $request->input('email');
+        $person->at = $request->filled('accion') ? $request->input('accion') : false;
+        $person->localidad = $request->input('localidad');
         $person->telefono = $request->input('telefono');
         $person->especialidad = $request->input('especialidad');
         $person->save();
@@ -60,6 +67,9 @@ class PublicController extends Controller
 
         $person->nombre = $request->input('nombre');
         $person->domicilio = $request->input('domicilio');
+        $person->email = $request->input('email');
+        $person->at = $request->has('at');
+        $person->localidad = $request->input('localidad');
         $person->telefono = $request->input('telefono');
         $person->especialidad = $request->input('especialidad');
         $person->save();
