@@ -66,7 +66,7 @@
                             <td class="px-6 py-4 uppercase invisible lg:visible">
                                 <p>{{ $person->domicilio }}</p>
                             </td>
-                            <td>
+                            <td class="px-6 py-4 uppercase invisible lg:visible">
                                 <p>{{ $person->localidad }}</p>
                             </td>
                             <td class="px-6 py-4 uppercase invisible lg:visible">
