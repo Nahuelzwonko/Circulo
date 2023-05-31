@@ -8,7 +8,7 @@
     <section class="h-[100vh] flex flex-col items-center mt-20">
         <h1 class="font-hammersmith text-7xl">Búsqueda</h1>
         <div class="w-[80%] relative overflow-x-auto  sm:rounded-lg">
-            <div class="flex flex-col lg:flex-row-reverse justify-evenly items-center px-8 py-20">
+            <div class="flex flex-col lg:flex-row-reverse justify-evenly items-center px-8 mt-8 lg:py-20">
                 <div class="flex items-center mb-4">
                     <input id="default-checkbox" type="checkbox" value=""
                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
@@ -42,16 +42,16 @@
                         <th scope="col" class="px-6 py-4">
                             <i class="fa-solid fa-user mr-2"></i>Nombre
                         </th>
-                        <th scope="col" class="px-6 py-4">
+                        <th scope="col" class="px-6 py-4 invisible lg:visible">
                             <i class="fa-solid fa-sharp fa-location-dot mr-2"></i>Dirección Consultorio
                         </th>
-                        <th scope="col" class="px-6 py-4">
+                        <th scope="col" class="px-6 py-4 invisible lg:visible">
                             <i class="fa-solid fa-globe mr-2"></i>Localidad
                         </th>
-                        <th scope="col" class="px-6 py-4">
+                        <th scope="col" class="px-6 py-4 invisible lg:visible">
                             <i class="fa-solid fa-tag fa-flip-horizontal mr-2"></i>Especialidad
                         </th>
-                        <th scope="col" class="px-6 py-4">
+                        <th scope="col" class="px-6 py-4 invisible lg:visible">
                             <i class="fa-solid fa-phone mr-2"></i>Contacto
                         </th>
                     </tr>
@@ -63,17 +63,17 @@
                                 <p class="font-bold">{{ $person->nombre }}</p>
                                 <p class="lowercase text-md">{{ $person->email }}</p>
                             </td>
-                            <td class="px-6 py-4 uppercase">
+                            <td class="px-6 py-4 uppercase invisible lg:visible">
                                 <p>{{ $person->domicilio }}</p>
                             </td>
                             <td>
                                 <p>{{ $person->localidad }}</p>
                             </td>
-                            <td class="px-6 py-4 uppercase">
+                            <td class="px-6 py-4 uppercase invisible lg:visible">
                                 <p>{{ $person->especialidad }}</p>
                             </td>
                         
-                            <td class="px-6 py-4 uppercase">
+                            <td class="px-6 py-4 uppercase invisible lg:visible">
                                 <p>{{ $person->telefono }}</p>
                             </td>
                             <td class="px-6 py-4 hidden">
