@@ -4,9 +4,8 @@
 @section('Encabezado', 'Nuestro blog')
 @section('Boton', 'Informate!')
 @section('content')
-<div class="h-[200vh] mt-20">
-    @include('posts.view')
-</div>
+@include('posts.view')
+
 @include('include.cta')
 @include('include.footer')  
 

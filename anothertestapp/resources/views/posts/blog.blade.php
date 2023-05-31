@@ -1,5 +1,5 @@
 <section class="container mx-auto font-Poppins">
-    <h1 class="lg:text-7xl font-extrabold text-center font-hammersmith text-4xl mt-20 lg:mt-0">NOTICIAS</h1>
+    <h1 class="lg:text-7xl font-extrabold text-center font-hammersmith text-4xl mt-20 lg:mt-8 ">NOTICIAS</h1>
     @if ($posts->isNotEmpty())
         <div class="bg-white  lg:p-6 flex flex-col lg:flex-row items-center justify-between">
         
