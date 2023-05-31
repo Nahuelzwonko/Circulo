@@ -14,6 +14,19 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
 use App\Models\Post;
 
+
+// Ruta para mostrar el formulario
+Route::get('/asociate', [AsociateController::class, 'index'])->name('asociate.index');
+
+// Ruta para enviar el formulario
+Route::post('/asociate/send-form', [AsociateController::class, 'sendForm'])->name('asociate.send-form');
+
+
+// Ruta de éxito después de enviar el formulario
+Route::get('/asociate/success', function () {
+    return view('asociate.success');
+})->name('asociate.success');
+
 // Rutas públicas
 Route::get('/', HomeContoller::class);
 Route::get('kineClub', [KineclubController::class, 'index'])->name('kine.index');
