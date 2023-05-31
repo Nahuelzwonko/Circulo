@@ -23,7 +23,7 @@
 
 <!-- PANTALLAS MEDIANAS Y PEQUEÑAS -->
 <div class="flex flex-col lg:hidden mt-8 items-center mb-20">
-  <h1 class="text-black font-bold text-4xl font-hammersmith mb-8">MISIÓN Y VISIÓN</h1>
+  <h1 class="text-black font-bold text-4xl font-hammersmith mb-8 mt-8">MISIÓN Y VISIÓN</h1>
   <p class="text-justify font-Poppins px-8 z-[1] font-extrabold">
     Nuestra tarea principal es negociar convenios colectivos de prestación con obras sociales, mutuales y prepagas en nombre y representación de sus socios, buscando aumentar continuamente los aranceles.
     Asimismo, estamos en la constante búsqueda para generar un espacio de pertenencia, unión y consenso entre los profesionales para lograr un crecimiento conjunto basado en la solidaridad y formación profesional.
@@ -32,5 +32,5 @@
     Pretendemos prestar servicios modernos y procedimientos sistematizados para atender con mayor eficiencia y eficacia las necesidades de los socios, con políticas de gestión acorde a la actualidad.
   </p>
 </div>
-<div class="inline lg:hidden bg-[#546EF3] rounded-[20px] w-[200px] h-[250px] p-8 z-0 absolute top-[22rem] md:top-[58rem] ml-4"></div>
-<div class="inline lg:hidden bg-[#F28F1C] w-[250px] h-[250px] rounded-[50%] z-0 absolute top-[52rem] -right-[4rem]"></div>
+<div class="inline lg:hidden bg-[#546EF3] rounded-[20px] w-[200px] h-[250px] p-8 z-0 absolute top-[117%] md:top-[58rem] ml-4"></div>
+<div class="inline lg:hidden bg-[#F28F1C] w-[250px] h-[250px] rounded-[50%] z-0 absolute top-[160%] -right-[4rem]"></div>
