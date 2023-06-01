@@ -26,8 +26,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins  text-black transition" href="/">
-                                    Suscribite
+                                <a class="font-Poppins  text-black transition" href="{{route('asociate.index')}}">
+                                    Asociate
                                 </a>
                             </li>
                             <li>
@@ -137,16 +137,17 @@
         <div class="flex flex-col lg:flex-row justify-evenly">
             <img src="{{ asset('storage/logo/ckfm-logo.svg') }}" alt="foto">
             <div class="flex flex-col gap-8">
-                <h1 class="font-bold text-4xl font-sans">Páginas</h1>
+                <h1 class="font-bold text-4xl font-hammersmith">Páginas</h1>
                 <ul class="flex flex-col gap-4 text-lg font-bold">
                     <li><a class="hover:text-slate-500" href="/">Inicio</a></li>
-                    <li><a class="hover:text-slate-500" href="{{ route('quienes.index') }}">Quienes Somos</a></li>
+                    
                     <li><a class="hover:text-slate-500" href="{{ route('kine.index') }}">Kine Club</a></li>
-                    <li><a class="hover:text-slate-500" href="{{ route('contacto.index') }}">Contactate</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('asociate.index') }}">Asociate</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('contacto.index') }}">Contactanos</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-6">
-                <h1 class="font-bold text-4xl font-sans">Contacto</h1>
+                <h1 class="font-bold text-4xl font-hammersmith">Contacto</h1>
                 <ul class="flex flex-col gap-4 text-lg font-bold">
                     <li><a class="hover:text-slate-500" href=""><svg xmlns="http://www.w3.org/2000/svg"
                                 class="w-5 h-5 text-black shrink-0 inline mr-4" fill="none" viewBox="0 0 24 24"
@@ -168,13 +169,13 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>Eusebio Blanco 148, Mendoza.</a></li>
-
+                    
                 </ul>
 
 
             </div>
             <div class="flex flex-col gap-8">
-                <h1 class="font-bold text-4xl font-sans">Newsletter</h1>
+                <h1 class="font-bold text-4xl font-hammersmith">Newsletter</h1>
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row">
                         <input type="text"

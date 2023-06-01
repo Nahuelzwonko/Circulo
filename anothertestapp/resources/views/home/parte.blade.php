@@ -2,7 +2,7 @@
 <div class="hidden lg:flex lg:visible w-full h-[150vh] unefondo justify-center items-center ">
     <div class=" space-y-6 justify-between items-center text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
         <div class="md:4/10 lg:w-1/2 flex justify-end m-0">
-          <img class="w-[100%] " src="{{ asset('storage/png/imagen3.png')}}" alt="image" loading="lazy" width="" height="" class="w-full">
+          <img class="w-[80%] " src="{{ asset('storage/png/imagen3.svg')}}" alt="image" loading="lazy" width="" height="" class="w-full">
         </div>
         <div class=" md:7/12 lg:w-1/2">
           <h2 class="text-3xl text-center font-bold text-black md:text-5xl font-hammersmith">
@@ -31,7 +31,7 @@
     <svg class="absolute z-0 top-[635%] md:top-[340%] right-[35%] w-3/12 pulse"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
     </svg>
-    <img class="w-[75%] z-10 relative" src="{{ asset('storage/png/im3.svg')}}" alt="image">
+    <img class="w-[75%] z-10 relative" src="{{ asset('storage/png/imagen3.svg')}}" alt="image">
     
   </div>
     

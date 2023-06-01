@@ -1,3 +1,4 @@
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -5,15 +6,21 @@
         </h2>
     </x-slot>
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
+            <h1 class="font-hammersmith text-5xl text-center py-8">Noticias</h1>
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
+                <div class="flex justify-end p-6 bg-white border-b border-gray-200">
                     {{-- tag modal --}}
                     <button
-                        class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button" data-modal-toggle="defaultModal">
-                        Nuevo post
+                        <div class="flex flex-row items-center justify-center gap-2">
+                            <p class="fa-solid fa-plus"></p>
+                            <p class="font-Poppins">Agregar</p>
+                        </div>
+                        
                     </button>
+
                     {{-- main modal --}}
                     <div id="defaultModal" tabindex="-1" aria-hidden="true"
                         class="fixed top-1 left-1.5 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
@@ -114,19 +121,19 @@
                     </div>
                 </div>
                 {{-- tablas --}}
-
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+               
+                <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-lg text-justify text-gray-500 dark:text-gray-400 ">
+                        <thead class="text-xl font-Poppins text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 {{-- id de la tabla --}}
                                 <th scope="col" class="px-6 py-3">
-                                    Id
+                                    Imágen
                                 </th>
                                 {{--  --}}
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
-                                        Title
+                                        Título
                                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1"
                                                 aria-hidden="true" fill="currentColor" viewBox="0 0 320 512">
                                                 <path
@@ -137,7 +144,7 @@
                                 {{-- body --}}
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
-                                        Body
+                                        Descripción
                                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1"
                                                 aria-hidden="true" fill="currentColor" viewBox="0 0 320 512">
                                                 <path
@@ -147,7 +154,8 @@
                                 </th>
                                 {{-- fecha --}}
                                 <th scope="col" class="px-6 py-3">
-                                    <span class="sr-only">Data time</span>
+                                    Fecha
+                                    
                                 </th>
                                 {{-- date --}}
                                 <th scope="col" class="px-6 py-3">
@@ -155,7 +163,7 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="">
                             @foreach ($posts as $post)
                                 {{-- id de la tabla --}}
                                 <tr class=" bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -168,7 +176,7 @@
                                         @endif
                                     </th>
                                     {{-- titulo de la tabla --}}
-                                    <td class="py-1 px-4">
+                                    <td class="py-1 px-4 font-semibold">
                                         {{ $post->title }}
                                     </td>
                                     {{-- contenido o body --}}
@@ -176,15 +184,16 @@
                                         <span class="w-[80px]">{{ $post->body }}</span>
                                     </td>
                                     {{-- fecha data time --}}
-                                    <td class="py-1 px-4">
+                                    <td class="py-1 px-4 font-sm">
                                         {{ $post->created_at }}
                                     </td>
                                     {{-- accion de delete --}}
-                                    <td class="py-1 px-2 text-right">
+                                    <td class="py-1 px-4 text-right flex flex-row items-center justify-center h-[10rem] gap-4">
                                         <a href="{{ route('posts.edit', $post->id) }}"
-                                            class="font-medium text-blue-600 mr-2">Editar</a>
+                                           class="font-medium text-[#12469A] mr-2 text-3xl"><i class="fa-solid fa-pen-to-square"></i></a>
+
                                         <a href="{{ route('posts.delete', $post->id) }}"
-                                            class="font-medium text-red-600 mr-2">Borrar</a>
+                                           class="font-medium text-red-600 mr-2 text-3xl"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -196,4 +205,5 @@
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 </x-app-layout>

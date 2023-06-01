@@ -1,17 +1,16 @@
 <section class="bg-white w-full  flex justify-center items-center">
     <div class="w-[100%] flex flex-col justify-center items-center gap-8 lg:gap-20  ">
         <div class=" w-[70%]">
-            <p class="text-md lg:text-3xl font-Poppins text-justify">
-                Para ser parte del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza déjanos tus datos y
-                así podrás llenar formulario en el que encontrarás toda la documentación que debés presentar
-                digitalmente en el Círculo. ¡Gracias por elegir ser parte del Círculo!
+            <h1 class="font-hammersmith text-center text-2xl lg:text-6xl mb-6">INSCRIPCIÓN</h1>
+            <p class="text-md lg:text-3xl font-Poppins text-justify lg:text-center">
+                Para ser parte del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza tenés que presentar la siguiente documentación solicitada a continuación. <br>¡Gracias por elegir ser parte del Círculo!
             </p>
             <div class="w-100 flex justify-center mt-10">
-                <h2 class="font-hammersmith text-2xl ">SE ADJUNTA EN FORMATO DIGITAL</h2>
+                <h2 class="font-hammersmith lg:text-3xl ">SE ADJUNTA EN FORMATO DIGITAL</h2>
             </div>
         </div>
         <div class="w-full lg:w-[45%]">
-            <form class="text-center" method="POST" action="{{ route('asociate.send-form') }}"
+            <form class="text-center flex flex-col gap-4 items-center" method="POST" action="{{ route('asociate.send-form') }}"
                 enctype="multipart/form-data">
                 @csrf
                 <div class="mb-6 text-left w-[80%] mx-auto">
@@ -25,16 +24,16 @@
                     </div>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
                         for="file_input">Currículum Vitae</label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="cv">
                 </div>
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="w-[80%]">
                         <div class="flex justify-start w-full">
-                            <p class="block  mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
+                            <p class="block  mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">
                                 Fotocopia de DNI (nuevo)</p>
                         </div>
                         <label for="dropzone-file" 
@@ -58,7 +57,7 @@
                     </div>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Título
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">Título
                         Universitario (1 copia certificada)
                     </label>
                     <input
@@ -66,7 +65,7 @@
                         id="file_input" type="file" name="titulo" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Título
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">Título
                         de posgrado (En caso de poseer)
 
                     </label>
@@ -75,7 +74,7 @@
                         id="file_input" type="file" name="posgrado" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
                         for="file_input">Matrícula Provincial
                     </label>
                     <input
@@ -83,7 +82,7 @@
                         id="file_input" type="file" name="matricula" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
                         for="file_input">Constancia Ingresos Brutos
                     </label>
                     <input
@@ -91,7 +90,7 @@
                         id="file_input" type="file" name="ingresos" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
                         for="file_input">Constancia de CUIT (constancia del sitio Web de AFIP-DGI)
                     </label>
                     <input
@@ -99,7 +98,7 @@
                         id="file_input" type="file" name="cuit" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
                         for="file_input">Certificado de Inscripción en la Superintendencia de la Salud
                     </label>
                     <input
@@ -107,7 +106,7 @@
                         id="file_input" type="file" name="salud" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Póliza
+                    <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">Póliza
                         de Seguro de Mala Praxis vigente expedido por la compañía aseguradora
                     </label>
                     <input
