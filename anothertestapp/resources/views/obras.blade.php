@@ -65,4 +65,6 @@
             @endforeach
         </div>
     </section>
+@include('include.cta') 
+@include('include.footer')   
 @endsection
