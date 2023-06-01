@@ -16,11 +16,11 @@
                 <div class="mb-6 text-left w-[80%] mx-auto">
                     <div>
                         <label for="name"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre y
+                            class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white">Nombre y
                             Apellido*</label>
                         <input type="text" id="name"
-                            class=" block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                            placeholder="Nombre y apellido" name="name" id="name" required>
+                            class=" block w-full font-Poppins font-semibold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                            placeholder="" name="name" id="name" required>
                     </div>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto">
@@ -45,10 +45,10 @@
                                         d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
                                     </path>
                                 </svg>
-                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
-                                        class="font-semibold">Hacer clic
+                                <p class="mb-2  font-Poppins font-bold text-xl text-gray-500 dark:text-gray-400"><span
+                                        class="">Hacer clic
                                         para cargar</span> o arrastrar y soltar</p>
-                                <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
+                                <p class="font-Poppins font-bold text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
                                     800x400px)
                                 </p>
                             </div>
@@ -61,7 +61,7 @@
                         Universitario (1 copia certificada)
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="titulo" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -70,7 +70,7 @@
 
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="posgrado" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -78,7 +78,7 @@
                         for="file_input">Matrícula Provincial
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="matricula" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -86,7 +86,7 @@
                         for="file_input">Constancia Ingresos Brutos
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="ingresos" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -94,7 +94,7 @@
                         for="file_input">Constancia de CUIT (constancia del sitio Web de AFIP-DGI)
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="cuit" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -102,7 +102,7 @@
                         for="file_input">Certificado de Inscripción en la Superintendencia de la Salud
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="salud" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -110,16 +110,16 @@
                         de Seguro de Mala Praxis vigente expedido por la compañía aseguradora
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="poliza" required>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    <label class="block mb-2 font-hammersmith text-xl text-gray-900 dark:text-white"
                         for="file_input">Habilitación del consultorio (emitida por Ministerio de Salud y/o
                         Municipalidad y/o Colegio Médico.)
                     </label>
                     <input
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="consultorio" required>
                 </div>
                 <button type="submit"
