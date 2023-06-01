@@ -19,13 +19,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(Markdown::class, function ($app) {
             return new Markdown($app->make('markdown.renderer'), $app->make('markdown.theme'));
         });
-
-        // ...
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
         //

@@ -1,4 +1,3 @@
-
 <section class="bg-white w-full  flex justify-center items-center">
     <div class="w-[100%] flex flex-col justify-center items-center gap-8 lg:gap-20  ">
         <div class=" w-[70%]">
@@ -12,7 +11,8 @@
             </div>
         </div>
         <div class="w-full lg:w-[45%]">
-            <form class="text-center" method="POST" action="{{ route('asociate.send-form') }}">
+            <form class="text-center" method="POST" action="{{ route('asociate.send-form') }}"
+                enctype="multipart/form-data">
                 @csrf
                 {{-- cv --}}
                 <div class="mb-6 text-left w-[80%] mx-auto">
@@ -20,7 +20,7 @@
                         for="file_input">Currículum Vitae</label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="cv">
                 </div>
                 {{-- dni --}}
                 <div class="flex flex-col items-center justify-center w-full">
@@ -45,7 +45,7 @@
                                     800x400px)
                                 </p>
                             </div>
-                            <input id="dropzone-file" type="file" class="hidden" />
+                            <input id="dropzone-file" name="dni" type="file" class="hidden" />
                         </label>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="titulo">
                 </div>
                 {{-- Título de posgrado (En caso de poseer) --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -66,7 +66,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="posgrado">
                 </div>
                 {{-- Matrícula Provincial --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -75,7 +75,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="matricula">
                 </div>
                 {{-- Constancia Ingresos Brutos --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -84,7 +84,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="ingresos">
                 </div>
                 {{-- Constancia de CUIT (constancia impresa desde sitio Web de AFIP-DGI) --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -93,7 +93,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="cuit">
                 </div>
                 {{-- Certificado de Inscripción en la Superintendencia de la Salud --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -102,7 +102,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="salud">
                 </div>
                 {{-- Póliza de Seguro de Mala Praxis vigente expedido por la compañía aseguradora --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -111,7 +111,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="poliza">
                 </div>
                 {{-- Póliza de Seguro de Mala Praxis vigente expedido por la compañía aseguradora --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
@@ -120,7 +120,7 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file">
+                        id="file_input" type="file" name="consultorio">
                 </div>
                 <button type="submit"
                     class="lg:w-[60%] lg:rounded-[30px] mb-40 lg:mb-0 lg:mt-8 text-white lg:text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-md w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Enviar</button>
