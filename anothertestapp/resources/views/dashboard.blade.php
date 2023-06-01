@@ -15,4 +15,5 @@
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 </x-app-layout>
