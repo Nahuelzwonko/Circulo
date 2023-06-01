@@ -115,7 +115,7 @@
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl text-gray-900 dark:text-white"
-                        for="file_input">Habilitación del consultorio (emitida por Ministerio de Salud y/o
+                        for="file_input">Habilitación del Consultorio (emitida por Ministerio de Salud y/o
                         Municipalidad y/o Colegio Médico.)
                     </label>
                     <input
