@@ -14,7 +14,16 @@
             <form class="text-center" method="POST" action="{{ route('asociate.send-form') }}"
                 enctype="multipart/form-data">
                 @csrf
-                {{-- cv --}}
+                <div class="mb-6 text-left w-[80%] mx-auto">
+                    <div>
+                        <label for="name"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre y
+                            Apellido*</label>
+                        <input type="text" id="name"
+                            class=" block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                            placeholder="Nombre y apellido" name="name" id="name" required>
+                    </div>
+                </div>
                 <div class="mb-6 text-left w-[80%] mx-auto">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         for="file_input">Currículum Vitae</label>
@@ -22,14 +31,13 @@
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                         id="file_input" type="file" name="cv">
                 </div>
-                {{-- dni --}}
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="w-[80%]">
                         <div class="flex justify-start w-full">
                             <p class="block  mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
                                 Fotocopia de DNI (nuevo)</p>
                         </div>
-                        <label for="dropzone-file"
+                        <label for="dropzone-file" 
                             class="flex flex-col items-center justify-center w-full h-50 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                             <div class="flex flex-col items-center justify-center pt-5 pb-6">
                                 <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none"
@@ -39,26 +47,24 @@
                                     </path>
                                 </svg>
                                 <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
-                                        class="font-semibold">Click
-                                        to upload</span> or drag and drop</p>
+                                        class="font-semibold">Hacer clic
+                                        para cargar</span> o arrastrar y soltar</p>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
                                     800x400px)
                                 </p>
                             </div>
-                            <input id="dropzone-file" name="dni" type="file" class="hidden" />
+                            <input id="dropzone-file" name="dni" type="file" class="hidden" required/>
                         </label>
                     </div>
                 </div>
-                {{-- Titulo universitario --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Título
                         Universitario (1 copia certificada)
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="titulo">
+                        id="file_input" type="file" name="titulo" required>
                 </div>
-                {{-- Título de posgrado (En caso de poseer) --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Título
                         de posgrado (En caso de poseer)
@@ -66,61 +72,56 @@
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="posgrado">
+                        id="file_input" type="file" name="posgrado" required>
                 </div>
-                {{-- Matrícula Provincial --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         for="file_input">Matrícula Provincial
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="matricula">
+                        id="file_input" type="file" name="matricula" required>
                 </div>
-                {{-- Constancia Ingresos Brutos --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         for="file_input">Constancia Ingresos Brutos
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="ingresos">
+                        id="file_input" type="file" name="ingresos" required>
                 </div>
-                {{-- Constancia de CUIT (constancia impresa desde sitio Web de AFIP-DGI) --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         for="file_input">Constancia de CUIT (constancia del sitio Web de AFIP-DGI)
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="cuit">
+                        id="file_input" type="file" name="cuit" required>
                 </div>
-                {{-- Certificado de Inscripción en la Superintendencia de la Salud --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         for="file_input">Certificado de Inscripción en la Superintendencia de la Salud
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="salud">
+                        id="file_input" type="file" name="salud" required>
                 </div>
-                {{-- Póliza de Seguro de Mala Praxis vigente expedido por la compañía aseguradora --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Póliza
                         de Seguro de Mala Praxis vigente expedido por la compañía aseguradora
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="poliza">
+                        id="file_input" type="file" name="poliza" required>
                 </div>
-                {{-- Póliza de Seguro de Mala Praxis vigente expedido por la compañía aseguradora --}}
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        for="file_input">Habilitación del consultorio (emitida por Ministerio de Salud y/o Municipalidad y/o Colegio Médico.)
+                        for="file_input">Habilitación del consultorio (emitida por Ministerio de Salud y/o
+                        Municipalidad y/o Colegio Médico.)
                     </label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="consultorio">
+                        id="file_input" type="file" name="consultorio" required>
                 </div>
                 <button type="submit"
                     class="lg:w-[60%] lg:rounded-[30px] mb-40 lg:mb-0 lg:mt-8 text-white lg:text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-md w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Enviar</button>

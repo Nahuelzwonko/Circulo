@@ -13,24 +13,12 @@ use App\Http\Controllers\ProfesionalesController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
 use App\Models\Post;
-
-
-// Ruta para mostrar el formulario
-Route::get('/asociate', [AsociateController::class, 'index'])->name('asociate.index');
-
-// Ruta para enviar el formulario
-Route::post('/asociate/send-form', [AsociateController::class, 'sendForm'])->name('asociate.send-form');
-
-
-// Ruta de éxito después de enviar el formulario
-Route::get('/asociate/success', function () {
-    return view('asociate.success');
-})->name('asociate.success');
-
 // Rutas públicas
 Route::get('/', HomeContoller::class);
 Route::get('kineClub', [KineclubController::class, 'index'])->name('kine.index');
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
+Route::post('/enviar-contacto', [ContactoController::class, 'enviarMensaje'])->name('enviar.contacto');
+Route::get('/mensaje-enviado', [ContactoController::class, 'mensajeEnviado'])->name('mensaje.enviado');
 Route::get('quienes', [QuienesController::class, 'index'])->name('quienes.index');
 Route::get('obras', [ObrasController::class, 'index'])->name('obras.index');
 Route::get('asociate', [AsociateController::class, 'index'])->name('asociate.index');
@@ -40,6 +28,11 @@ Route::get('/allPost', function () {
         'posts' => Post::where('active', true)->get()
     ]);
 })->name('allPost');
+Route::get('/asociate', [AsociateController::class, 'index'])->name('asociate.index');
+Route::post('/asociate/send-form', [AsociateController::class, 'sendForm'])->name('asociate.send-form');
+Route::get('/asociate/success', function () {
+    return view('asociate.success');
+})->name('asociate.success');
 
 // Rutas privadas para usuarios
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -57,7 +50,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/datos/{dato}/edit', [DatosController::class, 'edit'])->name('datos.edit');
     Route::delete('/datos/{dato}', [DatosController::class, 'destroy'])->name('datos.destroy');
     Route::put('/datos/{dato}', [DatosController::class, 'update'])->name('datos.update');
-
     //seccion de noticias
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
     Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');

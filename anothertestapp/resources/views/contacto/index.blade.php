@@ -36,45 +36,46 @@
             </div>
             <div>
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <form action="#" class="space-y-8 flex flex-col">
+                    <form action="{{ route('enviar.contacto') }}" class="space-y-8 flex flex-col" method="POST">
+                        @csrf
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div>
                                 <label for="name"
-                                    class="block mb-2 text-xl text-black font-Poppins font-bold">Nombre*</label>
+                                    class="block mb-2 text-xl text-black font-Poppins font-bold">Nombre y Apellido*</label>
                                 <input type="text" id="name"
                                     class=" shadow-sm border border-gray-300 text-black text-lg rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                                    placeholder="Tu nombre" required>
+                                    placeholder="Tu nombre" name="name" id="name" required>
                             </div>
                             <div>
                                 <label for="email"
                                     class="block mb-2 text-xl font-bold text-black font-Poppins">Email*</label>
-                                <input type="email" id="email"
+                                <input 
                                     class="shadow-sm border border-gray-300 text-black text-lg rounded-[30px] focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                                    placeholder="tucorreo@correo.com" required>
+                                    placeholder="tucorreo@correo.com" type="email" id="email" name="email" required>
                             </div>
                         </div>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div>
                                 <label for="number"
                                     class="block mb-2 text-xl font-bold text-black font-Poppins">Numero*</label>
-                                <input type="text" id="number"
+                                <input type="text" id="number" name="number"
                                     class="block p-3 w-full text-lg text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                                     placeholder="Tu numero" required>
                             </div>
                             <div>
                                 <label for="subject"
                                     class="block mb-2 text-xl font-bold text-black font-Poppins">Asunto*</label>
-                                <input type="text" id="subject"
+                                <input type="text" id="subject" name="subject" 
                                     class="block p-3 w-full text-lg text-black rounded-[30px] border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                                    placeholder="Let us know how we can help you" required>
+                                    placeholder="Quiero ser parte del circulo" required>
                             </div>
                         </div>
                         <div>
                             <label for="message" class="block mb-2 text-xl font-bold text-black font-Poppins">Dejanos tu
                                 mensaje*</label>
-                            <textarea id="message" rows="6"
+                            <textarea id="message" rows="6" id="message" name="message"
                                 class="block p-2.5 w-full text-lg text-black rounded-[30px] shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
-                                placeholder="Hola, me gustaría hablar sobre cómo..."></textarea>
+                                placeholder="Hola, me gustaría hablar sobre..." required></textarea>
                         </div>
                         <button type="submit"
                             class="py-3 px-5 text-lg font-medium text-center self-center text-white rounded-[30px] bg-black sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 hover:bg-slate-800">Enviar</button>

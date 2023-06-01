@@ -9,8 +9,10 @@ class HomeContoller extends Controller
 {
     public function __invoke()
     {
-        $showAdvertisementModal = true; 
-        return view('home')->with('showAdvertisementModal', $showAdvertisementModal);
-    }
+        $showAdvertisementModal = true;
+        $advertisementMessage = "¡Descuento especial por tiempo limitado!";
 
+        return view('home', compact('showAdvertisementModal', 'advertisementMessage'));
+    }
+    
 }

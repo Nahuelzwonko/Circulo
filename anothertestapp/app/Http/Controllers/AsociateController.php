@@ -20,6 +20,7 @@ class AsociateController extends Controller
     public function sendForm(Request $request)
     {
         $data = $request->all();
+        $nombre = $request->input('name');
 
         if ($request->hasFile('cv')) {
             $archivoPDF = $request->file('cv');
@@ -87,7 +88,7 @@ class AsociateController extends Controller
             $rutaConsultorio =
                 null;
         }
-        Mail::to('codehuitweb@gmail.com')->send(new FormularioEnviado($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio));
+        Mail::to('inscripciones@kinesiologosmza.com')->send(new FormularioEnviado($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio, $nombre));
 
         if ($rutaArchivoPDF) {
             Storage::disk('public')->delete($rutaArchivoPDF);

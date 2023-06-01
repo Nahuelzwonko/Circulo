@@ -21,9 +21,10 @@ class FormularioEnviado extends Mailable
     public $rutaSalud;
     public $rutaPoliza;
     public $rutaConsultorio;
+    public $nombre;
 
     
-    public function __construct($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio)
+    public function __construct($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio, $nombre)
     {
         $this->data = $data;
         $this->rutaArchivoPDF = $rutaArchivoPDF;
@@ -35,12 +36,14 @@ class FormularioEnviado extends Mailable
         $this->rutaCuit = $rutaCuit;
         $this->rutaSalud = $rutaSalud;
         $this->rutaPoliza = $rutaPoliza;
-        $this->rutaPoliza = $rutaConsultorio; 
+        $this->rutaPoliza = $rutaConsultorio;
+        $this->nombre = $nombre;
     }
     public function build()
     {
         $message = $this->markdown('emails.formulario')
-        ->subject('Nuevo formulario enviado');
+        ->subject('Nuevo formulario enviado')
+        ->with('nombre', $this->nombre);
 
         if ($this->rutaArchivoPDF) {
             $message->attachFromStorageDisk('public', $this->rutaArchivoPDF);
