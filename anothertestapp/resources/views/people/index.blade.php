@@ -127,17 +127,17 @@
     <div class="mx-auto">
         <table class="w-[85%] mx-auto text-xl text-left text-gray-500 dark:text-gray-400">
             <thead>
-                <tr>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Nombre</th>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Email</th>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Domicilio</th>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Localidad</th>
+                <tr class="font-Poppins uppercase font-bold text-gray-700">
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Nombre</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Email</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Domicilio</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Localidad</th>
                     
                     
                     
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Teléfono</th>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Especialidad</th>
-                    <th class="px-6 py-3 border-b-2 border-gray-200 font-semibold text-left">Atencion domiciliaria</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Teléfono</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Especialidad</th>
+                    <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Atencion domiciliaria</th>
                     
                 </tr>
             </thead>
@@ -154,7 +154,7 @@
                        
                         <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->telefono }}</td>
                         <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->especialidad }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200 text-center">{{ $person->at }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200 tex">{{ $person->at }}</td>
                         <td>
                             <form action="{{ route('people.destroy', $person->id) }}" method="POST"
                                 onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
