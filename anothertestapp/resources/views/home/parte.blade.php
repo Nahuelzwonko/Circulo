@@ -27,10 +27,8 @@
   </p>
   <div class="my-6">
   <div class="my-6">
-    <img class="skew-x-[10deg] absolute z-0 left-20 md:left-60 w-3/12 wobble" src="{{asset ('storage/png/geometric/rectangle.svg')}}" alt="">
-    <svg class="absolute z-0 top-[635%] md:top-[340%] right-[35%] w-3/12 pulse"width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle  cx="120.001" cy="120" r="120" fill="#F28F1C"/>
-    </svg>
+    <img class="skew-x-[10deg] absolute z-0 left-[50%] md:left-60 w-3/12 wobble" src="{{asset ('storage/png/geometric/rectangle.svg')}}" alt="">
+  
     <img class="w-[75%] z-10 relative" src="{{ asset('storage/png/imagen3.svg')}}" alt="image">
     
   </div>
