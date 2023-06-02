@@ -20,7 +20,7 @@
                             Apellido*</label>
                         <input type="text" id="name"
                             class=" block w-full font-Poppins font-semibold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                            placeholder="" name="name" id="name" required>
+                            placeholder="" name="name" id="name" >
                     </div>
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto">
@@ -52,7 +52,7 @@
                                     800x400px)
                                 </p>
                             </div>
-                            <input id="dropzone-file" name="dni" type="file" class="hidden" required/>
+                            <input id="dropzone-file" name="dni" type="file" class="hidden" />
                         </label>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="titulo" required>
+                        id="file_input" type="file" name="titulo" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">Título
@@ -71,7 +71,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="posgrado" required>
+                        id="file_input" type="file" name="posgrado" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
@@ -79,7 +79,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="matricula" required>
+                        id="file_input" type="file" name="matricula" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
@@ -87,7 +87,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="ingresos" required>
+                        id="file_input" type="file" name="ingresos" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
@@ -95,7 +95,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="cuit" required>
+                        id="file_input" type="file" name="cuit" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white"
@@ -103,7 +103,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="salud" required>
+                        id="file_input" type="file" name="salud" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl font-medium text-gray-900 dark:text-white" for="file_input">Póliza
@@ -111,7 +111,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="poliza" required>
+                        id="file_input" type="file" name="poliza" >
                 </div>
                 <div class="mb-6 text-left w-[80%] mx-auto mt-6">
                     <label class="block mb-2 font-hammersmith text-xl text-gray-900 dark:text-white"
@@ -120,7 +120,7 @@
                     </label>
                     <input
                         class="block w-full font-Poppins font-bold text-xl text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="file_input" type="file" name="consultorio" required>
+                        id="file_input" type="file" name="consultorio" >
                 </div>
                 <button type="submit"
                     class="lg:w-[60%] lg:rounded-[30px] mb-40 lg:mb-0 lg:mt-8 text-white lg:text-xl bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-md w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Enviar</button>
