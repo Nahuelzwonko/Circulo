@@ -30,6 +30,11 @@
                         <span class="text-white hover:text-gray-300 font-Poppins">123-456-7890</span>
                     </a>
                 </div>
+                <button
+                    class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 rounded-lg font-extralight hover:bg-blue-600">
+                    
+                    <a class="font-Poppins" href="{{route('asociate.index')}}">Asociate</a>
+                </button>
             </div>
         </div>
     </div>
@@ -61,7 +66,7 @@
         <div class="flex gap-4">
             <button
                 class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
-                <span class="font-Poppins">Iniciar Sesión</span>
+                <span class="font-Poppins">Asociate</span>
             </button>
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -84,27 +89,28 @@
                 </li>
                 <li>
                     <a href="{{ route('quienes.index') }}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Quienes
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Quienes
                         Somos</a>
                 </li>
                 <li>
                     <a href="{{route('kine.index')}}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Kine
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Kine
                         Club</a>
                 </li>
                 <li>
                     <a href="{{route('allPost')}}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Noticias</a>
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Noticias</a>
                 </li>
                 <li>
                     <a href="{{route('obras.index')}}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Obras
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Obras
                         Sociales y Prepagas</a>
                 </li>
                 <li>
                     <a href="{{route('profesionales.index')}}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Profesionales Asociados</a>
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Profesionales Asociados</a>
                 </li>
             </ul>
         </div>
+        <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 </nav>
