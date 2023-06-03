@@ -1,4 +1,4 @@
-<div class="container mx-auto  ">
+<div class="container mx-auto mt-[60px] ">
     <div class="w-full flex justify-start mb-4 lg:mb-10">
         <span class="font-Poppins text-black font-bold">Posted on {{ \Carbon\Carbon::parse($post->created_at)->format('l, j F') }}</span>
     </div>
@@ -8,6 +8,7 @@
     <div class="w-full flex justify-center">
         <img src="/storage/{{ $post->image_url }}" alt="Imagen de la noticia" class=" mt-4 rounded-[30px]">
     </div>
+    <p class="mt-2 text-gray-600  lg:block">{{ ($post->body) }}</p>
     <div>
         <p class=" mt-12 text-2xl text-gray-600 font-Poppins text-justify">{!! nl2br($post->cuerpo) !!}</p>
     </div>

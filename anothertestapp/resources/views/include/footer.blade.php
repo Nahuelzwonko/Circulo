@@ -141,7 +141,7 @@
                 <ul class="flex flex-col gap-4 text-lg font-bold">
                     <li><a class="hover:text-slate-500" href="/">Inicio</a></li>
                     
-                    <li><a class="hover:text-slate-500" href="{{ route('kine.index') }}">Kine Club</a></li>
+                    <li><a class="hover:text-slate-500" href="{{ route('kineClub.index') }}">Kine Club</a></li>
                     <li><a class="hover:text-slate-500" href="{{ route('asociate.index') }}">Asociate</a></li>
                     <li><a class="hover:text-slate-500" href="{{ route('contacto.index') }}">Contactanos</a></li>
                 </ul>

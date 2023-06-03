@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderByDesc('created_at')->get();
-        return view ('posts.index', compact('posts'));
+        return view('posts.index', compact('posts'));
     }
     /**
      * Show the form for creating a new resource.
@@ -35,17 +35,17 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
         $post->cuerpo = $request->input('cuerpo', '');
-        if($request->hasFile('image')){
+        if ($request->hasFile('image')) {
             $file = $request->file('image');
-            $path = Storage::putFile('storage/images', $request->file('image'));
+            $path = Storage::putFile('public/images', $request->file('image'));
             $nuevo_path = str_replace('public/', '', $path);
             $post->image_url = $nuevo_path;
         }
         if ($request->hasFile('pdf')) {
-        $pdf = $request->file('pdf');
-        $pdfPath = $pdf->store('public/pdfs');
-        $post->pdf_url = str_replace('public/', '', $pdfPath);
-    }
+            $pdf = $request->file('pdf');
+            $pdfPath = $pdf->store('public/pdfs');
+            $post->pdf_url = str_replace('public/', '', $pdfPath);
+        }
         $post->save();
         return redirect()->route('posts.index')->with('success', 'Post creado exitosamente.');
     }
@@ -53,7 +53,7 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function view ($post)
+    public function view($post)
     {
         //
         $post = Post::find($post);

@@ -47,7 +47,7 @@
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
                 <a href="{{ route('quienes.index') }}" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Quiénes somos</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('kine.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">KineClub</a>
+                <a href="{{route('kineClub.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">KineClub</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
                 <a href="{{route('allPost')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
@@ -93,7 +93,7 @@
                         Somos</a>
                 </li>
                 <li>
-                    <a href="{{route('kine.index')}}"
+                    <a href="{{route('kineClub.index')}}"
                         class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Kine
                         Club</a>
                 </li>

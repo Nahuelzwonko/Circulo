@@ -12,10 +12,11 @@ use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\ProfesionalesController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
+use App\Http\Controllers\KineController;
 use App\Models\Post;
 // Rutas públicas
 Route::get('/', HomeContoller::class);
-Route::get('kineClub', [KineclubController::class, 'index'])->name('kine.index');
+Route::get('kineClub', [KineclubController::class, 'index'])->name('kineClub.index');
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
 Route::post('/enviar-contacto', [ContactoController::class, 'enviarMensaje'])->name('enviar.contacto');
 Route::get('/mensaje-enviado', [ContactoController::class, 'mensajeEnviado'])->name('mensaje.enviado');
@@ -65,6 +66,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/people/{id}', [PublicController::class, 'destroy'])->name('people.destroy');
     Route::get('/people/{id}/edit', [PublicController::class, 'edit'])->name('people.edit');
     Route::put('/people/{id}', [PublicController::class, 'update'])->name('people.update');
+    //Seccion de empresas kineclub
+    Route::get('/kine', [KineController::class, 'index'])->name('kine.index');
+    Route::post('/kine', [KineController::class, 'store'])->name('kine.store');
+    Route::delete('/kine/{kine}', [KineController::class, 'destroy'])->name('kine.destroy');
+    Route::get('/kine/{kine}/edit', [KineController::class, 'edit'])->name('kine.edit');
+    Route::put('/kine/{kine}', [KineController::class, 'update'])->name('kine.update');
+
+
 });
 
 

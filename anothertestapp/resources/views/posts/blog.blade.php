@@ -1,12 +1,9 @@
-<section class="container mx-auto font-Poppins">
-    <h1 class="lg:text-7xl font-extrabold text-center font-hammersmith text-4xl mt-20 lg:mt-8 ">NOTICIAS</h1>
+<section class="container mx-auto font-Poppins mt-[50px]">
+    <h1 class="lg:text-7xl font-extrabold text-center font-hammersmith text-4xl  lg:mt-8 ">NOTICIAS</h1>
     @if ($posts->isNotEmpty())
         <div class="bg-white  lg:p-6 flex flex-col lg:flex-row items-center justify-between">
-        
             <div class="ml-4 lg:p-4 flex lg:w-[55%]">
-                
                 <div class="flex flex-col items-center lg:gap-4 ">
-                    
                     <div class="w-full flex justify-start mt-8">
                         <span class=" text-black">Posted on
                             {{ \Carbon\Carbon::parse($posts->first()->created_at)->format('l, j F') }}</span>
@@ -31,23 +28,28 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-shrink-0 ">
-                <img src="/storage/{{ $posts->first()->image_url }}" alt="Imagen de la noticia" class="mt-4 rounded-[20px]">
+            <div class="flex-shrink-0 w-[400px]">
+                <img src="/storage/{{ $posts->first()->image_url }}" alt="Noticia principal"
+                    class="mt-4 max-w-full h-auto rounded-md">
             </div>
+
         </div>
     @endif
     <div class="w-full flex justify-center border-t-[1.5px] bg-gradient-to-r border-black to-gray-400 mt-10"></div>
     <div class="w-full flex justify-start mb-8 ">
-        <h2 class="text-[30px] lg:text-[40px] text-center lg:text-left font-hammersmith mt-4  w-full">Últimas noticias</h2>
+        <h2 class="text-[30px] lg:text-[40px] text-center lg:text-left font-hammersmith mt-4  w-full">Últimas noticias
+        </h2>
     </div>
     {{-- Mostrar las demás noticias --}}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-30 gap-8">
         @foreach ($posts->slice(1) as $post)
             <div class="bg-white lg:p-6">
                 <h2 class="text-xl font-bold">{{ $post->title }}</h2>
-                <img src="/storage/{{ $post->image_url }}" alt="Imagen de la noticia" class="mt-4 rounded-lg">
+                <img src="/storage/{{ $post->image_url }}" alt="Imagen de la noticia"
+                    class="mt-4 rounded-[20px]">
                 <span class=" text-black">{{ \Carbon\Carbon::parse($post->created_at)->format('l, j F') }}</span>
-                <p class="mt-2 text-gray-600 hidden lg:block">{{ $post->body }}</p>
+                {{--  --}}
+                <p class="mt-2 text-gray-600  lg:block">{{ Str::limit($posts->first()->body, 150) }}</p>
                 <div class="w-full flex justify-start mt-5">
                     <a href="{{ route('posts.view', $post->id) }}"
                         class="flex items-center font-semibold text-black hover:underline">
