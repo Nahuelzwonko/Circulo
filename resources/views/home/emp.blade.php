@@ -1,7 +1,7 @@
 <div class="swiper my-6 md:my-10 lg:mt-16 lg:mb-24">
   <div class="swiper-wrapper flex">
     <div class="swiper-slide lg:my-6 md:my-10 flex flex-row justify-around lg:gap-24">
-      <img src="{{asset('storage/clients/logo-omint.svg')}}" alt="client logo" class=" sm:w-1/5 " width="100px">
+      <img src="{{asset('storage/clients/logo-omint.svg') }}" alt="client logo" class="sm:w-1/5" width="100px">
       <img src="{{asset('storage/clients/logo-avalian.svg')}}" alt="client logo" class=" sm:w-1/5 " width="100px">
       <img src="{{asset('storage/clients/logo-swiss.svg')}}" alt="client logo" class=" sm:w-1/5 " width="100px">
       <img src="{{asset('storage/clients/logo-dasuten.svg')}}" alt="client logo" class=" sm:w-1/5 " width="100px">
