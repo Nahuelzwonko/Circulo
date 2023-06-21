@@ -75,7 +75,7 @@
         <div class="flex gap-4">
             <button
                 class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
-                <span class="font-Poppins">Asociate</span>
+                <span class="font-Poppins"> <a href="{{ route('asociate.index') }}">Asociate</a> </span>
             </button>
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
