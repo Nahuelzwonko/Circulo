@@ -26,7 +26,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="font-Poppins  text-black transition" href="{{route('asociate.index')}}">
+                                <a class="font-Poppins  text-black transition" href="{{ route('asociate.index') }}">
                                     Asociate
                                 </a>
                             </li>
@@ -51,7 +51,7 @@
                                 </svg>
 
                                 <span class="font-Poppins text-black transition group-hover:text-white/75">
-                                  
+
                                     pruebas
                                 </span>
                             </a>
@@ -87,7 +87,7 @@
                     </ul>
                 </div>
                 {{-- newsletter --}}
-                <div class="text-center sm:text-left">
+                {{-- <div class="text-center sm:text-left">
                     <p class="text-3xl font-bold font-hammersmith text-black">Newsletter</p>
                     <ul class="mt-3 space-y-4 text-sm">
                         <div class="pt-3 flex items-center">
@@ -106,7 +106,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </div>
         {{-- copy --}}
@@ -140,7 +140,7 @@
                 <h1 class="font-bold text-4xl font-hammersmith">Páginas</h1>
                 <ul class="flex flex-col gap-4 text-lg font-bold">
                     <li><a class="hover:text-slate-500" href="/">Inicio</a></li>
-                    
+
                     <li><a class="hover:text-slate-500" href="{{ route('kineClub.index') }}">Kine Club</a></li>
                     <li><a class="hover:text-slate-500" href="{{ route('asociate.index') }}">Asociate</a></li>
                     <li><a class="hover:text-slate-500" href="{{ route('contacto.index') }}">Contactanos</a></li>
@@ -169,12 +169,12 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>Eusebio Blanco 148, Mendoza.</a></li>
-                    
+
                 </ul>
 
 
             </div>
-            <div class="flex flex-col gap-8">
+            {{-- <div class="flex flex-col gap-8">
                 <h1 class="font-bold text-4xl font-hammersmith">Newsletter</h1>
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-row">
@@ -191,9 +191,7 @@
                         <a href=""><img src="{{ asset('storage/iconos/tw.svg') }}"></a>
                     </div>
                 </div>
-
-
-            </div>
+            </div> --}}
         </div>
         <div class="w-full flex flex-col justify-center items-center">
             <div>
