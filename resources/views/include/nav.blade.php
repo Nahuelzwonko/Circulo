@@ -1,10 +1,9 @@
-
 <nav class="glass z-10 lg:py-8 md:pb-0 invisible lg:visible">
     <div class="2xl:max-w-[85%] xl:max-w-[95%] xl:mx-auto md:mx-4 ">
         <div class="flex items-center md:justify-between sm:justify-center h-16 ">
             <a href="/">
-            <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 "
-                src="{{ asset('storage/logo/logowhite.svg') }}" alt="Logo">
+                <img class="mt-14 2xl:w-[200px] lg:w-[190px] md:w-[190px] md:mt-12 w-[45%] md:ml-0 ml-32 "
+                    src="{{ asset('storage/logo/logowhite.svg') }}" alt="Logo">
             </a>
             <div
                 class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
@@ -32,8 +31,8 @@
                 </div>
                 <button
                     class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 rounded-lg font-extralight hover:bg-blue-600">
-                    
-                    <a class="font-Poppins" href="{{route('asociate.index')}}">Asociate</a>
+
+                    <a class="font-Poppins" href="{{ route('asociate.index') }}">Asociate</a>
                 </button>
             </div>
         </div>
@@ -43,25 +42,35 @@
         <div class="flex lg:justify-end md:justify-center">
             <div id="items"
                 class="flex items-center lg:border-white-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
-                <a href="/" class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Inicio</a>
+                <a href="/"
+                    class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Inicio</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{ route('quienes.index') }}" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Quiénes somos</a>
+                <a href="{{ route('quienes.index') }}"
+                    class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Quiénes
+                    somos</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('kineClub.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">KineClub</a>
+                <a
+                    href="{{ route('kineClub.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">KineClub</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('allPost')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
+                <a
+                    href="{{ route('allPost') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('obras.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras Sociales y Prepagas</a>
+                <a
+                    href="{{ route('obras.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras
+                    Sociales y Prepagas</a>
                 <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
-                <a href="{{route('profesionales.index')}}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Profesionales Asociados</a>
+                <a
+                    href="{{ route('profesionales.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Profesionales
+                    Asociados</a>
             </div>
         </div>
     </div>
 </nav>
+{{-- nav responsive --}}
 <nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 visible lg:invisible">
     <div class="w-screen flex flex-wrap items-center justify-between  mx-auto p-4">
         <a href="/">
-        <img src="{{ asset('storage/logo/logo.svg') }}" class="h-8 mr-3" alt="Logo">
+            <img src="{{ asset('storage/logo/logoblack.svg') }}" class="h-8 mr-3" alt="Logo">
         </a>
         <div class="flex gap-4">
             <button
@@ -93,22 +102,23 @@
                         Somos</a>
                 </li>
                 <li>
-                    <a href="{{route('kineClub.index')}}"
+                    <a href="{{ route('kineClub.index') }}"
                         class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Kine
                         Club</a>
                 </li>
                 <li>
-                    <a href="{{route('allPost')}}"
+                    <a href="{{ route('allPost') }}"
                         class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Noticias</a>
                 </li>
                 <li>
-                    <a href="{{route('obras.index')}}"
+                    <a href="{{ route('obras.index') }}"
                         class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Obras
                         Sociales y Prepagas</a>
                 </li>
                 <li>
-                    <a href="{{route('profesionales.index')}}"
-                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Profesionales Asociados</a>
+                    <a href="{{ route('profesionales.index') }}"
+                        class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Profesionales
+                        Asociados</a>
                 </li>
             </ul>
         </div>
