@@ -34,6 +34,7 @@ Route::post('/asociate/send-form', [AsociateController::class, 'sendForm'])->nam
 Route::get('/asociate/success', function () {
     return view('asociate.success');
 })->name('asociate.success');
+Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
 
 // Rutas privadas para usuarios
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -53,7 +54,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('/datos/{dato}', [DatosController::class, 'update'])->name('datos.update');
     //seccion de noticias
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-    Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
+    
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/delete/{id}', [PostController::class, 'destroy'])->name('posts.delete');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
