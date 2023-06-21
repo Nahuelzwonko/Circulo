@@ -1,4 +1,12 @@
-<div class="md:h-[750px] sm:h-auto bg-hero-bg">
+<style>
+    .main-container {
+        background-image: url('{{ asset('storage/fondo/hero-bg.svg') }}');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<div class="main-container md:h-[750px] sm:h-auto bg-hero-bg">
     <!-- Incluyo navbar -->
     @include('include.nav')
     <!-- Padre grid para dividir en dos columnas el contenido: queda el texto a la derecha y la imagen a la izquierda. -->
