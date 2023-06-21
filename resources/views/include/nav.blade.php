@@ -70,7 +70,7 @@
 <nav class="glass fixed w-screen z-20 top-0 left-0 border-b border-gray-200 visible lg:invisible">
     <div class="w-screen flex flex-wrap items-center justify-between  mx-auto p-4">
         <a href="/">
-            <img src="{{ asset('storage/logo/logoblack.svg') }}" class="h-8 mr-3" alt="Logo">
+            <img src="{{ asset('storage/logo/logowhite.svg') }}" class="h-8 mr-3" alt="Logo">
         </a>
         <div class="flex gap-4">
             <button
