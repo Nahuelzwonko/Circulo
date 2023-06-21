@@ -28,7 +28,7 @@
                 </div>
             </div>
             <img class="start-0  wobble-ver-right lg:w-[40%] sm:w-[60%]"
-                src="{{ asset('storage/png/geometric/rectangle.svg') }}" alt="">
+                src="{{ asset('storage/png/geometric/Rectangle.svg') }}" alt="">
             <div class="d:4/10 lg:w-1/2 flex justify-end">
                 <img class="wobble lg:w-[40%] sm:w-[60%]" src="{{ asset('storage/png/geometric/Circle.svg') }}"
                     alt="">

@@ -1,4 +1,7 @@
-<div class="md:h-[750px] sm:h-auto bg-hero-bg" >
+<div class="md:h-[750px] sm:h-auto bg-hero-bg" style=" background-image:url(../../public/storage/fondo/hero-bg.svg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;" >
     <!-- Incluyo navbar -->
     @include('include.nav')
     <!-- Padre grid para dividir en dos columnas el contenido: queda el texto a la derecha y la imagen a la izquierda. -->
