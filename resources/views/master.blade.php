@@ -9,11 +9,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
+    <style>
+    .main-container {
+        background-image: url('{{ asset('storage/fondo/hero-bg.svg') }}');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
 </head>
 
 <body>
     <header class="h-[100vh] mb-[40px]">
-        <div class="lg:h-[750px] sm:h-[745px] bg-hero-bg">
+        <div class="lg:h-[750px] sm:h-[745px] main-container">
             @include('include.nav')
             <div class="flex flex-row justify-center items-center mt-32 lg:mt-44 gap-[25rem] lg:gap-16">
                 <div
