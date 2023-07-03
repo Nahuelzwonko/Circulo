@@ -4,7 +4,9 @@
 @section('cont', 'aca va el encabezado ')
 @section('Boton', 'Conocénos')
 @section('content')
-  @include('quienes.mision')
+<div class="mt-5 lg:mt-20">
+    @include('quienes.mision')
+</div>
   @include('quienes.valores')
   @include('quienes.comision')
   @include('include.cta')
