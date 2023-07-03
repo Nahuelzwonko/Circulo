@@ -4,7 +4,10 @@
 @section('cont', '')
 @section('Boton', '')
 @section('content')
-    @include('obras.emp')
+    <div class="mt-5 lg:mt-20">
+        @include('obras.emp')
+    </div>
+
     @include('include.cta')
     @include('include.footer')
 @endsection
