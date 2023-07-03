@@ -4,7 +4,9 @@
 @section('Encabezado', 'Nuestro blog')
 @section('content')
 @section('Boton', 'Informate!')
-@include('posts.blog')
+<div class="mt-5 lg:mt-20">
+    @include('posts.blog')
+</div>
 @include('include.cta')
 @include('include.footer')
 @endsection
