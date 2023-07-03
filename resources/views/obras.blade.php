@@ -4,7 +4,7 @@
 @section('cont', '')
 @section('Boton', '')
 @section('content')
-    <div class="mt-5 lg:mt-20">
+    <div class="mt-5 lg:mt-25">
         @include('obras.emp')
     </div>
 
