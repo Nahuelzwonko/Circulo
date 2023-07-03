@@ -52,7 +52,7 @@
 
                                 <span class="font-Poppins text-black transition group-hover:text-white/75">
 
-                                    contacto@kinesiologosmza.com
+                                    <a href="contacto@kinesiologosmza.com">Contacto</a>
                                 </span>
                             </a>
                         </li>
