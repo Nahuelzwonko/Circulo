@@ -75,7 +75,6 @@
                                 <td class="px-6 py-4 uppercase invisible lg:visible">
                                     <p>{{ $person->especialidad }}</p>
                                 </td>
-
                                 <td class="px-6 py-4 uppercase invisible lg:visible">
                                     <p>{{ $person->telefono }}</p>
                                 </td>
