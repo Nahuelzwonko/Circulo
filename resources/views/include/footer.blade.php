@@ -51,8 +51,7 @@
                                 </svg>
 
                                 <span class="font-Poppins text-black transition group-hover:text-white/75">
-
-                                    
+                                    <a href="contacto@kinesiologosmza.com">Contacto</a>
                                 </span>
                             </a>
                         </li>
