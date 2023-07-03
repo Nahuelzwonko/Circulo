@@ -1,4 +1,4 @@
-    <section class="w-full h-full flex justify-center items-center">
+    <section class="w-full h-full flex justify-center items-center mt-40">
         <div class="flex flex-wrap justify-center w-[70%] ">
             @foreach ($datos as $dato)
                 <div class="relative group w-full md:w-1/1 lg:w-1/2 xl:w-1/3 p-6">
