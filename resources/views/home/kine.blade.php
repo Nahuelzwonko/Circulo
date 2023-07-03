@@ -1,5 +1,9 @@
 <div class="hidden lg:block lg:visible lg:w-[full] lg:h-[110vh] fade-in  ">
-    <div class="bgKine w-full h-full flex justify-center items-center rounde">
+    <div style="  background-image: url(../public/storage/fondo/kinefondo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;"
+        class=" w-full h-full flex justify-center items-center rounde">
         <div class="w-[60%] h-[60%] rounded-[20px] glass1">
             <div class="flex">
                 <div class="w-1/2">
@@ -42,7 +46,7 @@
     <div class="my-6">
         <img class="skew-x-[10deg] absolute z-0 left-20 md:left-60 w-3/12"
             src="{{ asset('storage/png/geometric/rectangle.svg') }}" alt="">
-        
+
         <img class="z-[3] relative" src="{{ asset('storage/kineclub/kineclub.svg') }}" alt="Tarjetakineclub" />
     </div>
     <button
