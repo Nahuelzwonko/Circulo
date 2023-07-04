@@ -2,7 +2,7 @@
         <div class="flex flex-wrap justify-center w-[70%] ">
             @foreach ($datos as $dato)
                 <div class="relative group w-full md:w-1/1 lg:w-1/2 xl:w-1/3 p-6">
-                    <div class="w-full h-full border rounded-xl shadow-xl flex justify-center items-center">
+                    <div class="w-[200px] h-[200px] border rounded-xl shadow-xl flex justify-center items-center">
                         <img class="w-full h-auto object-cover rounded-lg" src="{{ asset($dato->imagen) }}"
                             alt="{{ $dato->nombre }}" />
                         <div
@@ -24,9 +24,12 @@
                                     <!-- Modal header -->
                                     <div
                                         class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            {{ $dato->nombre }}
-                                        </h3>
+                                        <div class="flex justify-center items-center w-full">
+                                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                                {{ $dato->nombre }}
+                                            </h3>
+                                        </div>
+
                                         <button type="button"
                                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                             data-modal-hide="defaultModal{{ $dato->id }}">
@@ -47,7 +50,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div
-                                        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                        class="flex justify-center items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                         <button data-modal-hide="defaultModal{{ $dato->id }}" type="button"
                                             class="text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cerrar</button>
                                     </div>
