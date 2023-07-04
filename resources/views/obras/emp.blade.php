@@ -3,7 +3,7 @@
             @foreach ($datos as $dato)
                 <div class="relative group w-full md:w-1/1 lg:w-1/2 xl:w-1/3 p-6">
                     <div class="w-[200px] h-[200px] border rounded-xl shadow-xl flex justify-center items-center">
-                        <img class="w-full h-auto object-cover rounded-lg" src="{{ asset($dato->imagen) }}"
+                        <img class="w-[200px] h-[200px] object-cover rounded-lg" src="{{ asset($dato->imagen) }}"
                             alt="{{ $dato->nombre }}" />
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-filter backdrop-blur">
