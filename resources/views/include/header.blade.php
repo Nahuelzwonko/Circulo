@@ -18,8 +18,7 @@
             <h1
                 class="font-hammersmith 2xl:text-7xl xl:text-6xl sm:text-4xl font-bold uppercase text-white 2xl:leading-[6rem] xl:leading-[4.5rem] lg:leading-normal sm:leading-[3.5rem] lg:text-start sm:text-center">
                 El círculo que <br>nos une</br></h1>
-            <p class=" text-white text-[1.4rem] font-extralight invisible lg:visible  ">Whereby is the super simple way
-                to connect over video. <br>No downloads or long having into meeting links.</br></p>
+            <p class=" text-white text-[1.4rem] font-extralight invisible lg:visible  ">¡Bienvenidos al Círculo de Kinesiólogos de Mendoza, donde la pasión por la kinesiología se encuentra con el compromiso de mejorar la calidad de vida!</br></p>
             <button
                 class="xl:text-xl text-white p-4 rounded-full bg-[#0051A7] hover:bg-blue-700 self-center invisible lg:visible">Conocénos!</button>
         </div>
