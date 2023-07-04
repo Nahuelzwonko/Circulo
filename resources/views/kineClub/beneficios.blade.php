@@ -1,4 +1,4 @@
-<section class="w-full h-screen flex justify-center items-center">
+<section class="w-full h-full flex justify-center items-center">
     <div class="flex flex-col justify-center items-center mt-40">
         <h1 class="text-black font-hammersmith font-bold text-3xl lg:text-[80px]">BENEFICIOS KINECLUB</h1>
         <div class="flex flex-wrap justify-center w-[100%]">
