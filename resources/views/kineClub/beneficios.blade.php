@@ -23,9 +23,12 @@
                             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                 <!-- Modal header -->
                                 <div
-                                    class="flex items-center justify-center p-4 border-b rounded-t dark:border-gray-600">
-                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                        {{ $kine->nombre }}</h3>
+                                    class="flex  items-center justify-center p-4 border-b rounded-t dark:border-gray-600">
+
+                                    <div class="w-full flex justify-center items-center">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            {{ $kine->nombre }}</h3>
+                                    </div>
                                     <button type="button"
                                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                         data-modal-hide="defaultModal{{ $kine->id }}">
@@ -37,6 +40,7 @@
                                         </svg>
                                         <span class="sr-only">Close modal</span>
                                     </button>
+
                                 </div>
                                 <!-- Modal body -->
                                 <div class="p-6 space-y-6">
@@ -45,7 +49,7 @@
                                 </div>
                                 <!-- Modal footer -->
                                 <div
-                                    class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    class="flex items-center justify-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                     <button data-modal-hide="defaultModal{{ $kine->id }}" type="button"
                                         class="text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cerrar</button>
                                 </div>
