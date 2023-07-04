@@ -1,9 +1,9 @@
 <section class="w-full h-full flex justify-center items-center">
     <div class="flex flex-col justify-center items-center mt-40">
         <h1 class="text-black font-hammersmith font-bold text-3xl lg:text-[80px]">BENEFICIOS KINECLUB</h1>
-        <div class="flex flex-wrap justify-center w-[100%] mt-10 ">
+        <div class="grid grid-cols-1 justify-center sm:grid-cols-2 lg:grid-cols-3 w-full mt-10 ">
             @foreach ($kines as $kine)
-                <div class="w-full flex justify-center sm:w-1/3 lg:w-1/4  p-5  mx-1  ">
+                <div class="w-full flex justify-center p-5  mx-1  ">
                     <div class="relative group w-[150px] h-[150px] border bg-white rounded-xl shadow-xl">
                         <img class="w-[200px] h-[150px] bg-white object-cover rounded-lg"
                             src="{{ Storage::url($kine->foto) }}" alt="foto" />
