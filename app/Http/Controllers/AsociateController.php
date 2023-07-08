@@ -88,7 +88,7 @@ class AsociateController extends Controller
             $rutaConsultorio =
                 null;
         }
-        Mail::to('inscripciones@kinesiologosmza.com')->send(new FormularioEnviado($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio, $nombre));
+        Mail::to('administracion@kinesiologosmza.com')->send(new FormularioEnviado($data, $rutaArchivoPDF, $rutaArchivoImagen, $rutaTitulo, $rutaPosgrado, $rutaMatricula, $rutaIngresos, $rutaCuit, $rutaSalud, $rutaPoliza, $rutaConsultorio, $nombre));
 
         if ($rutaArchivoPDF) {
             Storage::disk('public')->delete($rutaArchivoPDF);

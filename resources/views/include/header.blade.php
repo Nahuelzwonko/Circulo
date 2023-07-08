@@ -12,8 +12,8 @@
         <div
             class="flex flex-col lg:items-center sm:items-center lg:w-3/4 sm:w-full sm:h-28 gap-8 2xl:ml-64 lg:ml-48 mt-15 text-center">
             <h1
-                class="font-hammersmith 2xl:text-7xl xl:text-6xl sm:text-4xl font-bold uppercase text-white 2xl:leading-[6rem] xl:leading-[4.5rem] lg:leading-normal sm:leading-[3.5rem] lg:text-start sm:text-center">
-                El círculo que <br>nos une</br></h1>
+                class="font-hammersmith  2xl:text-7xl xl:text-6xl sm:text-4xl font-bold uppercase text-white 2xl:leading-[6rem] xl:leading-[4.5rem] lg:leading-normal sm:leading-[3.5rem] lg:text-center sm:text-center">
+                El círculo nos une</h1>
             <p class=" text-white text-[1.4rem] font-extralight invisible lg:visible  ">¡Bienvenidos al Círculo de Kinesiólogos de Mendoza, donde la pasión por la kinesiología se encuentra con el compromiso de mejorar la calidad de vida!</br></p>
             <button
                 class="xl:text-xl text-white p-4 rounded-full bg-[#0051A7] hover:bg-blue-700 self-center invisible lg:visible">Conocénos!</button>
