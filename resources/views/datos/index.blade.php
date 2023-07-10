@@ -1,23 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-        
-    </x-slot>
-    <div class="w-[80%] mx-auto pb-8">
-        <h1 class="font-hammersmith text-5xl text-center py-8">Obras Sociales</h1>
-        <div class="flex justify-end">
-            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" type="button"
-                class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                <div class="flex flex-row items-center justify-center gap-2">
-                    <p class="fa-solid fa-plus"></p>
-                    <p class="font-Poppins">Agregar</p>
-                </div>
-            </button>
-        </div>
-    </div>
-    
+@extends('admin.layouts.template')
+@section('title', 'Panel de control | Circulo')
+@include('admin.include.nav')
+@section('content')
+ <div class="p-4 sm:ml-64 mt-30">
     {{-- modal --}}
     <div id="defaultModal" tabindex="-1" aria-hidden="true"
         class="fixed top-1 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
@@ -123,4 +108,5 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
-</x-app-layout>
+ </div>
+@endsection
