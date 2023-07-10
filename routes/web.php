@@ -36,10 +36,11 @@ Route::get('/asociate/success', function () {
 })->name('asociate.success');
 Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
 //Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'role:user'])->group(function () {
+    //  Route::get('/dashboard', function () {
+    //      return view('dashboard');
+    // })->name('dashboard');
+
     Route::get('/user/home', function () {
         return view('user_home');
     })->name('user.home');

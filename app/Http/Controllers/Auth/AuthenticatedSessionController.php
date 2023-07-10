@@ -21,12 +21,15 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $credentials = $request->validated();
-
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
-        }
 
+            if (Auth::user()->role === 'admin') {
+                return redirect()->intended('/posts');
+            }
+
+            return redirect()->intended('/user/home');
+        }
         $errors = [];
 
         if (!User::where('email', $credentials['email'])->exists()) {
@@ -46,6 +49,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/dashboard');
+        return redirect('/');
     }
 }
