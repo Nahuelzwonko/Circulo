@@ -35,8 +35,17 @@ Route::get('/asociate/success', function () {
     return view('asociate.success');
 })->name('asociate.success');
 Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
+//Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/user/home', function () {
+        return view('user_home');
+    })->name('user.home');
+});
 
-// Rutas privadas para usuarios
+// Rutas privadas para administrador
 Route::middleware(['auth', 'role:admin'])->group(function () {
     // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     //Editar perfil de administrador
@@ -51,7 +60,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::put('/datos/{dato}', [DatosController::class, 'update'])->name('datos.update');
     //seccion de noticias
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-    
+
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/delete/{id}', [PostController::class, 'destroy'])->name('posts.delete');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
