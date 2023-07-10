@@ -1,6 +1,6 @@
 @extends('master')
 @section('titulo', 'Asociate | CKFM')
-@section('Encabezado', 'Asóciate')
+@section('Encabezado', 'Asociate')
 @section('cont', 'Para ser parte del Círculo de Kinesiólogos y Fisioterapeutasde Mendoza')
 @section('Boton', '')
 @section('content')
