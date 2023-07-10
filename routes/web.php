@@ -38,14 +38,13 @@ Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
 
 // Rutas privadas para usuarios
 Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::controller(DashboardController::class)->group(function () {
+        Route::get('dashboard', 'Index')->name('dashboard');
+    });
     //Editar perfil de administrador
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    //inicio de administracion
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->middleware(['auth', 'verified'])->name('dashboard');
     //Agregar y quitar empresas
     Route::get('/datos', [DatosController::class, 'index'])->name('datos.index');
     Route::post('/datos', [DatosController::class, 'store'])->name('datos.store');
@@ -73,8 +72,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::delete('/kine/{kine}', [KineController::class, 'destroy'])->name('kine.destroy');
     Route::get('/kine/{kine}/edit', [KineController::class, 'edit'])->name('kine.edit');
     Route::put('/kine/{kine}', [KineController::class, 'update'])->name('kine.update');
-
-
 });
 
 
