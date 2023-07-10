@@ -37,7 +37,7 @@ Route::get('/asociate/success', function () {
 Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
 
 // Rutas privadas para usuarios
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'role:admin'])->group(function () {
     //Editar perfil de administrador
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
