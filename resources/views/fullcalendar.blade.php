@@ -1,6 +1,5 @@
-@extends('users.layouts.template')
+@extends('users.layouts.agenda')
 @section('title', 'Bienvenido')
-
 @include('users.include.nav')
 @section('content')
     <div class="p-4 sm:ml-64">
