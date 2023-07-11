@@ -40,7 +40,6 @@
             background-position: center;
             background-size: cover;
             border-radius: 8px;
-
             -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);

@@ -23,7 +23,6 @@
                         <div class="card__secret">
                             <p class="card__secret--last">420</p>
                         </div>
-
                     </div>
                 </div>
             </div>
