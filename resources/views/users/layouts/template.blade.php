@@ -22,11 +22,12 @@
             -webkit-perspective: 600px;
             -moz-perspective: 600px;
             perspective: 600px;
+            
 
         }
 
         .card__part {
-            box-shadow: 1px 1px #aaa3a3;
+            box-shadow: 1px 1px #303030000;
             top: 0;
             position: absolute;
             z-index: 1000;
@@ -34,8 +35,8 @@
             display: inline-block;
             width: 320px;
             height: 190px;
-            background-image: url('https://image.ibb.co/bVnMrc/g3095.png'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
-            /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
+            
+            background-image: url({{ asset('storage/card/fondo.png') }});
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
