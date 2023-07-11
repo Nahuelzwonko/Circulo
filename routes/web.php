@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\AsociateController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +13,7 @@ use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\ProfesionalesController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
+use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\KineController;
 use App\Models\Post;
 // Rutas públicas
@@ -44,11 +46,16 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/home', function () {
         return view('user_home');
     })->name('user.home');
+    
+    Route::get('/user/getevent', [FullCalendarController::class, 'getEvent'])->name('getevent');
+    Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
+    Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
+    Route::delete('/user/destroy/{id}', [FullCalendarController::class, 'destroy'])->name('destroy');
 });
 
 // Rutas privadas para administrador
 Route::middleware(['auth', 'role:admin'])->group(function () {
-     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     //Editar perfil de administrador
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

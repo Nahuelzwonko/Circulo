@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Laratrust\Contracts\LaratrustUser;
 use Laratrust\Traits\HasRolesAndPermissions;
+use App\Models\Booking;
 
 class User extends Authenticatable implements LaratrustUser
 {
@@ -44,4 +45,8 @@ class User extends Authenticatable implements LaratrustUser
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
