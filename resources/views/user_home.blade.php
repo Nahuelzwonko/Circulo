@@ -3,6 +3,7 @@
 @include('users.include.nav')
 @section('content')
     <div class="p-4 sm:ml-64">
+        <h1>HOLAAA PRUEBA A VER SI ESTA BIEN HECHO EL LINKEO XD</h1>
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
             <div class="card">
                 <div class="card__front card__part">
