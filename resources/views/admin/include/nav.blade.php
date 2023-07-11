@@ -80,62 +80,67 @@
         aria-label="Sidebar">
         <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
             <ul class="flex flex-col py-4 space-y-1">
-            <li class="px-5">
-                <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">Noticias</div>
-                </div>
-            </li>
-            <li>
-                <a href="{{route('posts.index')}}"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
-                    <span class="inline-flex justify-center items-center ml-4">
+                <li class="px-5">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-xl font-medium tracking-wide text-gray-900">Noticias</div>
+                    </div>
+                </li>
+                <li>
+                    <a href="{{route('posts.index')}}"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
 
-                    </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">Agregar Noticia</span>
-                </a>
-            </li>
-            <li class="px-5">
-                <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">Personal Asociado</div>
-                </div>
-            </li>
-            <li>
-                <a href="{{route('people.index')}}"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
-                    <span class="inline-flex justify-center items-center ml-4">
+                        </span>
+                        <span class="ml-2 text-lg tracking-wide truncate">Agregar Noticia</span>
+                    </a>
+                </li>
+            </ul> 
+            <ul class="flex flex-col py-4 space-y-1">
+                <li class="px-5">
+                        <div class="flex flex-row items-center h-8">
+                            <div class="text-xl font-medium tracking-wide text-gray-900">Personal Asociado</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="{{route('people.index')}}"
+                            class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
+                            <span class="inline-flex justify-center items-center ml-4">
 
-                    </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">Agregar Personal</span>
-                </a>
-            </li>
-            <li class="px-5">
-                <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">Obras Sociales</div>
-                </div>
-            </li>
-            <li>
-                <a href="{{route('datos.index')}}"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
-                    <span class="inline-flex justify-center items-center ml-4">
-
-                    </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">Agregar Empresa</span>
-                </a>
-            </li>
-            <li class="px-5">
-                <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">KineClub</div>
-                </div>
-            </li>
-            <li>
-                <a href="{{route('kine.index')}}"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
-                    <span class="inline-flex justify-center items-center ml-4">
-
-                    </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">Agregar Beneficio</span>
-                </a>
-            </li>
+                            </span>
+                            <span class="ml-2 text-lg tracking-wide truncate">Agregar Personal</span>
+                        </a>
+                    </li>
+            </ul>       
+                
+            <ul class="flex flex-col py-4 space-y-1">
+                <li class="px-5">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-xl font-medium tracking-wide text-gray-900">Obras Sociales</div>
+                    </div>
+                </li>
+                <li>
+                    <a href="{{route('datos.index')}}"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                        </span>
+                        <span class="ml-2 text-lg tracking-wide truncate">Agregar Empresa</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex flex-col py-4 space-y-1">
+                <li class="px-5">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-xl font-medium tracking-wide text-gray-900">KineClub</div>
+                    </div>
+                </li>
+                <li>
+                    <a href="{{route('kine.index')}}"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                        </span>
+                        <span class="ml-2 text-lg tracking-wide truncate">Agregar Beneficio</span>
+                    </a>
+                </li>
             </ul>
 
 
