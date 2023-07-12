@@ -38,7 +38,7 @@
     </article>
 
     <div class="flex-wrap items-center justify-center gap-8 text-center sm:flex mb-10">
-        <div class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+        <div class="w-full px-4 py-4 mt-6 bg-blue-500 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792"
@@ -62,7 +62,7 @@
             </button>
         </div>
         <div
-            class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 ">
+            class="w-full px-4 py-4 mt-6 bg-blue-500 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 ">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792"
@@ -85,7 +85,7 @@
                 <a href="https://www.kinesiologosmza.com/kineClub">Conocer los beneficios</a>
             </button>
         </div>
-        <div class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+        <div class="w-full px-4 py-4 mt-6 bg-blue-500 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792"
