@@ -117,7 +117,7 @@
         .card__info {
             margin-bottom: 0;
             margin-top: 5px;
-            font-size: 16px;
+            font-size: 20px bold;
             line-height: 18px;
             color: #fff;
             letter-spacing: 1px;

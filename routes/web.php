@@ -15,6 +15,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\KineController;
+use App\Http\Controllers\TarjetaController;
 use App\Models\Post;
 // Rutas públicas
 Route::get('/', HomeContoller::class);
@@ -44,9 +45,11 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     // })->name('dashboard');
 
     Route::get('/user/home', function () {
-        return view('user_home');
+        $username = auth()->user()->name; // Reemplaza 'name' con el atributo correcto que contiene el nombre de usuario en tu modelo de usuario
+        return view('user_home', compact('username'));
     })->name('user.home');
-    
+
+    Route::get('/user/tarjeta', [TarjetaController::class, 'Tarjeta'])->name('tarjeta');
     Route::get('/user/getevent', [FullCalendarController::class, 'getEvent'])->name('getevent');
     Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
     Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
