@@ -9,13 +9,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('storage/favicon/favicon.png') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
+    <style>
+        .bg-naranja{
+            background-color: #F28F1C;
+        }
+    </style>
 </head>
 
 <body>
     @yield('content')
     <div class="min-h-screen bg-blue-500 flex justify-center items-center">
         <div
-            class="absolute w-60 h-60 rounded-xl bg-[#F28F1C] -top-5 -left-16 z-0 transform rotate-45 hidden md:block">
+            class="absolute w-60 h-60 rounded-xl bg-naranja -top-5 -left-16 z-0 transform rotate-45 hidden md:block">
         </div>
         <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
             <div>
@@ -23,9 +28,9 @@
             </div>
             @yield('form')
         </div>
-        <div class="w-40 h-40 absolute bg-[#F28F1C] rounded-full top-0 right-12 hidden md:block"></div>
+        <div class="w-40 h-40 absolute bg-naranja rounded-full top-0 right-12 hidden md:block"></div>
         <div
-            class="w-20 h-40 absolute bg-[#F28F1C] rounded-full bottom-20 left-10 transform rotate-45 hidden md:block">
+            class="w-20 h-40 absolute bg-naranja rounded-full bottom-20 left-10 transform rotate-45 hidden md:block">
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
