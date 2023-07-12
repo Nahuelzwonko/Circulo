@@ -1,8 +1,8 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
-
-    <form method="POST" action="{{ route('login') }}">
+@extends('layouts.temlogin')
+@section('titulo', 'login | CKFM')
+@section('contenido')
+@section('form')
+<form method="POST" action="{{ route('login') }}">
         @csrf
         <!-- Email Address -->
         <div>
@@ -39,10 +39,10 @@
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
-
             <x-primary-button class="ml-3">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+
+@endsection
