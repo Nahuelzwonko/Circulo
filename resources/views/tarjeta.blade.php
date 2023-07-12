@@ -52,7 +52,7 @@
             <h3 class="py-4 text-2xl font-semibold  sm:text-xl text-white">
                 Descuentos exclusivos
             </h3>
-            <p class="py-4 text-white text-md dark:text-gray-300">
+            <p class="py-4 text-white text-md ">
                 Obtén increíbles descuentos en salud, hoteles, actividades deportivas, moda, belleza y bienestar. Ahorra
                 mientras disfrutas al máximo
             </p>
@@ -62,7 +62,7 @@
             </button>
         </div>
         <div
-            class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 dark:bg-gray-800">
+            class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 ">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792"
@@ -85,7 +85,7 @@
                 <a href="https://www.kinesiologosmza.com/kineClub">Conocer los beneficios</a>
             </button>
         </div>
-        <div class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 dark:bg-gray-800">
+        <div class="w-full px-4 py-4 mt-6 bg-[#5168E1] rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
             <div class="flex-shrink-0">
                 <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
                     <svg width="20" height="20" fill="currentColor" class="w-6 h-6" viewBox="0 0 1792 1792"
@@ -99,7 +99,7 @@
             <h3 class="py-4 text-2xl font-semibold  sm:text-xl text-white">
                 Promociones actualizadas
             </h3>
-            <p class="py-4 text-white text-md dark:text-gray-300">
+            <p class="py-4 text-white text-md ">
                 No te pierdas nuestras ofertas especiales, paquetes exclusivos y eventos únicos para los miembros de
                 KineClub. Siempre tendrás algo emocionante por descubrir.
             </p>
@@ -112,7 +112,7 @@
 
     <div class="text-white bg-[6875F5] ">
         <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-            <h2 class="text-3xl font-extrabold dark:text-white sm:text-4xl">
+            <h2 class="text-3xl font-extrabold  sm:text-4xl">
                 <span class="block">
                     ¡Estemos siempre conectados!
                 </span>
