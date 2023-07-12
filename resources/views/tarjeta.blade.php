@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <div class="text-white bg-blue-500 ">
+    <div class="text-white bg-orange-500 ">
         <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
             <h2 class="text-3xl font-extrabold  sm:text-4xl">
                 <span class="block">
@@ -123,7 +123,7 @@
             <div class="lg:mt-0 lg:flex-shrink-0">
                 <div class="mt-12 inline-flex rounded-md shadow">
                     <button type="button"
-                        class="py-4 px-6  bg-orange-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        class="py-4 px-6  bg-blue-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                         Hablemos
                     </button>
                 </div>
