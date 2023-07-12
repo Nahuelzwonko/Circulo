@@ -6,18 +6,19 @@
         <div class="py-12">
             <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
                 <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">empresas asociadas</h1>
-                <div class="flex justify-end my-12">
+                <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
                     <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                         class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button">
-                        <div class="flex flex-row items-center justify-center gap-2">
+                        <div class="flex flex-row items-center justify-center gap-2 ">
                             <p class="fa-solid fa-plus"></p>
                             <p class="font-Poppins">Agregar</p>
                         </div>
 
                     </button>
                 </div>
-                
+            </div>
+        </div>
                 
 
 
@@ -86,13 +87,13 @@
                             Descripción</th>
                         <th scope="col"
                             class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
-                            Imagen</th>
+                            Imágen</th>
                         
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-600">
                     @foreach ($kines as $kine)
-                        <tr>
+                        <tr class="border-b pb-8">
                             <td class="px-2 py-2 whitespace-nowrap text-center uppercase">{{ $kine->nombre }}</td>
                             <td class="px-2 py-2 whitespace-nowrap text-center ">{{ Str::limit($kine->descripcion, 30) }}</td>
                             <td class="px-2 py-2 whitespace-nowrap text-center ">
@@ -100,16 +101,15 @@
                             </td>
                             <td class="px-2 py-2 whitespace-nowrap text-center ">
                                 <form action="{{ route('kine.destroy', $kine) }}" method="POST"
-                                    onsubmit="return confirm('¿Estás seguro de eliminar esta empresa?')">
+                                    onsubmit="return confirm('¿Estás seguro de eliminar esta empresa?')" class="flex flex-col-reverse gap-4 w-[40%] mx-auto">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</button>
+                                    <a href="{{ route('kine.edit', $kine) }}"
+                                    class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
                                 </form>
                             </td>
-                            <td class="px-2 py-2 whitespace-nowrap text-center ">
-                                <a href="{{ route('kine.edit', $kine) }}"
-                                    class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
-                            </td>
+                           
                         </tr>
                     @endforeach
 

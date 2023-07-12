@@ -51,7 +51,7 @@
                                             {{-- Resumen de la noticia --}}
                                             <label for="body"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark.text-gray-900 dark:text-gray-300">Descripción
-                                                (Resumen)</label>
+                                                </label>
                                             <div
                                                 class="w-full mb-4 mt-3 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
                                                 <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
@@ -69,7 +69,7 @@
                                             <label for="cuerpo"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark.text-gray-900 dark:text-gray-300">Descripción
                                                 Detallada
-                                                (Noticia completa)</label>
+                                                </label>
                                             <div
                                                 class="w-full mb-4 mt-3 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
 
@@ -188,14 +188,12 @@
                                         </td>
                                         {{-- accion de delete --}}
                                         <td
-                                            class="py-1 px-4 text-right flex flex-row items-center justify-center h-[10rem] gap-4">
+                                            class="py-1 px-4 flex flex-col-reverse text-center gap-4 w-[70%] mx-auto">
                                             <a href="{{ route('posts.edit', $post->id) }}"
-                                                class="font-medium text-[#12469A] mr-2 text-3xl"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                                class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</a>
 
                                             <a href="{{ route('posts.delete', $post->id) }}"
-                                                class="font-medium text-red-600 mr-2 text-3xl"><i
-                                                    class="fa-solid fa-trash"></i></a>
+                                                class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
                                         </td>
                                     </tr>
                                 @endforeach

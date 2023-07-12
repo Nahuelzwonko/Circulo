@@ -2,7 +2,22 @@
 @section('title', 'Panel de control | Circulo')
 @include('admin.include.nav')
 @section('content')
- <div class="p-4 sm:ml-64 mt-30">
+<div class="p-4 sm:ml-64 mt-8">
+    <div class="py-12">
+        <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
+            <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">obras sociales asociadas</h1>
+            <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
+                <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    type="button">
+                    <div class="flex flex-row items-center justify-center gap-2 ">
+                        <p class="fa-solid fa-plus"></p>
+                        <p class="font-Poppins">Agregar</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
     {{-- modal --}}
     <div id="defaultModal" tabindex="-1" aria-hidden="true"
         class="fixed top-1 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
@@ -64,43 +79,43 @@
         </div>
     </div>
     {{-- tabla --}}
-    <div class="w-full flex justify-center">
-        <div class="relative overflow-x-auto">
-            <table class="w-[80%] text-xl text-left text-black dark:text-gray-300">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <div class="w-full mx-auto">
+        <div class=" overflow-x-auto">
+            <table class="w-full text-xl text-center text-black dark:text-gray-300">
+                <thead class="text-xl font-Poppins text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <th class="px-10 py-5 text-left text-xl font-semibold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
                             Nombre
                         </th>
-                        <th class="px-10 py-5 text-left text-xl font-semibold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
                             Imágen
                         </th>
-                        <th class="px-10 py-5 text-left text-xl font-semibold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
                             Descripción</th>
                         
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y ">
                     @foreach ($datos as $dato)
-                        <tr>
-                            <td class="px-10 py-5 whitespace-nowrap">{{ $dato->nombre }}</td>
+                        <tr class="border-b">
+                            <td class="px-10 py-5 whitespace-nowrap uppercase">{{ $dato->nombre }}</td>
                             <td class="px-10 py-5 whitespace-nowrap">
-                                <img src="{{ asset($dato->imagen) }}" alt="{{ $dato->nombre }}" class="h-10 w-15">
+                                <img src="{{ asset($dato->imagen) }}" alt="{{ $dato->nombre }}" class="h-10 w-15 mx-auto">
                             </td>
                             <td class="px-10 py-5 whitespace-nowrap">{{ Str::limit($dato->descripcion, 50) }}</td>
-                            <td class="px-10 py-5 whitespace-nowrap">
+                            <td class="px-10 py-5 whitespace-nowrap flex flex-col gap-8">
                                 <form action="{{ route('datos.destroy', $dato->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit"
-                                        class=" text-red-600 py-2 px-4 text-2xl"><i class="fa-solid fa-trash"></i></button>
+                                    
+                                    <button class=" text-blue-600 py-2 px-4">
+                                        <a href="{{ route('datos.edit', $dato->id) }}" class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
+                                    </button>
+                                    <button type="submit"><a class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</a></button>
                                 </form>
                             </td>
-                            <td class="px-10 py-5 whitespace-nowrap">
-                                <button class=" text-blue-600 py-2 px-4 text-2xl">
-                                    <a href="{{ route('datos.edit', $dato->id) }}" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
-                                </button>
-                            </td>
+                            
+                           
                         </tr>
                     @endforeach
                 </tbody>
@@ -108,5 +123,5 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
- </div>
+</div>
 @endsection

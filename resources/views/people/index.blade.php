@@ -3,16 +3,31 @@
 @include('admin.include.nav')
 @section('content')
     <div class="p-4 sm:ml-64 ">
+        <div class="py-12">
+            <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
+                <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">profesionales asociados</h1>
+                <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                        class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        type="button">
+                        <div class="flex flex-row items-center justify-center gap-2 ">
+                            <p class="fa-solid fa-plus"></p>
+                            <p class="font-Poppins">Agregar</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
         <!-- Main modal-->
         <div id="defaultModal" tabindex="-1" aria-hidden="true"
-            class="fixed top-1 left-1 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            class="fixed top-1 z-50 left-1 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
             <div class="relative w-[80%] max-w-2xl max-h-full">
                 {{-- Modal content  --}}
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <!-- Modal header -->
                     <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                            Agregar personal
+                            Agregar Profesional
                         </h3>
                         <button type="button"
                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -114,23 +129,23 @@
             <table class="w-[85%] mx-auto text-xl text-left text-gray-500 dark:text-gray-400">
                 <thead>
                     <tr class="font-Poppins uppercase font-bold text-gray-700">
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Nombre</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Email</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Domicilio</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Localidad</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Nombre</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Email</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Domicilio</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Localidad</th>
 
 
 
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Teléfono</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Especialidad</th>
-                        <th class="px-6 py-3 border-b-2 border-gray-200 text-left">Atencion domiciliaria</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Teléfono</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Especialidad</th>
+                        <th class="px-6 py-3 border-b-2 border-gray-200 text-center">Atencion domiciliaria</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($people as $person)
                         <tr
-                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-center">
                             <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->nombre }}</td>
                             <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->email }}</td>
                             <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">{{ $person->domicilio }}</td>
@@ -147,14 +162,15 @@
                                     onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="text-red-600 hover:text-red-800 text-2xl px-4"><i
-                                            class="fa-solid fa-trash"></i></button>
+                                    <button type="submit"
+                                                class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2 mr-4">Eliminar</button>
+                                    
                                 </form>
+                                
                             </td>
                             <td>
                                 <a href="{{ route('people.edit', $person->id) }}"
-                                    class="text-blue-600 hover:text-blue-800 text-2xl px-4"><i
-                                        class="fa-solid fa-pen-to-square"></i></a>
+                                class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
                             </td>
                         </tr>
                     @endforeach
@@ -162,6 +178,6 @@
             </table>
         </div>
     </div>
-    </div>
+    
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 @endsection
