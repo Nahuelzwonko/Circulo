@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\AsociateController;
+use App\Http\Controllers\ConsultorioController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeContoller;
@@ -16,6 +17,11 @@ use App\Http\Controllers\DatosController;
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\KineController;
 use App\Http\Controllers\TarjetaController;
+use App\Http\Controllers\EvaluacionKinesicaController;
+use App\Models\EvaluacionKinesica;
+
+use Dompdf\Dompdf;
+use Illuminate\Support\Facades\Response;
 use App\Models\Post;
 // Rutas públicas
 Route::get('/', HomeContoller::class);
@@ -40,12 +46,8 @@ Route::get('/asociate/success', function () {
 Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
 //Dashboard
 Route::middleware(['auth', 'role:user'])->group(function () {
-    //  Route::get('/dashboard', function () {
-    //      return view('dashboard');
-    // })->name('dashboard');
-
     Route::get('/user/home', function () {
-        $username = auth()->user()->name; // Reemplaza 'name' con el atributo correcto que contiene el nombre de usuario en tu modelo de usuario
+        $username = auth()->user()->name;
         return view('user_home', compact('username'));
     })->name('user.home');
 
@@ -54,6 +56,40 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
     Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
     Route::delete('/user/destroy/{id}', [FullCalendarController::class, 'destroy'])->name('destroy');
+    Route::get('/user/consultorio', [ConsultorioController::class, 'Consultorio'])->name('consultorio');
+    Route::get('/user/ficha-kinesica', [ConsultorioController::class, 'mostrarFormulario'])->name('ficha-kinesica');
+    Route::post('/evaluacion-kinesica', [EvaluacionKinesicaController::class, 'store'])->name('evaluacion-kinesica.store');
+    Route::get('/evaluacion-kinesica/lista', [EvaluacionKinesicaController::class, 'lista'])->name('evaluacion-kinesica.lista');
+    Route::get('/evaluacion-kinesica/{id}/edit', [EvaluacionKinesicaController::class, 'edit'])->name('evaluacion-kinesica.edit');
+    Route::patch('/evaluacion-kinesica/{id}', [EvaluacionKinesicaController::class, 'update'])->name('evaluacion-kinesica.update');
+    Route::get('/evaluacion-kinesica/{id}/descargar', function ($id) {
+        // Obtener la evaluación kinesica por ID
+        $evaluacion = EvaluacionKinesica::findOrFail($id);
+
+        // Crear una instancia de Dompdf
+        $dompdf = new Dompdf();
+
+        // Renderizar la vista 'pdf.ficha_kinesica' y pasar los datos de la evaluación
+        $html = view('pdf.ficha_kinesica', compact('evaluacion'))->render();
+
+        // Cargar el contenido HTML en Dompdf
+        $dompdf->loadHtml($html);
+
+        // Renderizar el PDF
+        $dompdf->render();
+
+        // Obtener el contenido del PDF como una cadena de bytes
+        $output = $dompdf->output();
+
+        // Crear una respuesta para descargar el archivo PDF
+        $response = Response::make($output, 200);
+        $response->header('Content-Type', 'application/pdf');
+        $response->header('Content-Disposition', 'attachment; filename="' . $evaluacion->nombre . ' Ficha Kinesica.pdf"');
+
+
+        return $response;
+    })->name('evaluacion-kinesica.descargar');
+
 });
 
 // Rutas privadas para administrador
