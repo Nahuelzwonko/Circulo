@@ -16,25 +16,25 @@
     </style>
 </head>
 
-<body>
-    @yield('content')
-    <div class="min-h-screen bg-blue-500 flex justify-center items-center">
-        <div
-            class="absolute w-60 h-60 rounded-xl bg-naranja -top-5 -left-16 z-0 transform rotate-45 hidden md:block">
-        </div>
-        <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
-            <div>
-                <h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Ingresa a tu cuenta</h1>
+    <body>
+        @yield('content')
+        <div class="min-h-screen bg-blue-500 flex justify-center items-center">
+            <div
+                class="absolute w-60 h-60 rounded-xl bg-naranja -top-5 -left-16 z-0 transform rotate-45 hidden md:block">
             </div>
-            @yield('form')
+            <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
+                <div>
+                    <h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Ingresa a tu cuenta</h1>
+                </div>
+                @yield('form')
+            </div>
+            <div class="w-40 h-40 absolute bg-naranja rounded-full top-0 right-12 hidden md:block"></div>
+            <div
+                class="w-20 h-40 absolute bg-naranja rounded-full bottom-20 left-10 transform rotate-45 hidden md:block">
+            </div>
         </div>
-        <div class="w-40 h-40 absolute bg-naranja rounded-full top-0 right-12 hidden md:block"></div>
-        <div
-            class="w-20 h-40 absolute bg-naranja rounded-full bottom-20 left-10 transform rotate-45 hidden md:block">
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    </body>
 
 
 
