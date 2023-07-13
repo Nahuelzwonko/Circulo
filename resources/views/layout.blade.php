@@ -9,13 +9,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     
     @vite('resources/css/app.css')
-
+    <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     @yield('content')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <script>
         var swiper = new Swiper('.swiper', {
             slidesPerView: 'auto',
