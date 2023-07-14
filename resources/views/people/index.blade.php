@@ -2,7 +2,7 @@
 @section('title', 'Panel de control | Circulo')
 @include('admin.include.nav')
 @section('content')
-    <div class="p-4 sm:ml-64 ">
+    
         <div class="py-12">
             <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
                 <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">profesionales asociados</h1>
@@ -177,7 +177,7 @@
                 </tbody>
             </table>
         </div>
-    </div>
+   
     
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>
 @endsection
