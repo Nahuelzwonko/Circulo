@@ -36,6 +36,8 @@
                         <div class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
                             @yield('form')
                         </div>
+
+
                     </div>
                 </div>
             </div>
