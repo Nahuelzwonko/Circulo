@@ -50,7 +50,6 @@ Route::middleware(['auth', 'role:user'])->group(function () {
         $username = auth()->user()->name;
         return view('user_home', compact('username'));
     })->name('user.home');
-
     Route::get('/user/tarjeta', [TarjetaController::class, 'Tarjeta'])->name('tarjeta');
     Route::get('/user/getevent', [FullCalendarController::class, 'getEvent'])->name('getevent');
     Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
@@ -63,33 +62,17 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/evaluacion-kinesica/{id}/edit', [EvaluacionKinesicaController::class, 'edit'])->name('evaluacion-kinesica.edit');
     Route::patch('/evaluacion-kinesica/{id}', [EvaluacionKinesicaController::class, 'update'])->name('evaluacion-kinesica.update');
     Route::get('/evaluacion-kinesica/{id}/descargar', function ($id) {
-        // Obtener la evaluación kinesica por ID
         $evaluacion = EvaluacionKinesica::findOrFail($id);
-
-        // Crear una instancia de Dompdf
         $dompdf = new Dompdf();
-
-        // Renderizar la vista 'pdf.ficha_kinesica' y pasar los datos de la evaluación
         $html = view('pdf.ficha_kinesica', compact('evaluacion'))->render();
-
-        // Cargar el contenido HTML en Dompdf
         $dompdf->loadHtml($html);
-
-        // Renderizar el PDF
         $dompdf->render();
-
-        // Obtener el contenido del PDF como una cadena de bytes
         $output = $dompdf->output();
-
-        // Crear una respuesta para descargar el archivo PDF
         $response = Response::make($output, 200);
         $response->header('Content-Type', 'application/pdf');
         $response->header('Content-Disposition', 'attachment; filename="' . $evaluacion->nombre . ' Ficha Kinesica.pdf"');
-
-
         return $response;
     })->name('evaluacion-kinesica.descargar');
-
 });
 
 // Rutas privadas para administrador
