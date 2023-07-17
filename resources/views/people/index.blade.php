@@ -130,28 +130,28 @@
             <table class="w-[80%] text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr class="font-Poppins uppercase font-bold text-gray-700">
-                        <th class=" border-b-2 border-gray-200 text-center">Nombre</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Email</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Domicilio</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Localidad</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Teléfono</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Especialidad</th>
-                        <th class=" border-b-2 border-gray-200 text-center">Atencion domiciliaria</th>
+                        <th class=" border-gray-200 text-center">Nombre</th>
+                        <th class=" border-gray-200 text-center">Email</th>
+                        <th class=" border-gray-200 text-center">Domicilio</th>
+                        <th class=" border-gray-200 text-center">Localidad</th>
+                        <th class=" border-gray-200 text-center">Teléfono</th>
+                        <th class=" border-gray-200 text-center">Especialidad</th>
+                        <th class=" border-gray-200 text-center">Atencion domiciliaria</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($people as $person)
                         <tr
-                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-center">
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->nombre }}</td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->email }}</td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->domicilio }}</td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->localidad }}</td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->telefono }}</td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200">{{ $person->especialidad }}
+                            class="bg-white border-b  text-center">
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->nombre }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->email }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->domicilio }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->localidad }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->telefono }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->especialidad }}
                             </td>
-                            <td class="px-3 py-3 whitespace-nowrap border-b border-gray-200 tex">{{ $person->at }}</td>
+                            <td class="px-3 py-3 border-b border-gray-200 tex">{{ $person->at }}</td>
                             <td>
                                 <form action="{{ route('people.destroy', $person->id) }}" method="POST"
                                     onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
