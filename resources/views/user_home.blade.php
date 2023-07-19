@@ -23,10 +23,8 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-                <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Herramientas y recursos
                     diseñados para facilitar tu experiencia</h1>
@@ -38,7 +36,7 @@
                     <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                 </div>
             </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div class="flex sm:flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
                         class=" inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -64,7 +62,6 @@
                         <p class="leading-relaxed text-base">El Consultorio Virtual te permite atender y dar terapia a tus
                             pacientes de forma remota, desde la comodidad de tu propio espacio. Realiza consultas y sesiones
                             de rehabilitación en línea, brindando seguimiento efectivo a tus pacientes.</p>
-
                     </div>
                 </div>
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -83,7 +80,7 @@
                 </div>
             </div>
         </div>
-          <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
             <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036">
@@ -109,6 +106,6 @@
         </div>
     </section>
 
-   
+
     @include('users.include.footer')
 @endsection
