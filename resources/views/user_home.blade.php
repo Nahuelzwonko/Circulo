@@ -27,47 +27,63 @@
 
         </div>
     </section>
+
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap w-full mb-20">
-                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Herramientas y recursos
-                        diseñados para facilitar tu experiencia</h1>
-                    <div class="h-1 w-20 bg-indigo-500 rounded"></div>
-                </div>
-                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Nuestro objetivo es brindarte un entorno digital
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Herramientas y recursos
+                    diseñados para facilitar tu experiencia</h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Nuestro objetivo es brindarte
+                    un entorno digital
                     moderno y accesible, donde puedas acceder a información relevante, participar en eventos y
                     capacitaciones, y conectarte con colegas de la industria.</p>
+                <div class="flex mt-6 justify-center">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
             </div>
-            <div class="flex flex-wrap justify-center -m-4">
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="{{asset('storage/card/tarjeta.png')}}" alt="content">
-                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Nuevo</h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="{{route('tarjeta')}}">KineClub Digital</a> </h2>
-                        <p class="leading-relaxed text-base">Nueva trajeta Kine Club digital. Con esta tarjeta, podrás disfrutar de una experiencia única y aprovechar al máximo tu membresía en el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza..</p>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        <img class=" rounded w-full object-cover object-center mb-6"
+                            src="{{ asset('storage/card/tarjeta.png') }}" alt="content">
                     </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="{{asset('storage/card/calendar.png')}}" alt="content">
-                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Nuevo</h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="{{route('getevent')}}">Agenda Digital</a></h2>
-                        <p class="leading-relaxed text-base">Descubre nuestra Agenda Digital, una herramienta innovadora para organizar tus actividades y citas de manera eficiente. Programa y gestiona tus horarios de atención, con recordatorios para citas y eventos importantes. </p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="{{asset('storage/card/consultorio.png')}}" alt="content">
-                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Nuevo</h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Consultorio virtual</h2>
-                        <p class="leading-relaxed text-base">El Consultorio Virtual te permite atender y dar terapia a tus pacientes de forma remota, desde la comodidad de tu propio espacio. Realiza consultas y sesiones de rehabilitación en línea, brindando seguimiento efectivo a tus pacientes.</p>
-                    </div>
-                </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">KineClub Digital</h2>
+                        <p class="leading-relaxed text-base">Nueva trajeta Kine Club digital. Con esta tarjeta, podrás
+                            disfrutar de una experiencia única y aprovechar al máximo tu membresía en el Círculo de
+                            Kinesiólogos y Fisioterapeutas de Mendoza..</p>
 
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        <img class=" rounded w-full object-cover object-center mb-6"
+                            src="{{ asset('storage/card/consultorio.png') }}" alt="content">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Consultorio virtual</h2>
+                        <p class="leading-relaxed text-base">El Consultorio Virtual te permite atender y dar terapia a tus
+                            pacientes de forma remota, desde la comodidad de tu propio espacio. Realiza consultas y sesiones
+                            de rehabilitación en línea, brindando seguimiento efectivo a tus pacientes.</p>
+
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        <img class=" rounded w-full object-cover object-center mb-6"
+                            src="{{ asset('storage/card/calendar.png') }}" alt="content">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Agenda Digital</h2>
+                        <p class="leading-relaxed text-base">Descubre nuestra Agenda Digital, una herramienta innovadora
+                            para organizar tus actividades y citas de manera eficiente. Programa y gestiona tus horarios de
+                            atención, con recordatorios para citas y eventos importantes.</p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -87,14 +103,15 @@
                     Una vez más, te damos la bienvenida al Círculo de Kinesiólogos y Fisioterapeutas de Mendoza, donde la
                     pasión por la kinesiología se encuentra con el compromiso de mejorar la calidad de vida. ¡Nos
                     enorgullece tenerte como parte de nuestra comunidad en esta nueva era digital! <br>
-                    <span class="font-bold">¡Bienvenido {{$username}} y que disfrutes de esta nueva experiencia!</span>
-                    
-                    </p>
+                    <span class="font-bold">¡Bienvenido {{ $username }} y que disfrutes de esta nueva
+                        experiencia!</span>
+
+                </p>
                 <span class="inline-block h-1 w-10 rounded bg-purple-500 mt-8 mb-6"></span>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">CKFM</h2>
                 <p class="text-gray-500"> Presidente Pini Maria Laura</p>
             </div>
         </div>
     </section>
-@include('users.include.footer')
+    @include('users.include.footer')
 @endsection
