@@ -20,7 +20,7 @@ use App\Http\Controllers\TarjetaController;
 use App\Http\Controllers\EvaluacionKinesicaController;
 use App\Models\EvaluacionKinesica;
 
-use Dompdf\Dompdf;
+
 use Illuminate\Support\Facades\Response;
 use App\Models\Post;
 // Rutas públicas
@@ -56,23 +56,19 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
     Route::delete('/user/destroy/{id}', [FullCalendarController::class, 'destroy'])->name('destroy');
     Route::get('/user/consultorio', [ConsultorioController::class, 'Consultorio'])->name('consultorio');
-    Route::get('/user/ficha-kinesica', [ConsultorioController::class, 'mostrarFormulario'])->name('ficha-kinesica');
-    Route::post('/evaluacion-kinesica', [EvaluacionKinesicaController::class, 'store'])->name('evaluacion-kinesica.store');
-    Route::get('/evaluacion-kinesica/lista', [EvaluacionKinesicaController::class, 'lista'])->name('evaluacion-kinesica.lista');
-    Route::get('/evaluacion-kinesica/{id}/edit', [EvaluacionKinesicaController::class, 'edit'])->name('evaluacion-kinesica.edit');
-    Route::patch('/evaluacion-kinesica/{id}', [EvaluacionKinesicaController::class, 'update'])->name('evaluacion-kinesica.update');
-    Route::get('/evaluacion-kinesica/{id}/descargar', function ($id) {
-        $evaluacion = EvaluacionKinesica::findOrFail($id);
-        $dompdf = new Dompdf();
-        $html = view('pdf.ficha_kinesica', compact('evaluacion'))->render();
-        $dompdf->loadHtml($html);
-        $dompdf->render();
-        $output = $dompdf->output();
-        $response = Response::make($output, 200);
-        $response->header('Content-Type', 'application/pdf');
-        $response->header('Content-Disposition', 'attachment; filename="' . $evaluacion->nombre . ' Ficha Kinesica.pdf"');
-        return $response;
-    })->name('evaluacion-kinesica.descargar');
+    Route::get('/user/ficha_kinesica', [EvaluacionKinesicaController::class, 'create'])->name('ficha-kinesica');
+    Route::post('/user/ficha_kinesica', [EvaluacionKinesicaController::class, 'store'])->name('evaluacion-kinesica.store');
+    Route::get('/mostrar-tabla-datos', [EvaluacionKinesicaController::class, 'mostrarTablaDatos'])->name('mostrar.tabla.datos');
+    Route::get('/mostrar-formularios', [EvaluacionKinesicaController::class, 'mostrarFormularios'])->name('mostrar_formularios');
+    Route::get('/formulario/{id}/edit', [EvaluacionKinesicaController::class, 'edit'])->name('formulario.edit');
+    Route::put('/formulario/{id}', [EvaluacionKinesicaController::class, 'update'])->name('formulario.update')->middleware('web');
+    Route::delete('/formulario/{id}', [EvaluacionKinesicaController::class, 'destroy'])->name('formulario.destroy');
+
+    Route::get('/formulario/{id}/pdf', [EvaluacionKinesicaController::class, 'generarPDF'])->name('formulario.pdf');
+
+
+
+
 });
 
 // Rutas privadas para administrador

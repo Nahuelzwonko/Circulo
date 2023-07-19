@@ -12,8 +12,5 @@ class ConsultorioController extends Controller
        
         return view('consultorio');
     }
-    public function mostrarFormulario()
-    {
-        return view('ficha_kinesica');
-    }
+
 }

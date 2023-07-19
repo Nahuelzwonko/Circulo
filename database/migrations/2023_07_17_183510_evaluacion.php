@@ -4,16 +4,15 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEvaluacionKinesicaTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('evaluacion_kinesica', function (Blueprint $table) {
+        Schema::create('evaluacion', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
             $table->string('nombre_profesional');
             $table->string('nombre_paciente');
             $table->integer('edad');
@@ -33,8 +32,6 @@ class CreateEvaluacionKinesicaTable extends Migration
             $table->text('plan_tratamiento');
             $table->text('objetivos_tratamiento');
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -43,6 +40,6 @@ class CreateEvaluacionKinesicaTable extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('evaluacion_kinesica');
+        Schema::dropIfExists('evaluacion');
     }
-}
+};

@@ -49,4 +49,8 @@ class User extends Authenticatable implements LaratrustUser
     {
         return $this->hasMany(Booking::class);
     }
+    public function formularios()
+    {
+        return $this->hasMany(EvaluacionKinesica::class);
+    }
 }
