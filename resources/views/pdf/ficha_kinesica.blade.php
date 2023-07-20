@@ -62,7 +62,7 @@
 
 <body class="bg-gray-100">
     <h1>Ficha Médica</h1>
-    <p><strong>fecha</strong>{{$formulario->created_at}}</p>
+    <p><strong>Fecha y Hora de Ingreso: </strong>{{$formulario->created_at}}</p>
     <p><strong>Nombre del profesional:</strong> {{ $formulario->nombre_profesional }}</p>
     <p><strong>Nombre del paciente:</strong> {{ $formulario->nombre_paciente }}</p>
     <p><strong>Edad:</strong> {{ $formulario->edad }}</p>
