@@ -44,7 +44,7 @@
                                         <form action="{{ route('formulario.destroy', $formulario->id) }}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-red-600 font-bold">Eliminar
+                                            <button type="submit" class="text-red-600 font-bold border border-red-600 focus:ring-4 text-sm px-5 py-2.5 mr-2 mb-2 rounded-lg">Eliminar
                                             </button>
                                         </form>
                                     </div>
