@@ -89,7 +89,7 @@
                     <a href="{{route('posts.index')}}"
                         class="relative flex flex-row items-center h-11  text-gray-600 hover:text-gray-800 border-l-2 border-transparent hover:border-indigo-500 pr-6 transition-all hover:bg-gray-300 hover:rounded-r-3xl duration-500 hover:pl-4">
                         <span class="inline-flex justify-center items-center ml-4"></span>
-                        <span class="ml-2 text-lg tracking-wide truncate font-light font-light">Agregar Noticia</span>
+                        <span class="ml-2 text-lg tracking-wide truncate font-light">Agregar Noticia</span>
                     </a>
                 </li>
             </ul> 
@@ -196,7 +196,7 @@
                 <a href="{{ route('posts.index') }}"
                     class="relative flex flex-row items-center h-11  text-gray-600 hover:text-gray-800 border-l-2 border-transparent hover:border-indigo-500 pr-6 transition-all hover:bg-gray-300 hover:rounded-r-3xl duration-500 hover:pl-4">
                     <span class="inline-flex justify-center items-center ml-4"></span>
-                    <span class="ml-2 text-lg tracking-wide truncate font-light font-light">Agregar Noticia</span>
+                    <span class="ml-2 text-lg tracking-wide truncate font-light">Agregar Noticia</span>
                 </a>
             </li>
         </ul>
