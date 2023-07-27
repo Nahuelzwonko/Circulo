@@ -32,12 +32,10 @@
                     </div>
                     <!-- Col -->
                     <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
-                        <h3 class="pt-4 text-2xl text-center">Sign up</h3>
+                        <h3 class="pt-4 text-2xl text-center">Ingresar</h3>
                         <div class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
                             @yield('form')
                         </div>
-
-
                     </div>
                 </div>
             </div>
