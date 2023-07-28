@@ -74,51 +74,53 @@
             </div>
         </div>
     </div>
-    <div class="mt-3 relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
-                    <th scope="col"
-                        class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
-                        Nombre</th>
-                    <th scope="col"
-                        class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
-                        Descripción</th>
-                    <th scope="col"
-                        class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
-                        Imágen</th>
-
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-600">
-                @foreach ($kines as $kine)
-                    <tr class="border-b pb-8">
-                        <td class="px-2 py-2 whitespace-nowrap text-center uppercase">{{ $kine->nombre }}</td>
-                        <td class="px-2 py-2 whitespace-nowrap text-center ">{{ Str::limit($kine->descripcion, 30) }}</td>
-                        <td class="px-2 py-2 whitespace-nowrap text-center ">
-                            <img src="{{ Storage::url($kine->foto) }}" width="100px" height="100px" alt="imagen" />
-                        </td>
-                        <td class="px-2 py-2 whitespace-nowrap text-center ">
-                            <form action="{{ route('kine.destroy', $kine) }}" method="POST"
-                                onsubmit="return confirm('¿Estás seguro de eliminar esta empresa?')"
-                                class="flex flex-col-reverse gap-4 w-[40%] mx-auto">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit"
-                                    class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</button>
-                                <a href="{{ route('kine.edit', $kine) }}"
-                                    class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
-                            </form>
-                        </td>
+    <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col"
+                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                            Nombre</th>
+                        <th scope="col"
+                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                            Descripción</th>
+                        <th scope="col"
+                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                            Imágen</th>
 
                     </tr>
-                @endforeach
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-600">
+                    @foreach ($kines as $kine)
+                        <tr class="border-b pb-4">
+                            <td class="px-2 py-2 whitespace-nowrap text-center uppercase">{{ $kine->nombre }}</td>
+                            <td class="px-2 py-2 whitespace-nowrap text-center ">{{ Str::limit($kine->descripcion, 30) }}
+                            </td>
+                            <td class="px-2 py-2 whitespace-nowrap text-center ">
+                                <img src="{{ Storage::url($kine->foto) }}" width="100px" height="100px" alt="imagen" />
+                            </td>
+                            <td class="px-2 py-2 whitespace-nowrap text-center ">
+                                <form action="{{ route('kine.destroy', $kine) }}" method="POST"
+                                    onsubmit="return confirm('¿Estás seguro de eliminar esta empresa?')"
+                                    class="flex flex-col-reverse gap-4 w-[40%] mx-auto">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit"
+                                        class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</button>
+                                    <a href="{{ route('kine.edit', $kine) }}"
+                                        class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
+                                </form>
+                            </td>
+
+                        </tr>
+                    @endforeach
 
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
-
 
 
     <script src="https://kit.fontawesome.com/35eba4cb11.js" crossorigin="anonymous"></script>

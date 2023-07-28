@@ -19,36 +19,40 @@
                     placeholder="Search for users">
             </div>
         </div>
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
 
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        Name
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Position
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Status
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Action
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @if ($person)
-                    <tr>
-                        <td>{{ $person->nombre }}</td>
-                    </tr>
-                @else
-                    <tr>
-                        <td colspan="4">No se encontraron datos de la persona.</td>
-                    </tr>
-                @endif
-            </tbody>
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Position
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Status
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if ($person)
+                            <tr>
+                                <td>{{ $person->nombre }}</td>
+                            </tr>
+                        @else
+                            <tr>
+                                <td colspan="4">No se encontraron datos de la persona.</td>
+                            </tr>
+                        @endif
+                    </tbody>
 
-        </table>
+                </table>
+            </div>
+        </div>
     </div>
 </section>

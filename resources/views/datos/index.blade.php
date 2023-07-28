@@ -36,7 +36,7 @@
                             <div class="field">
                                 <label for="nombre"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre
-                                    </label>
+                                </label>
                                 <div class="control">
                                     <input type="text" name="nombre" required
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
@@ -79,8 +79,8 @@
         </div>
     </div>
     {{-- tabla --}}
-    <div class="w-full mx-auto">
-        <div class=" overflow-x-auto">
+    <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+        <div class="overflow-x-auto">
             <table class="w-full text-xl text-center text-black dark:text-gray-300">
                 <thead class="text-xl font-Poppins text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
@@ -92,7 +92,7 @@
                         </th>
                         <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
                             Descripción</th>
-                        
+
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y ">
@@ -107,15 +107,17 @@
                                 <form action="{{ route('datos.destroy', $dato->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    
+
                                     <button class=" text-blue-600 py-2 px-4">
-                                        <a href="{{ route('datos.edit', $dato->id) }}" class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
+                                        <a href="{{ route('datos.edit', $dato->id) }}"
+                                            class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
                                     </button>
-                                    <button type="submit"><a class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</a></button>
+                                    <button type="submit"><a
+                                            class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</a></button>
                                 </form>
                             </td>
-                            
-                           
+
+
                         </tr>
                     @endforeach
                 </tbody>
