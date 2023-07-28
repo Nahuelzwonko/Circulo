@@ -96,7 +96,7 @@
                         <td class="px-2 py-2 whitespace-nowrap text-center uppercase">{{ $kine->nombre }}</td>
                         <td class="px-2 py-2 whitespace-nowrap text-center ">{{ Str::limit($kine->descripcion, 30) }}</td>
                         <td class="px-2 py-2 whitespace-nowrap text-center ">
-                            <img src="{{ Storage::url($kine->foto) }}" class="w-[95px]" alt="imagen" />
+                            <img src="{{ Storage::url($kine->foto) }}" width="50px" height="50px" alt="imagen" />
                         </td>
                         <td class="px-2 py-2 whitespace-nowrap text-center ">
                             <form action="{{ route('kine.destroy', $kine) }}" method="POST"
