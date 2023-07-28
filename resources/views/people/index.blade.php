@@ -174,7 +174,7 @@
 
     </div> --}}
     <div class="flex w-full justify-center"> 
-        <div class="bg-white w-80 flex justify-center dark:bg-gray-900 px-4 md:px-10 pb-5">
+        <div class="bg-white w-90 flex justify-center dark:bg-gray-900 px-4 md:px-10 pb-5">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <tbody>
                         @foreach ($people as $person)

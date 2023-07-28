@@ -5,7 +5,7 @@
     <div class="p-8 mt-14 flex justify-center items-center">
         <div class="card">
             <div class="card__front card__part">
-                <div class="w-full flex justify-end mt-[50%]">
+                <div class="w-full flex justify-end font-bold mt-[8rem]">
                     <div class="card__space-75">
                         <span class="card__label"></span>
                         <div class="flex w-full justify-end ">
