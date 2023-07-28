@@ -2,7 +2,7 @@
     <div class="">
         <button type="button" data-dial-toggle="speed-dial-menu-text-inside-button-square"
             aria-controls="speed-dial-menu-text-inside-button-square" aria-expanded="false"
-            class="flex items-center mb-5 justify-center  text-white bg-[#25d366] rounded-full w-14 h-14  dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+            class="flex items-center mb-5 justify-center  text-white  bg-green-500 rounded-full w-14 h-14  dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
             <a href="https://api.whatsapp.com/send?phone=2615340298&text=Hola%2C+me+comunico+desde+mi+perfil+web">
                 <svg class="w-10 h-10  dark:text-white" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
