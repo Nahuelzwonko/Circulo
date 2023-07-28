@@ -125,18 +125,18 @@
             </div>
         </div>
     </div>
-    <div class="relative shadow-md sm:rounded-lg z-[-10]">
+    {{-- <div class="relative shadow-md sm:rounded-lg ">
         <div class="w-full flex justify-center">
-            <table class="w-[80%] text-sm text-left text-gray-500 dark:text-gray-400">
+            <table class=" text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr class="font-Poppins uppercase font-bold text-gray-700">
-                        <th class=" border-gray-200 text-center">Nombre</th>
-                        <th class=" border-gray-200 text-center">Email</th>
-                        <th class=" border-gray-200 text-center">Domicilio</th>
-                        <th class=" border-gray-200 text-center">Localidad</th>
-                        <th class=" border-gray-200 text-center">Teléfono</th>
-                        <th class=" border-gray-200 text-center">Especialidad</th>
-                        <th class=" border-gray-200 text-center">Atencion domiciliaria</th>
+                        <th class=" text-center">Nombre</th>
+                        <th class=" text-center">Email</th>
+                        <th class=" text-center">Domicilio</th>
+                        <th class=" text-center">Localidad</th>
+                        <th class=" text-center">Teléfono</th>
+                        <th class=" text-center">Especialidad</th>
+                        <th class=" text-center">Atencion domiciliaria</th>
 
                     </tr>
                 </thead>
@@ -172,6 +172,62 @@
             </table>
         </div>
 
+    </div> --}}
+    <div class="flex w-full justify-center">
+        <div class="xl:w-3/4 2xl:w-4/5 w-full">
+
+            <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+                <div class="overflow-x-auto">
+                    <table class="w-full whitespace-nowrap">
+                        <tbody>
+                            @foreach ($people as $person)
+                                <tr tabindex="0"
+                                    class="focus:outline-none text-sm leading-none text-gray-600 dark:text-gray-200   h-16">
+                                    <td class="w-1/2">
+                                        <div class="flex items-center">
+
+                                            <div class="pl-2">
+                                                <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">
+                                                    {{ $person->nombre }}</p>
+                                                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200   mt-2">
+                                                    {{ $person->email }}</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pl-16">
+                                        <p>{{ $person->domicilio }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="pl-16">{{ $person->localidad }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="pl-16">{{ $person->telefono }}</p>
+                                    </td>
+                                    <td>
+                                        <p class="pl-16">{{ $person->especialidad }}</p>
+                                    </td>
+                                    <td>
+                                        <div class="pl-16">
+                                            <form action="{{ route('people.destroy', $person->id) }}" method="POST"
+                                                onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit"
+                                                    class="font-medium text-red-600 dark:text-red-500 hover:underline">Eliminar</button>
+                                            </form>
+                                            <a href="{{ route('people.edit', $person->id) }}"
+                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            @endforeach
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
 
