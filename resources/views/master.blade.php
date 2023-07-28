@@ -25,7 +25,7 @@
     <header class="h-[100vh] mb-[40px]">
         <div class="lg:h-[750px] sm:h-[745px] main-container">
             @include('include.nav')
-            <div class="flex flex-row justify-center items-center mt-32 lg:mt-44 gap-[25rem] lg:gap-16">
+            <div class="flex flex-row justify-center items-center mt-[15rem] lg:mt-[10rem] gap-[25rem] lg:gap-16">
                 <div
                     class="flex items-center justify-center text-center flex-col  sm:items-center lg:w-3/4 sm:w-full sm:h-28  mt-15">
                     <h1

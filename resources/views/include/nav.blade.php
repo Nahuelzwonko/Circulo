@@ -31,7 +31,7 @@
                 </div>
                 @guest
                     <button
-                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 rounded-lg font-extralight hover:bg-blue-600">
+                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
                         <a class="font-Poppins" href="{{ route('login') }}">Ingresar</a>
                     </button>
                 @endguest
@@ -51,29 +51,29 @@
         </div>
     </div>
     <div
-        class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4 border-white-600 border-t-[0.5px] lg:border-none  mt-0 invisible lg:visible h-0 lg:h-auto">
+        class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4  lg:border-none  mt-0 invisible lg:visible h-0 lg:h-auto">
         <div class="flex lg:justify-end md:justify-center">
             <div id="items"
-                class="flex items-center lg:border-white-600 lg:border-t-[0.5px] 2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
+                class="flex items-center  2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
                 <a href="/"
-                    class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Inicio</a>
-                <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
+                    class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Inicio</a>
+                <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a href="{{ route('quienes.index') }}"
-                    class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Quiénes
+                    class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Quiénes
                     somos</a>
-                <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
+                <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('kineClub.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">KineClub</a>
-                <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
+                    href="{{ route('kineClub.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">KineClub</a>
+                <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('allPost') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Noticias</a>
-                <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
+                    href="{{ route('allPost') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Noticias</a>
+                <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('obras.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline">Obras
+                    href="{{ route('obras.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Obras
                     Sociales y Prepagas</a>
-                <div class="h-[60%] w-[1px] bg-gray-400 mt-3 invisible lg:visible"></div>
+                <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <div
-                    class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 hover:underline  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                    class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2   bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm  mr-2 mb-2">
                     <a href="{{ route('profesionales.index') }}"class="">Profesionales
                         Asociados</a>
                 </div>
@@ -145,7 +145,7 @@
                 @guest
                     <li>
                         <a href="{{ route('login') }}"
-                            class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Ingresar</a>
+                            class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">Ingresar</a>
                     </li>
                 @endguest
 
