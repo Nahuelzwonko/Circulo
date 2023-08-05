@@ -109,6 +109,48 @@
                             class="text-[#F28F1C]">CLUB</span></span>
                 </a>
             </li>
+            {{--  --}}
+            <li>
+                <button type="button"
+                    class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown" data-collapse-toggle="dropdown">
+                    <svg class=" flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M19 0H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM2 6v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H2Zm11 3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0h2a1 1 0 0 1 2 0v1Z" />
+                    </svg>
+                    <span class=" ml-2 whitespace-nowrap">Mis archivos</span>
+                    <span
+                        class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-white bg-blue-500 rounded-full ">New</span>
+                </button>
+                <ul id="dropdown" class="hidden py-2 space-y-2">
+                    <li>
+                        <a href="{{ route('user-files.create') }}"
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Cargar
+                            archivo</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('user-files.show', ['id' => auth()->id()]) }}"
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Ver
+                            mis archivos</a>
+                    </li>
+                </ul>
+            </li>
+            {{-- <li>
+                <a href="{{ route('user-files.create') }}"
+                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class=" flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M19 0H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM2 6v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H2Zm11 3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0h2a1 1 0 0 1 2 0v1Z" />
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Mis archivos</span>
+                    <span
+                        class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-white bg-blue-500 rounded-full ">New</span>
+                </a>
+            </li> --}}
             <li>
                 <a href="https://octus.com.ar/login"
                     class="flex items-center  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">

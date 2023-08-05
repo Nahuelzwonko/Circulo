@@ -16,8 +16,10 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\DatosController;
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\KineController;
+use App\Http\Controllers\UserFileController;
 use App\Http\Controllers\TarjetaController;
 use App\Http\Controllers\EvaluacionKinesicaController;
+use App\Http\Controllers\AdminController;
 use App\Models\EvaluacionKinesica;
 
 
@@ -63,11 +65,12 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/formulario/{id}/edit', [EvaluacionKinesicaController::class, 'edit'])->name('formulario.edit');
     Route::put('/formulario/{id}', [EvaluacionKinesicaController::class, 'update'])->name('formulario.update')->middleware('web');
     Route::delete('/formulario/{id}', [EvaluacionKinesicaController::class, 'destroy'])->name('formulario.destroy');
-
     Route::get('/formulario/{id}/pdf', [EvaluacionKinesicaController::class, 'generarPDF'])->name('formulario.pdf');
-
-
-
+    Route::get('carga-archivos', [UserFileController::class, 'createForm'])->name('user-files.create');
+    Route::post('/cargar-archivos', [UserFileController::class, 'store'])->name('user-files.store');
+    Route::get('/ver-archivos/{id}', [UserFileController::class, 'show'])->name('user-files.show');
+    Route::get('/editar-archivos/{id}', [UserFileController::class, 'editForm'])->name('user-files.edit');
+    Route::put('/actualizar-archivos', [UserFileController::class, 'update'])->name('user-files.update');
 
 });
 
@@ -86,7 +89,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::put('/datos/{dato}', [DatosController::class, 'update'])->name('datos.update');
     //seccion de noticias
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/delete/{id}', [PostController::class, 'destroy'])->name('posts.delete');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
@@ -105,6 +107,12 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::delete('/kine/{kine}', [KineController::class, 'destroy'])->name('kine.destroy');
     Route::get('/kine/{kine}/edit', [KineController::class, 'edit'])->name('kine.edit');
     Route::put('/kine/{kine}', [KineController::class, 'update'])->name('kine.update');
+    //Datos de los usuarios
+    Route::get('/admin/user-files', [AdminController::class, 'userFiles'])->name('admin.user-files');
+    Route::get('/admin/download-all', [AdminController::class, 'downloadAll'])->name('admin.download-all');
+    Route::get('/admin/user-files/show/{id}', [AdminController::class, 'showUserFiles'])->name('admin.user-files.show');
+
+
 });
 
 
