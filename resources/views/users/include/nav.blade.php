@@ -15,7 +15,7 @@
 
     <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
         aria-controls="drawer-navigation"
-        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 ">
+        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700  ">
         <svg class="w-6 h-6  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
             viewBox="0 0 17 14">
             <path
@@ -44,7 +44,6 @@
     </button>
     <div class="py-4 overflow-y-auto">
         <ul class="space-y-2 font-medium">
-
             <li>
                 <a href="{{ route('user.home') }}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -58,7 +57,6 @@
                     <span class="ml-3">Inicio</span>
                 </a>
             </li>
-
             <li>
                 <a href="{{ route('getevent') }}"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
