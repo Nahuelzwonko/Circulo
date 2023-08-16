@@ -42,13 +42,13 @@
               
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class=" inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        class=" float inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-8 flex-shrink-0">
                         <img class=" rounded w-full object-cover object-center mb-6"
                             src="{{ asset('storage/card/tarjeta.png') }}" alt="content">
                     </div>
                     <div class="flex-grow">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">KineClub Digital</h2>
-                        <p class="leading-relaxed text-base">Nueva trajeta Kine Club digital. Con esta tarjeta, podrás
+                        <h2 class="text-gray-900 text-3xl title-font font-medium mb-8">KineClub Digital</h2>
+                        <p class="leading-relaxed text-xl text-justify">Nueva trajeta Kine Club digital. Con esta tarjeta, podrás
                             disfrutar de una experiencia única y aprovechar al máximo tu membresía en el Círculo de
                             Kinesiólogos y Fisioterapeutas de Mendoza..</p>
 
@@ -56,26 +56,26 @@
                 </div>
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class=" inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        class=" float inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-8 flex-shrink-0">
                         <img class=" rounded w-full object-cover object-center mb-6"
                             src="{{ asset('storage/card/consultorio.png') }}" alt="content">
                     </div>
                     <div class="flex-grow">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Consultorio virtual</h2>
-                        <p class="leading-relaxed text-base">El Consultorio Virtual te permite atender y dar terapia a tus
+                        <h2 class="text-gray-900 text-3xl title-font font-medium mb-8">Consultorio virtual</h2>
+                        <p class="leading-relaxed text-xl text-justify">El Consultorio Virtual te permite atender y dar terapia a tus
                             pacientes de forma remota, desde la comodidad de tu propio espacio. Realiza consultas y sesiones
                             de rehabilitación en línea, brindando seguimiento efectivo a tus pacientes.</p>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class=" inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                        class=" float inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-8 flex-shrink-0">
                         <img class=" rounded w-full object-cover object-center mb-6"
                             src="{{ asset('storage/card/calendar.png') }}" alt="content">
                     </div>
                     <div class="flex-grow">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Agenda Digital</h2>
-                        <p class="leading-relaxed text-base">Descubre nuestra Agenda Digital, una herramienta innovadora
+                        <h2 class="text-gray-900 text-3xl title-font font-medium mb-8">Agenda Digital</h2>
+                        <p class="leading-relaxed text-xl text-justify">Descubre nuestra Agenda Digital, una herramienta innovadora
                             para organizar tus actividades y citas de manera eficiente. Programa y gestiona tus horarios de
                             atención, con recordatorios para citas y eventos importantes.</p>
 
