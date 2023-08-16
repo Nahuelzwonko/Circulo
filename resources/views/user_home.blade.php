@@ -10,16 +10,17 @@
         </div>
         <div class="container px-5 py-24 mx-auto mt-20">
             <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Bienvenido {{ $username }}
-                </h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">¡Bienvenido(a) al nuevo sistema web del Círculo de
-                    Kinesiólogos y Fisioterapeutas de Mendoza! Aquí encontrarás herramientas y recursos para mejorar tu
-                    experiencia como miembro. Explora, conéctate y disfruta de esta nueva plataforma. ¡Te damos la
-                    bienvenida a nuestra comunidad en línea!</p>
+                <div class=" py-4 bg-slate-700 mb-8 rounded-3xl bg-gradient-to-l from-slate-50 via-indigo-500 to-slate-50">
+                    <h1 class="text-3xl md:text-6xl font-medium title-font text-white entrance">Bienvenido {{ $username }}</h1>
+                </div>
+                
+                <p class="text-3xl text-slate-700 font-medium mb-4 ">¡Bienvenido(a) al nuevo sistema web del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza!</p>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base lg:text-2xl"> Aquí encontrarás herramientas y recursos para mejorar tu
+                    experiencia como miembro. Explora, conéctate y disfruta de esta nueva plataforma.</p>
                 <div class="lg:mt-0 lg:flex-shrink-0">
                     <div class="mt-12 inline-flex">
                         <button type="button"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Seguir
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-xl px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Seguir
                             leyendo</button>
                     </div>
                 </div>
@@ -27,12 +28,12 @@
         </div>
         <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Herramientas y recursos
+                <h1 class="text-3xl lg:text-4xl lg:w-[80%] mx-auto font-medium title-font text-gray-900 mb-8">Herramientas y recursos
                     diseñados para facilitar tu experiencia</h1>
-                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Nuestro objetivo es brindarte
-                    un entorno digital
-                    moderno y accesible, donde puedas acceder a información relevante, participar en eventos y
-                    capacitaciones, y conectarte con colegas de la industria.</p>
+                <p class="text-base lg:text-2xl leading-relaxed w-[65%] mx-auto text-gray-500 mb-8">Te brindamos
+                    un entorno <span class="font-medium text-indigo-500 text-3xl">digital, moderno <span class="text-gray-500 text-2xl font-normal">y </span> accesible</span>, donde puedas acceder a información relevante, participar en eventos y
+                    capacitaciones, y conectarte con colegas de la industria.
+                </p>
                 <div class="flex mt-6 justify-center">
                     <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                 </div>
