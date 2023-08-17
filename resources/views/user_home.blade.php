@@ -10,7 +10,7 @@
         </div>
         <div class="container px-5 py-24 mx-auto mt-20">
             <div class="flex flex-col text-center w-full mb-12">
-                <div class=" py-4 bg-slate-700 mb-8 rounded-3xl bg-gradient-to-l from-slate-50 via-indigo-500 to-slate-50">
+                <div class=" py-4 bg-slate-700 mb-8 rounded-3xl bg-gradient-to-l from-slate-50 via-sky-500 to-slate-50">
                     <h1 class="text-3xl md:text-6xl font-medium title-font text-white entrance">Bienvenido {{ $username }}</h1>
                 </div>
                 
