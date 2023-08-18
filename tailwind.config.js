@@ -23,13 +23,18 @@ export default {
         //fuente secundaria
         Poppins:['Poppins', 'sans-serif'],
         //titulos
-        hammersmith:['Hammersmith One', 'sans-serif']
+        hammersmith:['Hammersmith One', 'sans-serif'],
+        monserrat:['Montserrat', 'sans-serif']
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
       backgroundImage:{
         'hero-bg': "url('/public/storage/fondo/hero-bg.svg')",
+        'dash-head': "url('/public/storage/png/dash-head.svg')",
+        'dash-head-resp': "url('/public/storage/png/dash-head-responsive.svg')",
+        'dash-bg': "url('/public/storage/png/dash-bg.png')",
+        'dash-bg-resp': "url('/public/storage/png/dash-bg-resp.svg')"
       },
       display: ['group-focus'],
       opacity: ['group-focus'],
