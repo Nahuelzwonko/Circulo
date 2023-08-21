@@ -53,10 +53,14 @@ Route::middleware(['auth', 'role:user'])->group(function () {
         return view('user_home', compact('username'));
     })->name('user.home');
     Route::get('/user/tarjeta', [TarjetaController::class, 'Tarjeta'])->name('tarjeta');
+    Route::post('/activar-tarjeta', [TarjetaController::class, 'activateCard'])->name('tarjeta.activate');
+
+    //rutas de fullCalendar
     Route::get('/user/getevent', [FullCalendarController::class, 'getEvent'])->name('getevent');
     Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
     Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
     Route::delete('/user/destroy/{id}', [FullCalendarController::class, 'destroy'])->name('destroy');
+    //end rutas fullCalendar
     Route::get('/user/consultorio', [ConsultorioController::class, 'Consultorio'])->name('consultorio');
     Route::get('/user/ficha_kinesica', [EvaluacionKinesicaController::class, 'create'])->name('ficha-kinesica');
     Route::post('/user/ficha_kinesica', [EvaluacionKinesicaController::class, 'store'])->name('evaluacion-kinesica.store');
@@ -71,7 +75,6 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/ver-archivos/{id}', [UserFileController::class, 'show'])->name('user-files.show');
     Route::get('/editar-archivos/{id}', [UserFileController::class, 'editForm'])->name('user-files.edit');
     Route::put('/actualizar-archivos', [UserFileController::class, 'update'])->name('user-files.update');
-
 });
 
 // Rutas privadas para administrador

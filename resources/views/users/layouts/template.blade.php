@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Circulo de Kinesiologos Mendoza')</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('storage/favicon/favicon.png') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
@@ -15,17 +16,13 @@
             margin-bottom: 30px;
             color: #162969;
         }
-
         .card {
             width: 320px;
             height: 190px;
             -webkit-perspective: 600px;
             -moz-perspective: 600px;
             perspective: 600px;
-
-
         }
-
         .card__part {
             box-shadow: 1px 1px #303030000;
             top: 0;
@@ -35,7 +32,6 @@
             display: inline-block;
             width: 320px;
             height: 190px;
-
             background-image: url({{ asset('storage/card/fondo.png') }});
             background-repeat: no-repeat;
             background-position: center;
@@ -51,40 +47,33 @@
             -webkit-backface-visibility: hidden;
             -moz-backface-visibility: hidden;
         }
-
         .card__front {
             padding: 18px;
             -webkit-transform: rotateY(0);
             -moz-transform: rotateY(0);
         }
-
         .card__back {
             padding: 18px 0;
             -webkit-transform: rotateY(-180deg);
             -moz-transform: rotateY(-180deg);
         }
-
         .card__black-line {
             margin-top: 5px;
             height: 38px;
             background-color: #303030;
         }
-
         .card__logo {
             height: 16px;
         }
-
         .card__front-logo {
             position: absolute;
             top: 18px;
             right: 18px;
         }
-
         .card__square {
             border-radius: 5px;
             height: 30px;
         }
-
         .card_numer {
             display: block;
             width: 100%;
@@ -96,24 +85,20 @@
             margin-bottom: 20px;
             margin-top: 20px;
         }
-
         .card__space-75 {
             width: 75%;
             float: left;
         }
-
         .card__space-25 {
             width: 25%;
             float: left;
         }
-
         .card__label {
             font-size: 10px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.8);
             letter-spacing: 1px;
         }
-
         .card__info {
             margin-bottom: 0;
             margin-top: 5px;
@@ -123,24 +108,20 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-
         .card__back-content {
             padding: 15px 15px 0;
         }
-
         .card__secret--last {
             color: #303030;
             text-align: right;
             margin: 0;
             font-size: 14px;
         }
-
         .card__secret {
             padding: 5px 12px;
             background-color: #fff;
             position: relative;
         }
-
         .card__secret:before {
             content: '';
             position: absolute;
@@ -151,28 +132,15 @@
             border-radius: 4px;
             background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
         }
-
         .card__back-logo {
             position: absolute;
             bottom: 15px;
             right: 15px;
         }
-
         .card__back-square {
             position: absolute;
             bottom: 15px;
             left: 15px;
-        }
-
-        .card:hover .card__front {
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-
-        }
-
-        .card:hover .card__back {
-            -webkit-transform: rotateY(0deg);
-            -moz-transform: rotateY(0deg);
         }
     </style>
 

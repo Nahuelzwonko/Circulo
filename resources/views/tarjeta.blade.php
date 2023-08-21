@@ -2,25 +2,8 @@
 @section('title', 'Bienvenido')
 @include('users.include.nav')
 @section('content')
-    <div class="p-8 mt-14 flex justify-center items-center">
-        <div class="card">
-            <div class="card__front card__part">
-                <div class="w-full flex justify-end font-bold mt-[8rem]">
-                    <div class="card__space-75">
-                        <span class="card__label"></span>
-                        <div class="flex w-full justify-end ">
-                            <p class="card__info">{{ $username }}</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card__space-25">
-                </div>
-            </div>
-            <div class="card__back card__part">
-            </div>
-        </div>
+    <div class="w-full flex justify-center mt-5 mb-10">
+        <img src="{{ asset('storage/logo/logoblack.svg') }}" alt="">
     </div>
     <article class="max-w-none format lg:format-lg format-red">
         <div class="w-full flex justify-center text-center">
@@ -35,6 +18,113 @@
             </div>
         </div>
     </article>
+    @if (session('tarjeta_activada'))
+        <div class="w-full flex text-center justify-center items-center">
+
+            <div id="alert-3"
+                class="w-80 flex items-center justify-center p-4 mb-4 text-green-800 rounded-lg bg-green-200 "
+                role="alert">
+                <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                </svg>
+                <span class="sr-only">Info</span>
+                <div class="ml-3 text-sm font-medium">
+                    Trajeta activada con exito
+                </div>
+                <button type="button"
+                    class="ml-auto -mx-1.5 -my-1.5  text-red-500 rounded-lg inline-flex items-center justify-center h-8 w-8 "
+                    data-dismiss-target="#alert-3" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    @endif
+    <div class="p-8 mt-14 flex justify-center items-center">
+
+        <div class="card">
+            <div class="card__front card__part">
+                <div class="w-full flex justify-end font-bold mt-[8rem]">
+                    <div class="card__space-75">
+                        <span class="card__label"></span>
+                        <div class="flex w-full justify-end -mb-1">
+                            @if ($user)
+                                <p class="card__info">{{ $user->nameTarjet }}</p>
+                            @endif
+                        </div>
+                        <div class="flex w-full justify-end ">
+                            @if ($user)
+                                <p class="card__info">{{ $user->dni }}</p>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="card__space-25">
+                </div>
+            </div>
+            <div class="card__back card__part">
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex items-center justify-center">
+        @if (!$user->nameTarjet || !$user->dni)
+            <button type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                class="text-white bg-blue-500 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2">
+                Activar mi tarjeta
+            </button>
+        @endif
+        <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative w-full max-w-md max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <button type="button"
+                        class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="authentication-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="px-6 py-6 lg:px-8">
+                        <h3 class="mb-4 text-xl text-center font-medium text-gray-900 dark:text-white">Activar mi KineClub
+                        </h3>
+                        <form class="space-y-6" action="{{ route('tarjeta.activate') }}" method="POST">
+                            @csrf
+                            <div>
+                                <label for="name"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre y
+                                    apellido*</label>
+                                <input type="name" name="name" id="name" placeholder="Nombre completo"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="number"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tu
+                                    DNI*</label>
+                                <input type="number" name="number" id="number" placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required>
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Activar
+                                tarjeta</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="flex-wrap items-center justify-center gap-8 text-center sm:flex mb-10">
         <div class="w-full px-4 py-4 mt-6 bg-blue-500 rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
@@ -108,7 +198,6 @@
             </button>
         </div>
     </div>
-
     <div class="text-white bg-blue-500 ">
         <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
             <h2 class="text-3xl font-extrabold  sm:text-4xl">
