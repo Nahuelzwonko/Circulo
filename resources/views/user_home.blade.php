@@ -67,36 +67,7 @@
     </section>
     <!-- End block -->
     <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
-            <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-amffa.svg') }}" alt="">
-                </a>
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-avalian.svg') }}" alt="">
-                </a>
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-opdea.svg') }}" alt="">
-                </a>
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-omint.svg') }}" alt="">
-                </a>
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-jerarquicos.svg') }}" alt="">
-                </a>
-                <a href="#" class="flex items-center lg:justify-center">
-                    <img class="h-30 hover:text-gray-900 dark:hover:text-white"
-                        src="{{ asset('storage/clients/logo-hope.svg') }}" alt="">
-                </a>
-            </div>
-        </div>
-    </section>
+
     <!-- End block -->
     <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
