@@ -5,8 +5,9 @@
             <div class="ml-4 lg:p-4 flex lg:w-[55%]">
                 <div class="flex flex-col items-center lg:gap-4 ">
                     <div class="w-full flex justify-start mt-8">
-                        <span class=" text-black">Posted on
-                            {{ \Carbon\Carbon::parse($posts->first()->created_at)->format('l, j F') }}</span>
+                        <span class=" text-black">Publicado el
+                            {{ \Carbon\Carbon::parse($posts->first()->created_at)->locale('es')->formatLocalized('%d de %B de %Y') }}</span>
+                            {{--  --}}
                     </div>
                     <div class="w-full flex justify-start">
                         <h2 class="text-lg lg:text-[30px] font-extrabold ">{{ $posts->first()->title }}</h2>
@@ -45,9 +46,9 @@
         @foreach ($posts->slice(1) as $post)
             <div class="bg-white lg:p-6">
                 <h2 class="text-xl font-bold">{{ $post->title }}</h2>
-                <img src="/storage/{{ $post->image_url }}" alt="Imagen de la noticia"
-                    class="mt-4 rounded-[20px]">
-                <span class=" text-black">{{ \Carbon\Carbon::parse($post->created_at)->format('l, j F') }}</span>
+                <img src="/storage/{{ $post->image_url }}" alt="Imagen de la noticia" class="mt-4 rounded-[20px]">
+                <span
+                    class=" text-black">{{ \Carbon\Carbon::parse($post->created_at)->locale('es')->formatLocalized('%d de %B de %Y') }}</span>
                 {{--  --}}
                 <p class="mt-2 text-gray-600  lg:block">{{ Str::limit($posts->first()->body, 150) }}</p>
                 <div class="w-full flex justify-start mt-5">

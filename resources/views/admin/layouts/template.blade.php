@@ -7,6 +7,8 @@
     <title>@yield('title', 'Circulo de Kinesiologos Mendoza')</title>
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/storage/favicon/favicon.png') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
 
     @vite('resources/css/app.css')
 
@@ -15,7 +17,7 @@
 <body>
     @include('admin.include.nav')
     @yield('content')
-<!--
+    <!--
   This example requires updating your template:
 
   ```
