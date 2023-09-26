@@ -53,4 +53,8 @@ class User extends Authenticatable implements LaratrustUser
     {
         return $this->hasMany(EvaluacionKinesica::class);
     }
+    public function eventos()
+    {
+        return $this->hasMany(Evento::class);
+    }
 }

@@ -20,6 +20,7 @@ use App\Http\Controllers\UserFileController;
 use App\Http\Controllers\TarjetaController;
 use App\Http\Controllers\EvaluacionKinesicaController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EventoController;
 use App\Models\EvaluacionKinesica;
 
 
@@ -56,10 +57,13 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::post('/activar-tarjeta', [TarjetaController::class, 'activateCard'])->name('tarjeta.activate');
 
     //rutas de fullCalendar
-    Route::get('/user/getevent', [FullCalendarController::class, 'getEvent'])->name('getevent');
-    Route::post('/user/storeevent', [FullCalendarController::class, 'store'])->name('storeevent');
-    Route::patch('/user/update/{id}', [FullCalendarController::class, 'update'])->name('update');
-    Route::delete('/user/destroy/{id}', [FullCalendarController::class, 'destroy'])->name('destroy');
+    Route::get('/user/getevent', [EventoController::class, 'index'])->name('getevent');
+    Route::post('/user/agregar', [EventoController::class, 'store'])->name('store');
+    Route::get('/user/editar/{id}', [EventoController::class, 'edit'])->name('edit');
+    Route::post('/user/editar/{id}', [EventoController::class, 'update'])->name('update');
+    Route::get('/user/success', [EventoController::class, 'success'])->name('success');
+    Route::get('/user/mostrar', [EventoController::class, 'show'])->name('show');
+    Route::delete('/user/eliminar/{id}', [EventoController::class, 'destroy'])->name('destroy');
     //end rutas fullCalendar
     Route::get('/user/consultorio', [ConsultorioController::class, 'Consultorio'])->name('consultorio');
     Route::get('/user/ficha_kinesica', [EvaluacionKinesicaController::class, 'create'])->name('ficha-kinesica');

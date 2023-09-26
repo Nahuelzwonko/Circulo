@@ -35,7 +35,7 @@
         }
     }
 </style>
-<div class="fixed right-6 bottom-6 group ">
+<div class="fixed right-6 bottom-6 group z-40">
     <button type="button" data-dial-toggle="speed-dial-menu-text-inside-button-square" style="background-color: #25d366 ;"
         aria-controls="speed-dial-menu-text-inside-button-square" aria-expanded="false"
         class="flex items-center mb-5 justify-center  text-white   rounded-full w-14 h-14  ">
@@ -101,7 +101,7 @@
                     </svg>
                     <span class="flex-1 ml-3 whitespace-nowrap">Agenda Virtual</span>
                     <span
-                        class="inline-flex items-center justify-center px-2 ml-1 text-sm font-medium text-white bg-yellow-300 rounded-full ">Soon</span>
+                        class="inline-flex items-center justify-center px-2 ml-1 text-sm font-medium text-white bg-blue-500 rounded-full ">New</span>
                 </a>
             </li>
             <li>
@@ -154,8 +154,8 @@
                             d="M19 0H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM2 6v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H2Zm11 3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0h2a1 1 0 0 1 2 0v1Z" />
                     </svg>
                     <span class=" ml-2 whitespace-nowrap">Mis archivos</span>
-                    <span
-                        class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-white bg-blue-500 rounded-full ">New</span>
+                    {{-- <span
+                        class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-white bg-blue-500 rounded-full ">New</span> --}}
                 </button>
                 <ul id="dropdown" class="hidden py-2 space-y-2">
                     <li>
