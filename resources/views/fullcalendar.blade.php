@@ -1,7 +1,7 @@
 @extends('users.layouts.agenda')
 @section('title', 'Bienvenido')
 <div class="z-40">
-@include('users.include.nav')
+    @include('users.include.nav')
 </div>
 
 @section('content')
@@ -36,7 +36,7 @@
                 <h1
                     class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     MI <span class="text-blue-600 dark:text-blue-500">AGENDA</span> VIRTUAL</h1>
-                
+
             </div>
             {{--  --}}
         </div>
@@ -111,7 +111,7 @@
                         <button type="button" id="btnGuardar"
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Guardar
                         </button>
-                        <button type="button" id="btnCerrar"
+                        <button type="button" id="btnCerrar" style="background-color: red;"
                             class="focus:outline-none text-white bg-red-700   font-medium rounded-lg text-sm px-5 py-2.5 mr-2"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
@@ -193,8 +193,8 @@
 
                 </div>
                 <div class="flex items-center justify-center p-6 ">
-                    <button type="button" id="btnEliminar"
-                        class="focus:outline-none text-white bg-red-700   font-medium rounded-lg text-sm px-5 py-2.5 mr-2  ">Eliminar</button>
+                    <button type="button" id="btnEliminar" style="background-color: red;"
+                        class="focus:outline-none text-white    font-medium rounded-lg text-sm px-5 py-2.5 mr-2  ">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -207,7 +207,8 @@
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-10">
-                <p class=" text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">La agenda permite a los usuarios
+                <p class=" text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">La agenda permite a los
+                    usuarios
                     ver, agregar, modificar y eliminar eventos de una manera intuitiva
                     y visual. Es una herramienta práctica para planificar y organizar actividades, ya sea para uso personal
                     o
