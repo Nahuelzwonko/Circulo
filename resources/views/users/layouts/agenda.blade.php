@@ -84,7 +84,7 @@
                 center: 'title',
                 right: 'dayGridMonth, listWeek'
             },
-            events: "http://localhost:8000/user/mostrar",
+            events: "https://kinesiologosmza.com/user/mostrar",
             dateClick: function(info) {
                 formulario.reset();
                 formulario.start.value = info.dateStr;
