@@ -8,10 +8,6 @@
 
 
 @section('content')
-    {{-- <div class="mt-5 lg:mt-20">
-        @include('kineClub.tarjeta')
-    </div> --}}
-
     <section class="text-gray-600 body-font overflow-hidden ">
         <div class="px-5 py-24 mx-auto">
             <div class="lg:w-4/5 mx-auto flex flex-wrap">
@@ -50,7 +46,7 @@
     <section class="w-full h-full flex justify-center items-center ">
         <div class="flex flex-col justify-center items-center ">
             <h1 class="text-black font-hammersmith font-bold text-3xl lg:text-[80px] mb-5">BENEFICIOS KINECLUB</h1>
-            <div class="grid gap-8  grid-cols-4 sm:grid-cols-2 p-4 md:p-2 xl:p-5">
+            <div class="grid gap-8  grid-cols-4  p-4 md:p-2 xl:p-5">
                 @foreach ($kines as $kine)
                     <div class="w-full flex justify-center p-5  mx-1  ">
                         <div class="relative group w-[200px] h-[200px] border bg-white rounded-xl shadow-xl">
