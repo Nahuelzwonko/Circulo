@@ -46,7 +46,7 @@
     <section class="w-full h-full flex justify-center items-center ">
         <div class="flex flex-col justify-center items-center ">
             <h1 class="text-black font-hammersmith font-bold text-3xl lg:text-[80px] mb-5">BENEFICIOS KINECLUB</h1>
-            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 sm:p-2 xl:p-5">
+            <div class="grid grid-cols-1 justify-center sm:grid-cols-2 lg:grid-cols-4 w-full mt-10 ">
                 @foreach ($kines as $kine)
                     <div class="w-full flex justify-center p-5  mx-1  ">
                         <div class="relative group w-[200px] h-[200px] border bg-white rounded-xl shadow-xl">
