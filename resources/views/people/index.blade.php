@@ -1,14 +1,16 @@
 @extends('admin.layouts.template')
 @section('title', 'Panel de control | Circulo')
-@include('admin.include.nav')
 @section('content')
 
     <div class="py-12">
-        <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
-            <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">profesionales asociados</h1>
+        <div class="w-full mx-auto sm:px-6 lg:px-8">
+            <h1
+                class="mb-4 text-4xl font-extrabold leading-none text-center tracking-tight  md:text-5xl lg:text-6xl text-white">
+                <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 uppercase">Profecionales</mark> asociados
+            </h1>
             <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
                 <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-lg px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button">
                     <div class="flex flex-row items-center justify-center gap-2 ">
                         <p class="fa-solid fa-plus"></p>
@@ -125,102 +127,54 @@
             </div>
         </div>
     </div>
-    {{-- <div class="relative shadow-md sm:rounded-lg ">
-        <div class="w-full flex justify-center">
-            <table class=" text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr class="font-Poppins uppercase font-bold text-gray-700">
-                        <th class=" text-center">Nombre</th>
-                        <th class=" text-center">Email</th>
-                        <th class=" text-center">Domicilio</th>
-                        <th class=" text-center">Localidad</th>
-                        <th class=" text-center">Teléfono</th>
-                        <th class=" text-center">Especialidad</th>
-                        <th class=" text-center">Atencion domiciliaria</th>
-
-                    </tr>
-                </thead>
+    <div class="flex w-full justify-center">
+        <div class=" w-90 flex justify-center bg-gray-800 px-4 md:px-10 pb-5">
+            <table class="w-full text-sm text-left text-white ">
                 <tbody>
                     @foreach ($people as $person)
-                        <tr
-                            class="bg-white border-b  text-center">
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->nombre }}</td>
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->email }}</td>
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->domicilio }}</td>
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->localidad }}</td>
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->telefono }}</td>
-                            <td class="px-3 py-3 border-b border-gray-200">{{ $person->especialidad }}
+                        <tr class="focus:outline-none text-sm leading-none text-white  h-16">
+                            <td class="w-1/2">
+                                <div class="flex items-center">
+
+                                    <div class="pl-2">
+                                        <p class="text-sm font-medium leading-none text-gray-white ">
+                                            {{ $person->nombre }}</p>
+                                        <p class="text-xs leading-3 text-white    mt-2">
+                                            {{ $person->email }}</p>
+                                    </div>
+                                </div>
                             </td>
-                            <td class="px-3 py-3 border-b border-gray-200 tex">{{ $person->at }}</td>
-                            <td>
-                                <form action="{{ route('people.destroy', $person->id) }}" method="POST"
-                                    onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit"
-                                        class="font-medium text-red-600 dark:text-red-500 hover:underline">Eliminar</button>
-                                </form>
-                                <a href="{{ route('people.edit', $person->id) }}"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                            <td class="pl-16">
+                                <p>{{ $person->domicilio }}</p>
                             </td>
                             <td>
+                                <p class="pl-16">{{ $person->localidad }}</p>
+                            </td>
+                            <td>
+                                <p class="pl-16">{{ $person->telefono }}</p>
+                            </td>
+                            <td>
+                                <p class="pl-16">{{ $person->especialidad }}</p>
+                            </td>
+                            <td>
+                                <div class="pl-16">
+                                    <form action="{{ route('people.destroy', $person->id) }}" method="POST"
+                                        onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit"
+                                            class="font-medium text-red-600 dark:text-red-500 hover:underline">Eliminar</button>
+                                    </form>
+                                    <a href="{{ route('people.edit', $person->id) }}"
+                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                                </div>
 
                             </td>
                         </tr>
                     @endforeach
+
                 </tbody>
             </table>
-        </div>
-
-    </div> --}}
-    <div class="flex w-full justify-center"> 
-        <div class="bg-white w-90 flex justify-center dark:bg-gray-900 px-4 md:px-10 pb-5">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <tbody>
-                        @foreach ($people as $person)
-                            <tr class="focus:outline-none text-sm leading-none text-gray-600 dark:text-gray-200  h-16">
-                                <td class="w-1/2">
-                                    <div class="flex items-center">
-
-                                        <div class="pl-2">
-                                            <p class="text-sm font-medium leading-none text-gray-800 dark:text-white ">
-                                                {{ $person->nombre }}</p>
-                                            <p class="text-xs leading-3 text-gray-600 dark:text-gray-200   mt-2">
-                                                {{ $person->email }}</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="pl-16">
-                                    <p>{{ $person->domicilio }}</p>
-                                </td>
-                                <td>
-                                    <p class="pl-16">{{ $person->localidad }}</p>
-                                </td>
-                                <td>
-                                    <p class="pl-16">{{ $person->telefono }}</p>
-                                </td>
-                                <td>
-                                    <p class="pl-16">{{ $person->especialidad }}</p>
-                                </td>
-                                <td>
-                                    <div class="pl-16">
-                                        <form action="{{ route('people.destroy', $person->id) }}" method="POST"
-                                            onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta persona?')">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit"
-                                                class="font-medium text-red-600 dark:text-red-500 hover:underline">Eliminar</button>
-                                        </form>
-                                        <a href="{{ route('people.edit', $person->id) }}"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
-                                    </div>
-
-                                </td>
-                            </tr>
-                        @endforeach
-
-                    </tbody>
-                </table>
         </div>
     </div>
 

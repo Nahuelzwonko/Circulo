@@ -1,14 +1,15 @@
 @extends('admin.layouts.template')
 @section('title', 'Panel de control | Circulo')
-@include('admin.include.nav')
 @section('content')
-
     <div class="py-12">
         <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
-            <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">empresas asociadas</h1>
-            <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
+            
+            <h1
+                class="mb-4 text-4xl font-extrabold leading-none text-center tracking-tight  md:text-5xl lg:text-6xl text-white">
+                Empresas <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 uppercase"> asociadas</mark>
+            <div class="flex justify-end pt-12 pb-6 ">
                 <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-lg px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button">
                     <div class="flex flex-row items-center justify-center gap-2 ">
                         <p class="fa-solid fa-plus"></p>
@@ -27,7 +28,7 @@
         class="fixed top-1 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full max-w-md max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative  rounded-lg shadow bg-gray-700">
                 <button type="button"
                     class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
                     data-modal-hide="authentication-modal">
@@ -74,24 +75,21 @@
             </div>
         </div>
     </div>
-    <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+    <div class="bg-gray-700 px-4 md:px-10 pb-5">
         <div class="overflow-x-auto">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <table class="w-full text-sm text-left text-white  ">
+                <thead class="text-xs  uppercase dark:bg-gray-700 ">
                     <tr>
-                        <th scope="col"
-                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                        <th scope="col" class="px-2 py-1 text-center font-bold  ">
                             Nombre</th>
-                        <th scope="col"
-                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                        <th scope="col" class="px-2 py-1 text-center font-bold  ">
                             Descripción</th>
-                        <th scope="col"
-                            class="px-2 py-1 text-center font-bold text-gray-700 dark:text-gray-400 uppercase tracking-wider">
+                        <th scope="col" class="px-2 py-1 text-center font-bold  ">
                             Imágen</th>
 
                     </tr>
                 </thead>
-                <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-600">
+                <tbody class=" divide-y divide-gray-200 bg-gray-800 ">
                     @foreach ($kines as $kine)
                         <tr class="border-b pb-4">
                             <td class="px-2 py-2 whitespace-nowrap text-center uppercase">{{ $kine->nombre }}</td>
@@ -107,12 +105,11 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
-                                        class="text-white font-light bg-red-600 hover:bg-red-800 rounded-full px-4 py-2">Eliminar</button>
+                                        class="text-white font-light bg-red-600 hover:bg-red-800 rounded-sm px-4 py-2">Eliminar</button>
                                     <a href="{{ route('kine.edit', $kine) }}"
-                                        class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-full px-4 py-2">Editar</a>
+                                        class="text-white font-light bg-blue-600 hover:bg-blue-800 rounded-sm px-4 py-2">Editar</a>
                                 </form>
                             </td>
-
                         </tr>
                     @endforeach
 

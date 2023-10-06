@@ -1,14 +1,17 @@
 @extends('admin.layouts.template')
 @section('title', 'Panel de control | Circulo')
-@include('admin.include.nav')
 @section('content')
 
     <div class="py-12">
         <div class="w-[80%] mx-auto sm:px-6 lg:px-8">
-            <h1 class="font-hammersmith text-5xl text-center py-8 capitalize">obras sociales asociadas</h1>
-            <div class="flex justify-end pt-12 pb-6 border-b border-gray-200">
+            <h1 class="font-hammersmith text-5xl text-center py-8 capitalize"> </h1>
+            <h1
+                class="mb-4 text-4xl font-extrabold leading-none text-center tracking-tight  md:text-5xl lg:text-6xl text-white">
+                Obras sociales <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 uppercase"> asociadas</mark>
+            </h1>
+            <div class="flex justify-end pt-12 pb-6 ">
                 <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-lg px-5 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     type="button">
                     <div class="flex flex-row items-center justify-center gap-2 ">
                         <p class="fa-solid fa-plus"></p>
@@ -26,7 +29,7 @@
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <!-- Modal header -->
                 <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 class="text-xl font-semibold text-white dark:text-white">
                         Nueva Empresa
                     </h3>
                     <div class="px-6 py-6 lg:px-8">
@@ -79,31 +82,31 @@
         </div>
     </div>
     {{-- tabla --}}
-    <div class="bg-white dark:bg-gray-900 px-4 md:px-10 pb-5">
+    <div class=" bg-gray-700 px-4 md:px-10 pb-5">
         <div class="overflow-x-auto">
-            <table class="w-full text-xl text-center text-black dark:text-gray-300">
-                <thead class="text-xl font-Poppins text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <table class="w-full text-xl text-center  text-white">
+                <thead class="text-xl font-Poppins text-white uppercase bg-gray-700 ">
                     <tr>
-                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-sm text-white ">
                             Nombre
                         </th>
-                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-sm text-white ">
                             Imágen
                         </th>
-                        <th class="px-10 py-5 text-xl font-bold text-black uppercase tracking-wider">
+                        <th class="px-10 py-5 text-sm text-white ">
                             Descripción</th>
 
                     </tr>
                 </thead>
-                <tbody class="bg-white divide-y ">
+                <tbody class="bg-gray-800 divide-y ">
                     @foreach ($datos as $dato)
-                        <tr class="border-b">
-                            <td class="px-10 py-5 whitespace-nowrap uppercase">{{ $dato->nombre }}</td>
-                            <td class="px-10 py-5 whitespace-nowrap">
+                        <tr class="">
+                            <td class=" whitespace-nowrap uppercase">{{ $dato->nombre }}</td>
+                            <td class=" whitespace-nowrap">
                                 <img src="{{ asset($dato->imagen) }}" alt="{{ $dato->nombre }}" class="h-10 w-15 mx-auto">
                             </td>
-                            <td class="px-10 py-5 whitespace-nowrap">{{ Str::limit($dato->descripcion, 50) }}</td>
-                            <td class="px-10 py-5 whitespace-nowrap flex flex-col gap-8">
+                            <td class=" py-5 whitespace-nowrap">{{ Str::limit($dato->descripcion, 50) }}</td>
+                            <td class=" py-5 whitespace-nowrap flex flex-col gap-8">
                                 <form action="{{ route('datos.destroy', $dato->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
