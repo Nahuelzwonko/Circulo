@@ -16,32 +16,30 @@
                         class="mb-4 text-4xl font-extrabold leading-none text-center tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                         TARJETA DE BENEFICIOS</h1>
                 </div>
-                <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 flex items-center font-Poppins text-gray-900">
-                    <p class="leading-relaxed mb-4">Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos
-                        trabajando continuamente para generar beneficios y facilidades para nuestros socios.
-                        Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los
-                        miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y
-                        promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte,
-                        indumentaria, estética, salud y bienestar.</p>
+                <div
+                    class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 flex flex-col justify-center items-center font-Poppins text-gray-900">
+                    <p class="leading-relaxed mb-4 text-center">Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos
+                        trabajando continuamente para generar beneficios y facilidades para nuestros socios. Para seguir
+                        sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del
+                        CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos
+                        y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud
+                        y bienestar.</p>
+                    <div class="w-full mt-6 lg:mt-0 text-center">
+                        <button class="bg-[#0051A7] hover:bg-blue-500 text-white  px-5 py-2 rounded-[10px] mx-auto">
+                            <a href="{{ route('asociate.index') }}">Quiero ser parte</a>
+                        </button>
+                    </div>
                 </div>
                 <div class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded">
                     <img alt="ecommerce" src="{{ asset('storage/png/tarjeta.png') }}">
                 </div>
-                <div class="w-full mt-6 lg:mt-0 flex justify-start">
-                    <button
-                        class="bg-[#0051A7] hover:bg-blue-500 text-white text-2xl px-5 py-2 rounded-[10px] ml-auto block w-max mx-auto">
-                        <a href="{{ route('asociate.index') }}">Quiero ser parte</a>
-                    </button>
-                </div>
-            </div>
-            <div class="px-5 py-24 mx-auto">
-                <p
-                    class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                    Presentando tu tarjeta y DNI en los locales adheridos podrás acceder a los beneficios y descuentos.
-                    ¡Pasa a retirar tu tarjeta por el círculo y súmate a kineclub!</p>
             </div>
         </div>
-
+        <div class="px-5 py-24 mx-auto">
+            <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+                Presentando tu tarjeta y DNI en los locales adheridos podrás acceder a los beneficios y descuentos.
+                ¡Pasa a retirar tu tarjeta por el círculo y súmate a kineclub!</p>
+        </div>
     </section>
     <section class="w-full h-full flex justify-center items-center ">
         <div class="flex flex-col justify-center items-center ">
@@ -52,8 +50,6 @@
                         <div class="relative group w-[200px] h-[200px] border bg-white rounded-xl shadow-xl">
                             <img class="w-[200px] h-[200px] bg-white object-cover rounded-lg"
                                 src="{{ Storage::url($kine->foto) }}" alt="foto" />
-                                
-                                
                             <div
                                 class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-filter backdrop-blur">
                                 <button data-modal-target="defaultModal{{ $kine->id }}"

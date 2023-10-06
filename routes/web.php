@@ -21,7 +21,9 @@ use App\Http\Controllers\TarjetaController;
 use App\Http\Controllers\EvaluacionKinesicaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\DashboardController;
 use App\Models\EvaluacionKinesica;
+
 
 
 use Illuminate\Support\Facades\Response;
@@ -83,7 +85,8 @@ Route::middleware(['auth', 'role:user'])->group(function () {
 
 // Rutas privadas para administrador
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
     //Editar perfil de administrador
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -118,8 +121,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/user-files', [AdminController::class, 'userFiles'])->name('admin.user-files');
     Route::get('/admin/download-all', [AdminController::class, 'downloadAll'])->name('admin.download-all');
     Route::get('/admin/user-files/show/{id}', [AdminController::class, 'showUserFiles'])->name('admin.user-files.show');
-
-
 });
 
 

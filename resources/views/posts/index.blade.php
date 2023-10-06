@@ -8,7 +8,7 @@
             <h1 class="font-hammersmith text-5xl text-center py-8">Noticias</h1>
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-end p-6 bg-white border-b border-gray-200">
-                    {{-- tag modal --}}
+                    
                     <button
                         class="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         type="button" data-modal-toggle="defaultModal">
@@ -19,15 +19,15 @@
 
                     </button>
 
-                    {{-- main modal --}}
+                    
                     <div id="defaultModal" tabindex="-1" aria-hidden="true"
                         class="fixed top-1 left-1.5 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                         <form action="{{ route('posts.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="relative w-full max-w-md max-h-full">
-                                {{-- modal content --}}
+                                
                                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 w-[150%]">
-                                    {{-- modal header --}}
+                                    
                                     <div class="flex justify-between items-start p-4 rounded-t border-b dark:">
                                         <div class="w-full justify-center">
                                             <h3 class="text-xl text-center text-gray-900 dark:text-white">
@@ -40,15 +40,15 @@
                                             <span class="sr-only"> cose modal</span>
                                         </button>
                                     </div>
-                                    {{-- modal body --}}
+                                    
                                     <div class="p-6">
-                                        {{-- titulo de la noticia --}}
+                                        
                                         <label for="title"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Título</label>
                                         <input type="text" name="title" id="title"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm ronded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                             required>
-                                        {{-- Resumen de la noticia --}}
+                                        
                                         <label for="body"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark.text-gray-900 dark:text-gray-300">Descripción
                                         </label>
@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- Cuerpo de la noticia --}}
+                                        
                                         <label for="cuerpo"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark.text-gray-900 dark:text-gray-300">Descripción
                                             Detallada
@@ -85,7 +85,7 @@
                                             </div>
                                         </div>
 
-                                        {{-- imagen de la noticia --}}
+                                        
                                         <label for="image"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imagen
                                             principal </label>
@@ -94,7 +94,7 @@
                                             id="file_input" type="file" name="image">
                                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">
                                             SVG, PNG, JPG or GIF (MAX. 800x400px).</p>
-                                        {{-- carga de pdf de la noticia --}}
+                                        
                                         <label for="pdf"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PDF</label>
                                         <input
@@ -103,7 +103,7 @@
                                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">
                                             Solo archivos .PDF</p>
                                     </div>
-                                    {{-- modal footer --}}
+                                    
                                     <div
                                         class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                         <button
@@ -118,16 +118,16 @@
                         </form>
                     </div>
                 </div>
-                {{-- tablas --}}
+                
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                {{-- id de la tabla --}}
+                                
                                 <th scope="col" class="px-6 py-3">
                                     Imágen
                                 </th>
-                                {{--  --}}
+                                
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Título
@@ -138,7 +138,7 @@
                                             </svg></a>
                                     </div>
                                 </th>
-                                {{-- body --}}
+                                
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Descripción
@@ -149,12 +149,12 @@
                                             </svg></a>
                                     </div>
                                 </th>
-                                {{-- fecha --}}
+                                
                                 <th scope="col" class="px-6 py-3">
                                     Fecha
 
                                 </th>
-                                {{-- date --}}
+                                
                                 <th scope="col" class="px-6 py-3">
                                     <span class="sr-only">eliminar</span>
                                 </th>
@@ -162,7 +162,7 @@
                         </thead>
                         <tbody class="">
                             @foreach ($posts as $post)
-                                {{-- id de la tabla --}}
+                                
                                 <tr
                                     class=" bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -173,19 +173,19 @@
                                             {{ $post->id }}
                                         @endif
                                     </th>
-                                    {{-- titulo de la tabla --}}
+                                    
                                     <td class="px-6 py-4 font-semibold">
                                         {{ $post->title }}
                                     </td>
-                                    {{-- contenido o body --}}
+                                    
                                     <td class="px-6 py-4">
                                         <span class="w-[80px]">{{ $post->body }}</span>
                                     </td>
-                                    {{-- fecha data time --}}
+                                    
                                     <td class="px-6 py-4 font-sm">
                                         {{ $post->created_at }}
                                     </td>
-                                    {{-- accion de delete --}}
+                                    
                                     <div class="w-full flex justify-center items-center">
                                         <td class="px-6 py-4 flex flex-col-reverse text-center gap-4 w-[70%] mx-auto">
                                             <a href="{{ route('posts.edit', $post->id) }}"
