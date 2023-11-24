@@ -1,8 +1,9 @@
-    <section class="w-full h-full flex justify-center items-center mt-20">
+    {{-- <section class="w-full h-full flex justify-center items-center mt-20">
         <div class="flex flex-wrap justify-center w-[70%] ">
             @foreach ($datos as $dato)
                 <div class="relative group w-full md:w-1/1 lg:w-1/2 xl:w-1/3 p-6">
-                    <div class="w-[200px] h-[200px] border rounded-xl shadow-xl flex justify-center items-center bg-white">
+                    <div
+                        class="w-[200px] h-[200px] border rounded-xl shadow-xl flex justify-center items-center bg-white">
                         <img class="w-full h-cover object-cover rounded-lg" src="{{ asset($dato->imagen) }}"
                             alt="{{ $dato->nombre }}" />
                         <div
@@ -29,7 +30,6 @@
                                                 {{ $dato->nombre }}
                                             </h3>
                                         </div>
-
                                         <button type="button"
                                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                             data-modal-hide="defaultModal{{ $dato->id }}">
@@ -61,4 +61,6 @@
                 </div>
             @endforeach
         </div>
-    </section>
+    </section> --}}
+
+

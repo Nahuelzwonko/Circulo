@@ -140,11 +140,11 @@
                     personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el
                     cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más
                     personas a recuperar su bienestar.</p>
-                    <div class="flex justify-center w-full ">
-                <button
-                    class="invisible lg:visible fade-in text-sm bg-[#0051A7] hover:bg-blue-700 text-white px-5  py-2 rounded-[10px] font-Poppins "><a
-                        href="../quienes/index.blade.php">Quiero ser parte</a></button>
-            </div>
+                <div class="flex justify-center w-full ">
+                    <button
+                        class="invisible lg:visible fade-in text-sm bg-[#0051A7] hover:bg-blue-700 text-white px-5  py-2 rounded-[10px] font-Poppins "><a
+                            href="../quienes/index.blade.php">Quiero ser parte</a></button>
+                </div>
             </div>
             <div class=" gap-4 mt-8">
                 <img class="w-full rounded-lg" src="{{ 'storage/png/imagen2.png' }}" alt="office content 1">
@@ -209,7 +209,7 @@
                 href="../quienes/index.blade.php">La Quiero!</a></button>
     </div>
     {{-- Se parte de CKFM --}}
-    <div class="hidden lg:flex lg:visible w-full h-[150vh] unefondo justify-center items-center ">
+    <div class="hidden lg:flex lg:visible w-full h-[150vh]  justify-center items-center ">
         <div
             class=" space-y-6 justify-between items-center text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
             <div class="md:4/10 lg:w-1/2 flex justify-end m-0">
@@ -249,12 +249,8 @@
         </p>
         <div class="my-6">
             <div class="my-6">
-                
-
                 <img class="w-[75%] z-10 relative" src="{{ asset('storage/png/imagen3.svg') }}" alt="image">
-
             </div>
-
         </div>
         <button class=" font-Poppins w-full bg-[#0051A7] hover:bg-blue-500 text-white text-2xl py-8 mt-8 "><a
                 href="../quienes/index.blade.php">Conocer</a></button>
