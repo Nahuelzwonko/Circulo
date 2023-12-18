@@ -21,14 +21,11 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $credentials = $request->validated();
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            if (Auth::user()->role === 'admin') {
-                return redirect()->intended('/posts');
-            }
-
-            return redirect()->intended('/user/home');
+            return redirect()->intended('/');
         }
         $errors = [];
 

@@ -36,12 +36,23 @@
                     </button>
                 @endguest
                 @auth
-                    <button
-                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1 rounded-lg font-extralight hover:bg-blue-600">
-                        <a href="{{ route('user.home') }}">Mi panel</a></button>
-                    </button>
-
+                    <li>
+                        @if (auth()->check() &&
+                                auth()->user()->hasRole('user'))
+                            <a href="{{ route('user.home') }}"
+                                class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                                Mi panel
+                            </a>
+                        @elseif(auth()->check() &&
+                                auth()->user()->hasRole('admin'))
+                            <a href="{{ route('admin.dashboard') }}"
+                                class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                                Mi panel
+                            </a>
+                        @endif
+                    </li>
                 @endauth
+
                 <button
                     class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
 
@@ -53,8 +64,7 @@
     <div
         class="2xl:max-w-[85%] xl:max-w-[95%]: xl:mx-auto lg:mx-4  lg:border-none  mt-0 invisible lg:visible h-0 lg:h-auto">
         <div class="flex lg:justify-end md:justify-center">
-            <div id="items"
-                class="flex items-center  2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
+            <div id="items" class="flex items-center  2xl:mr-0 xl:mr-4 md:gap-4 sm:gap-0 sm:text-[0.65rem]">
                 <a href="/"
                     class=" font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Inicio</a>
                 <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
@@ -135,18 +145,7 @@
                         class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Profesionales
                         Asociados</a>
                 </li>
-                @auth
-                    <li>
-                        <a href="{{ route('user.home') }}"
-                            class="font-Poppins block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 hover:text-gray-800  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Mi panel</a>
-                    </li>
-                @endauth
-                @guest
-                    <li>
-                        <a href="{{ route('login') }}"
-                            class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">Ingresar</a>
-                    </li>
-                @endguest
+
 
             </ul>
         </div>
