@@ -27,7 +27,7 @@
 
                                     <div class="w-full flex justify-center items-center">
                                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            {{ $kine->nombre }}</h3>
+                                            {{ $kine->nombre }} </h3>
                                     </div>
                                     <button type="button"
                                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -45,7 +45,9 @@
                                 <!-- Modal body -->
                                 <div class="p-6 space-y-6">
                                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                        {!! nl2br($kine->descripcion) !!}</p>
+                                        {!! nl2br($kine->descripcion) !!} </p>
+                                        
+                                        
                                 </div>
                                 <!-- Modal footer -->
                                 <div

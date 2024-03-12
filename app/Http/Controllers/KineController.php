@@ -21,10 +21,11 @@ class KineController extends Controller
             'nombre' => 'required',
             'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
             'descripcion' => 'nullable',
+
         ]);
 
         $kine = new Kine;
-        
+
         $kine->nombre = $request->nombre;
         if ($request->hasFile('foto')) {
             $image = $request->file('foto');
@@ -32,7 +33,18 @@ class KineController extends Controller
             $nuevo_path = str_replace('public/', '', $path);
             $kine->foto = $nuevo_path;
         }
+
         $kine->descripcion = $request->descripcion;
+        if ($request->has('facebook_url')) {
+            $kine->facebook_url = $request->facebook_url;
+        }
+        if ($request->has('instagram_url')) {
+            $kine->instagram_url = $request->instagram_url;
+        }
+        if ($request->has('twitter_url')) {
+            $kine->twitter_url = $request->twitter_url;
+        }
+
         $kine->save();
 
         return redirect()->back()->with('success', 'Kine guardada exitosamente');
@@ -53,11 +65,20 @@ class KineController extends Controller
         $request->validate([
             'nombre' => 'required',
             'descripcion' => 'required',
-            // Agrega las reglas de validación para otros campos si es necesario
+            'facebook_url' => 'nullable|url',
+            'instagram_url' => 'nullable|url',
+            'twitter_url' => 'nullable|url',
         ]);
-
-        $kine->update($request->all());
-
+    
+        $kine->nombre = $request->nombre;
+        $kine->descripcion = $request->descripcion;
+        $kine->facebook_url = $request->facebook_url;
+        $kine->instagram_url = $request->instagram_url;
+        $kine->twitter_url = $request->twitter_url;
+    
+        $kine->save();
+    
         return redirect()->route('kine.index')->with('success', 'La empresa ha sido actualizada exitosamente.');
     }
+    
 }
