@@ -22,6 +22,8 @@ use App\Http\Controllers\EvaluacionKinesicaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EventoController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SorteoController;
+use App\Http\Controllers\SorteoAdminController;
 use App\Models\EvaluacionKinesica;
 
 
@@ -31,6 +33,10 @@ use App\Models\Post;
 // Rutas públicas
 Route::get('/', HomeContoller::class);
 Route::get('kineClub', [KineclubController::class, 'index'])->name('kineClub.index');
+Route::get('sorteo', [SorteoController::class, 'index'])->name('sorteo.index');
+Route::get('/sorteos/{sorteo}/inscribirse', [SorteoController::class, 'mostrarFormularioInscripcion'])->name('sorteos.mostrarFormularioInscripcion');
+Route::post('/sorteo/{sorteo}/inscribirse', [SorteoController::class, 'inscribirse'])->name('sorteos.inscribirse');
+
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
 Route::post('/enviar-contacto', [ContactoController::class, 'enviarMensaje'])->name('enviar.contacto');
 Route::get('/mensaje-enviado', [ContactoController::class, 'mensajeEnviado'])->name('mensaje.enviado');
@@ -49,6 +55,8 @@ Route::get('/asociate/success', function () {
     return view('asociate.success');
 })->name('asociate.success');
 Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view');
+
+
 //Dashboard
 Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/user/home', function () {
@@ -121,6 +129,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/user-files', [AdminController::class, 'userFiles'])->name('admin.user-files');
     Route::get('/admin/download-all', [AdminController::class, 'downloadAll'])->name('admin.download-all');
     Route::get('/admin/user-files/show/{id}', [AdminController::class, 'showUserFiles'])->name('admin.user-files.show');
+    //Datos de cursos
+    Route::get('/admin/sorteos', [SorteoAdminController::class, 'index'])->name('admin.sorteos.index');
+    Route::get('/admin/sorteos/create', [SorteoAdminController::class, 'create'])->name('admin.sorteos.create');
+    Route::post('/admin/sorteos', [SorteoAdminController::class, 'store'])->name('admin.sorteos.store');
+    Route::get('/admin/sorteos/{sorteo}/edit', [SorteoAdminController::class, 'edit'])->name('admin.sorteos.edit');
+    Route::put('/admin/sorteos/{sorteo}', [SorteoAdminController::class, 'update'])->name('admin.sorteos.update');
+    Route::delete('/admin/sorteos/{sorteo}', [SorteoAdminController::class, 'destroy'])->name('admin.sorteos.destroy');
+    Route::get('/admin/sorteos/{sorteo}/descargar', [SorteoAdminController::class, 'descargar'])->name('admin.sorteos.descargar');
+
 });
 
 
