@@ -20,7 +20,7 @@ class SorteoAdminController extends Controller
             $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
             return $sorteo;
         });
-        $sorteos = Sorteo::withCount('participantes')->get();
+
 
         return view('admin.sorteos.index', compact('sorteos'));
     }
@@ -43,16 +43,18 @@ class SorteoAdminController extends Controller
 
         // Manejar la carga de archivos
         if ($request->hasFile('imagen')) {
-            // Guardar la imagen en el directorio de almacenamiento
-            $imagenPath = $request->file('imagen')->store('imagenes');
-            // Obtener la URL completa de la imagen guardada
-            $imagenUrl = url(Storage::url($imagenPath));
+            $imagenPath = $request->file('imagen')->store('public/sorteos');
+            // Almacena solo la ruta relativa de la imagen
+            $imagenUrl = Storage::url($imagenPath);
+            
+            
+            
         }
 
         // Crear un nuevo objeto Sorteo con los datos del formulario
         $sorteo = new Sorteo();
         $sorteo->nombre = $request->nombre;
-        $sorteo->imagen = $imagenUrl; // Asignar la URL de la imagen
+        $sorteo->imagen = $imagenPath ?? null;
         $sorteo->inicio = $request->inicio;
         $sorteo->fin = $request->fin;
         $sorteo->datos = $request->datos;
@@ -110,36 +112,36 @@ class SorteoAdminController extends Controller
         return redirect()->route('admin.sorteos.index')->with('success', '¡Sorteo eliminado con éxito!');
     }
     public function descargar($sorteoId)
-{
-    $sorteo = Sorteo::findOrFail($sorteoId);
-    $participantes = $sorteo->participantes;
+    {
+        $sorteo = Sorteo::findOrFail($sorteoId);
+        $participantes = $sorteo->participantes;
 
-    $headers = [
-        'Content-Type' => 'text/csv',
-        'Content-Disposition' => 'attachment; filename=participantes_sorteo_' . $sorteo->id . '.csv',
-    ];
+        $headers = [
+            'Content-Type' => 'text/csv',
+            'Content-Disposition' => 'attachment; filename=participantes_sorteo_' . $sorteo->id . '.csv',
+        ];
 
-    $callback = function () use ($participantes) {
-        $file = fopen('php://output', 'w');
+        $callback = function () use ($participantes) {
+            $file = fopen('php://output', 'w');
 
-        // Escribir encabezados CSV
-        fputcsv($file, ['Nombre del Sorteo', 'Correo Electrónico', 'Nombre y Apellido', 'Número de Matrícula', 'Teléfono', 'DNI']);
+            // Escribir encabezados CSV
+            fputcsv($file, ['Nombre del Sorteo', 'Correo Electrónico', 'Nombre y Apellido', 'Número de Matrícula', 'Teléfono', 'DNI']);
 
-        // Escribir datos de participantes
-        foreach ($participantes as $participante) {
-            fputcsv($file, [
-                $participante->nombre_sorteo,
-                $participante->email,
-                $participante->nombre_apellido,
-                $participante->numero_matricula,
-                $participante->telefono,
-                $participante->dni,
-            ]);
-        }
+            // Escribir datos de participantes
+            foreach ($participantes as $participante) {
+                fputcsv($file, [
+                    $participante->nombre_sorteo,
+                    $participante->email,
+                    $participante->nombre_apellido,
+                    $participante->numero_matricula,
+                    $participante->telefono,
+                    $participante->dni,
+                ]);
+            }
 
-        fclose($file);
-    };
+            fclose($file);
+        };
 
-    return new StreamedResponse($callback, 200, $headers);
-}
+        return new StreamedResponse($callback, 200, $headers);
+    }
 }

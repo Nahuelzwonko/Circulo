@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Sorteo;
 use App\Models\Participante;
+use Illuminate\Support\Facades\Storage;
 
 class SorteoController extends Controller
 {
@@ -15,6 +16,8 @@ class SorteoController extends Controller
         $sorteos->transform(function ($sorteo) {
             $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('Y-m-d');
             $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
+            // Agregar la ruta completa de la imagen
+            $sorteo->imagen = Storage::url($sorteo->imagen);
             return $sorteo;
         });
         return view('sorteo.index', compact('sorteos'));
