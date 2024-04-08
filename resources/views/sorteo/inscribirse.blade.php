@@ -6,7 +6,7 @@
 @section('content')
 <section>
 
-    <div class="py-16 mt-30">
+    <div class="py-16 mt-40">
         <form action="{{ route('sorteos.inscribirse', $sorteo->id) }}" method="post" class="max-w-sm mx-auto">
             @csrf
             <div class="mb-5">
