@@ -16,48 +16,68 @@
             </a>
         </div>
     </div>
-    <!-- sorteo 1 -->
     @if ($sorteos->isEmpty())
-    <p>No hay sorteos disponibles.</p>
+    <div class="w-full flex justify-center items-center">
+        <p>No hay sorteos disponibles.</p>
+    </div>
     @else
-    @foreach ($sorteos as $sorteo)
-    <div class="relative group overflow-hidden p-8 rounded-xl">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <div class="p-5">
-                <div class="flex w-full justify-center items-center">
-                <button type="button" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscritos
-                    <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800 bg-blue-200 rounded-full">
-                        {{ $sorteo->participantes_count }}
-                    </span>
-                </button>
-                </div>
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $sorteo->nombre }}</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Inicio: {{ $sorteo->inicio }} / Fin {{ $sorteo->fin }}
-
-                </p>
-
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ $sorteo->datos }}</p>
-
-                <div class="flex w-full justify-center items-center space-x-4">
-                    <a href="{{ route('admin.sorteos.edit', $sorteo->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-yellow-700 rounded-lg focus:outline-none focus:ring-blue-300">
-                        Editar
-                    </a>
-                    <a href="{{ route('admin.sorteos.descargar', $sorteo->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg focus:outline-none focus:ring-blue-300">
-                        descargar
-                    </a>
-                    <form action="{{ route('admin.sorteos.destroy', $sorteo) }}" method="post">
-                        @csrf
-                        @method('delete')
-                        <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg focus:outline-none focus:ring-blue-300">
-                            Eliminar
-                        </button>
-                    </form>
+    <div class="mx-auto px-6 max-w-6xl text-gray-500">
+        <div class="mt-12 flex flex-wrap justify-center">
+            @foreach ($sorteos as $sorteo)
+            <div class="w-full md:w-1/1 lg:w-1/1 xl:w-1/2 p-4">
+                <div class="relative group overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="p-5">
+                        <div class="flex w-full justify-start items-start mb-5">
+                            <p class="">
+                                Nº de inscriptos:
+                                <span class="text-white text-xl ">
+                                    {{ $sorteo->participantes_count }}
+                                </span>
+                            </p>
+                            <p class="ml-10">
+                                Estado:
+                                @if ($sorteo->estado === 'activo')
+                                <span class="text-green-500 text-xl">
+                                    Activo
+                                </span>
+                                @else
+                                <span class="text-red-500 text-xl">
+                                    Finalizado
+                                </span>
+                                @endif
+                            </p>
+                        </div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $sorteo->nombre }}</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Inicio: {{ $sorteo->inicio }} / Fin {{ $sorteo->fin }}</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ $sorteo->datos }} </p>
+                        <div class="flex w-full justify-center items-center space-x-4">
+                            <a href="{{ route('admin.sorteos.edit', $sorteo->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-yellow-700 rounded-lg focus:outline-none focus:ring-blue-300">
+                                Editar
+                            </a>
+                            <a href="{{ route('admin.sorteos.descargar', $sorteo->id) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg focus:outline-none focus:ring-blue-300">
+                                Descargar
+                            </a>
+                            <form action="{{ route('admin.sorteos.destroy', $sorteo) }}" method="post">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg focus:outline-none focus:ring-blue-300">
+                                    Eliminar
+                                </button>
+                            </form>
+                            <form action="{{ route('admin.sorteos.cambiarEstado', $sorteo->id) }}" method="post">
+                                @csrf
+                                <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg focus:outline-none focus:ring-blue-300">
+                                    Cambiar Estado
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
-    @endforeach
+
     @endif
 
 

@@ -30,35 +30,35 @@ class SorteoController extends Controller
 
 
     public function inscribirse(Request $request, Sorteo $sorteo)
-{
-    // Validar los datos del formulario de inscripción
-    $request->validate([
-        'nombre_sorteo' => 'required|string',
-        'email' => 'required|email',
-        'nombre_apellido' => 'required|string',
-        'numero_matricula' => 'required|string',
-        'telefono' => 'required|string',
-        'dni' => 'required|string',
-    ]);
+    {
+        // Validar los datos del formulario de inscripción
+        $request->validate([
+            'nombre_sorteo' => 'required|string',
+            'email' => 'required|email',
+            'nombre_apellido' => 'required|string',
+            'numero_matricula' => 'required|string',
+            'telefono' => 'required|string',
+            'dni' => 'required|string',
+        ]);
 
-    // Crear un nuevo participante
-    $participante = new Participante([
-        'nombre_sorteo' => $request->nombre_sorteo,
-        'email' => $request->email,
-        'nombre_apellido' => $request->nombre_apellido,
-        'numero_matricula' => $request->numero_matricula,
-        'telefono' => $request->telefono,
-        'dni' => $request->dni,
-    ]);
+        // Crear un nuevo participante
+        $participante = new Participante([
+            'nombre_sorteo' => $request->nombre_sorteo,
+            'email' => $request->email,
+            'nombre_apellido' => $request->nombre_apellido,
+            'numero_matricula' => $request->numero_matricula,
+            'telefono' => $request->telefono,
+            'dni' => $request->dni,
+        ]);
 
-    // Asignar el ID del sorteo al participante
-    $participante->sorteo_id = $sorteo->id;
+        // Asignar el ID del sorteo al participante
+        $participante->sorteo_id = $sorteo->id;
 
-    // Guardar el participante en la base de datos
-    $participante->save();
-
-    // Redireccionar al usuario a la página de confirmación o cualquier otra página deseada
-    return redirect()->route('sorteo.index')->with('success', '¡Te has inscrito al sorteo con éxito!');
-}
-
+        // Guardar el participante en la base de datos
+        $participante->save();
+        // Almacenar el mensaje de éxito en la sesión
+        session()->flash('success', '¡Te has inscrito al sorteo con éxito!');
+        // Redireccionar al usuario a la página de confirmación o cualquier otra página deseada
+        return redirect()->route('sorteo.index');
+    }
 }

@@ -15,9 +15,12 @@ class SorteoAdminController extends Controller
     public function index()
     {
         $sorteos = Sorteo::all();
+        $sorteos = Sorteo::withCount('participantes')->get();
         $sorteos->transform(function ($sorteo) {
             $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('Y-m-d');
             $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
+            
+
             return $sorteo;
         });
 
@@ -143,5 +146,12 @@ class SorteoAdminController extends Controller
         };
 
         return new StreamedResponse($callback, 200, $headers);
+    }
+    public function cambiarEstado(Sorteo $sorteo)
+    {
+        $sorteo->estado = $sorteo->estado === 'activo' ? 'finalizado' : 'activo';
+        $sorteo->save();
+
+        return redirect()->back()->with('success', '¡Estado del sorteo cambiado correctamente!');
     }
 }

@@ -5,7 +5,10 @@
 @section('Boton', 'Conocénos')
 @section('content')
 <section>
+
     <div class="py-16">
+        
+        
         <form action="{{ route('sorteos.inscribirse', $sorteo->id) }}" method="post" class="max-w-sm mx-auto">
             @csrf
             <div class="mb-5">
@@ -35,7 +38,7 @@
                 <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">Numero de documento sin puntos.</p>
             </div>
             <div class="flex w-full justify-center items-center">
-            <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Inscribirse</button>
+                <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Inscribirse</button>
 
             </div>
         </form>

@@ -26,10 +26,11 @@
             <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
                 <div class="px-4 py-2 bg-white rounded-b-lg dark:bg-gray-800">
                     <label for="datos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Datos del sorteo</label>
-                    <textarea class="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" id="datos" name="datos">{{ $sorteo->datos }}</textarea>
+                    <textarea v-pre class="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" id="datos" name="datos">{!! $sorteo->datos !!}</textarea>
                 </div>
             </div>
         </div>
+
         <div class="flex w-full justify-center items-center">
             <button type="submit" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Actualizar sorteo</button>
         </div>

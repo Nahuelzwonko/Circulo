@@ -137,6 +137,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::put('/admin/sorteos/{sorteo}', [SorteoAdminController::class, 'update'])->name('admin.sorteos.update');
     Route::delete('/admin/sorteos/{sorteo}', [SorteoAdminController::class, 'destroy'])->name('admin.sorteos.destroy');
     Route::get('/admin/sorteos/{sorteo}/descargar', [SorteoAdminController::class, 'descargar'])->name('admin.sorteos.descargar');
+    Route::post('admin/sorteos/{sorteo}/cambiar-estado', [SorteoAdminController::class, 'cambiarEstado'])->name('admin.sorteos.cambiarEstado');
+
 
 });
 
