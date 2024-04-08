@@ -1,14 +1,12 @@
 @extends('master')
 @section('titulo', 'Nuestros Sorteos | CKFM')
 @section('Encabezado', 'Estas a nada de participar')
-@section('cont', 'Texto texto texto')
+@section('cont', '')
 @section('Boton', 'Conocénos')
 @section('content')
 <section>
 
-    <div class="py-16">
-        
-        
+    <div class="py-16 mt-30">
         <form action="{{ route('sorteos.inscribirse', $sorteo->id) }}" method="post" class="max-w-sm mx-auto">
             @csrf
             <div class="mb-5">

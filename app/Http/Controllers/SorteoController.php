@@ -13,6 +13,7 @@ class SorteoController extends Controller
     public function index()
     {
         $sorteos = Sorteo::all();
+        $sorteos = Sorteo::orderByDesc('created_at')->get();
         $sorteos->transform(function ($sorteo) {
             $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('Y-m-d');
             $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
