@@ -5,7 +5,7 @@
 @section('Boton', 'Conocénos')
 @section('content')
 <!-- component -->
-<section class="mt-20">
+<section class="mt-40">
     <div class="py-16">
         @if(session('success'))
         <div class="w-full flex justify-center items-center">
