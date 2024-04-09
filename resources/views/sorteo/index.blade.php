@@ -27,10 +27,10 @@
             <div class="mt-12 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
                 @foreach($sorteos as $sorteo)
                 <div class="relative group overflow-hidden bg-white border border-gray-200 rounded-lg shadow">
-                    <img class="w-full h-64 object-cover rounded-t-lg" src="{{ asset($sorteo->imagen) }}" alt="" />
+                    <img class="w-full h-64 object-cover rounded-t-lg" src="{{asset ($sorteo->imagen) }}" alt="" />
                     <div class="p-5">
                         <h5 class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900">{{ $sorteo->nombre }}</h5>
-                        <p class="mb-3 text-sm sm:text-base font-normal text-gray-700"><b>Día del sorteo:</b> {{ $sorteo->inicio }}</p>
+                        <p class="mb-3 text-sm sm:text-base font-normal text-gray-700"><b>Día del sorteo:</b> {{ $sorteo->fin }}</p>
                         <p class="mb-3 text-sm sm:text-base font-normal text-gray-700">{!! nl2br($sorteo->datos) !!}</p>
                         <div class="flex justify-center">
                             @if ($sorteo->estado === 'activo')

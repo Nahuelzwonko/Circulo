@@ -25,7 +25,7 @@
         <div class="mt-12 flex flex-wrap justify-center">
             @foreach ($sorteos as $sorteo)
             <div class="w-full md:w-1/1 lg:w-1/1 xl:w-1/2 p-4">
-                <div class="relative group overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="relative group overflow-hidden border  rounded-lg shadow bg-gray-800 border-gray-700">
                     <div class="p-5">
                         <div class="flex w-full justify-start items-start mb-5">
                             <p class="">

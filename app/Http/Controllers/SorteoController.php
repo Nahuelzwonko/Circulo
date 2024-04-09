@@ -15,8 +15,8 @@ class SorteoController extends Controller
         $sorteos = Sorteo::all();
         $sorteos = Sorteo::orderByDesc('created_at')->get();
         $sorteos->transform(function ($sorteo) {
-            $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('Y-m-d');
-            $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
+            $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('d/m/Y');
+            $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('d/m/Y');
             // Agregar la ruta completa de la imagen
             $sorteo->imagen = Storage::url($sorteo->imagen);
             return $sorteo;

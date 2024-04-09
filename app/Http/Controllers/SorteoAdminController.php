@@ -18,9 +18,7 @@ class SorteoAdminController extends Controller
         $sorteos = Sorteo::withCount('participantes')->get();
         $sorteos->transform(function ($sorteo) {
             $sorteo->inicio = \Carbon\Carbon::parse($sorteo->inicio)->format('Y-m-d');
-            $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('Y-m-d');
-            
-
+            $sorteo->fin = \Carbon\Carbon::parse($sorteo->fin)->format('d/m/Y'); // Cambiado el formato aquí
             return $sorteo;
         });
 
@@ -49,9 +47,6 @@ class SorteoAdminController extends Controller
             $imagenPath = $request->file('imagen')->store('public/sorteos');
             // Almacena solo la ruta relativa de la imagen
             $imagenUrl = Storage::url($imagenPath);
-            
-            
-            
         }
 
         // Crear un nuevo objeto Sorteo con los datos del formulario
