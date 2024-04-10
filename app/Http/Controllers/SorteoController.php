@@ -58,7 +58,7 @@ class SorteoController extends Controller
         // Guardar el participante en la base de datos
         $participante->save();
         // Almacenar el mensaje de éxito en la sesión
-        session()->flash('success', '¡Te has inscrito al sorteo con éxito!');
+        session()->flash('success', '¡Te has inscripto al sorteo con éxito!');
         // Redireccionar al usuario a la página de confirmación o cualquier otra página deseada
         return redirect()->route('sorteo.index');
     }

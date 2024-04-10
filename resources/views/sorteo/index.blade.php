@@ -10,7 +10,7 @@
         @if(session('success'))
         <div class="w-full flex justify-center items-center">
             <div class="p-4 mb-4 text-sm text-white-800 rounded-lg bg-green-300 " role="alert">
-                <span class="font-medium">Felicitaciones!!</span> {{ session('success') }}
+                <span class="font-medium">¡Felicitaciones!</span> {{ session('success') }}
             </div>
         </div>
 
