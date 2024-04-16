@@ -42,6 +42,19 @@ class SorteoController extends Controller
             'dni' => 'required|string',
         ]);
 
+        // Verificar si el usuario ya está inscrito en este sorteo
+        $participanteExistente = Participante::where('sorteo_id', $sorteo->id)
+            ->where(function ($query) use ($request) {
+                $query->where('email', $request->email)
+                    ->orWhere('dni', $request->dni);
+            })
+            ->first();
+
+        // Si el participante ya existe, mostrar un mensaje de error
+        if ($participanteExistente) {
+            return redirect()->back()->with('error', 'Ya estás inscripto en este sorteo.');
+        }
+
         // Crear un nuevo participante
         $participante = new Participante([
             'nombre_sorteo' => $request->nombre_sorteo,
