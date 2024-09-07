@@ -57,7 +57,7 @@
             <img class="w-[100%] rounded-lg" src="{{ asset('storage/png/imagen.png') }}" alt="office content 1">
         </div>
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">¿Quienes Somos?</h2>
+            <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">¿Quíenes Somos?</h2>
             <p class="mb-4 text-center">Somos una asociación civil que agrupa a profesionales kinesiólogos,
                 fisioterapeutas,
                 terapistas
