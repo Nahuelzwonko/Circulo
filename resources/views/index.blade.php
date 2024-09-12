@@ -58,7 +58,7 @@
         </div>
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">¿Quíenes Somos?</h2>
-            <p class="mb-4 text-center">Somos una asociación civil que agrupa a profesionales kinesiólogos,
+            <p class="mb-4 text-left">Somos una asociación civil que agrupa a profesionales kinesiólogos,
                 fisioterapeutas,
                 terapistas
                 físicos y licenciados en kinesiología. Nuestra tarea principal es generar convenios
@@ -109,7 +109,7 @@ class="w-full">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">Se parte del C.K.F.M
             </h2>
-            <p class="mb-4 text-center"> En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y
+            <p class="mb-4 text-right"> En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y
                 fisioterapeutas comprometidos
                 con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y
                 personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el
