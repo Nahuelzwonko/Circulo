@@ -57,15 +57,8 @@
             <img class="w-[100%] rounded-lg" src="{{ asset('storage/png/imagen.png') }}" alt="office content 1">
         </div>
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">¿Quíenes Somos?</h2>
-            <p class="mb-4 text-left">Somos una asociación civil que agrupa a profesionales kinesiólogos,
-                fisioterapeutas,
-                terapistas
-                físicos y licenciados en kinesiología. Nuestra tarea principal es generar convenios
-                colectivos de
-                prestación con las obras sociales, mutuales y prepagas en nombre y representación de
-                nuestros socios
-                buscando el aumento continuo de los aranceles.</p>
+            <h2 class="mb-4 text-4xl text-left font-extrabold text-gray-900 dark:text-white">¿Quíenes Somos?</h2>
+            <p class="mb-4 text-left">Somos una asociación civil que agrupa a profesionales kinesiólogos, fisioterapeutas, terapistas físicos y licenciados en kinesiología. Nuestra tarea principal es generar convenios colectivos de prestación con las obras sociales, mutuales y prepagas en nombre y representación de nuestros socios buscando el aumento continuo de los aranceles.</p>
             <div class="flex justify-center w-full">
                 <button class=" font-Poppins invisible lg:visible text-sm  bg-[#0051A7] hover:bg-blue-700 text-white px-5  py-2 rounded-[10px] "><a href="{{ route('quienes.index') }}">Saber Más</a></button>
             </div>
@@ -85,16 +78,12 @@ class="w-full">
 <div class=""></div>
 </div>
 <div class=" md:7/12 lg:w-1/2">
-    <h2 class=" text-3xl text-center font-bold text-black md:text-5xl font-hammersmith">
+    <h2 class=" text-3xl text-left font-bold text-black md:text-5xl font-hammersmith">
         Se parte del C.K.F.M
     </h2>
     <div class="flex justify-center">
         <p class=" font-Poppins w-[80%] my-8 sm:mb-0 lg:mb-8  text-gray-600 text-justify lg:text-xl">
-            En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos
-            con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y
-            personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el
-            cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más
-            personas a recuperar su bienestar.
+            En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si sos profesional en estas áreas y compartís nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte y trabajar con nosotros para ayudar a nuestros pacientes a recuperar su bienestar.
         </p>
     </div>
     <div class="flex justify-center w-full ">
@@ -107,14 +96,9 @@ class="w-full">
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl text-center font-extrabold text-gray-900 dark:text-white">Se parte del C.K.F.M
+            <h2 class="mb-4 text-4xl text-right font-extrabold text-gray-900 dark:text-white">Sé parte del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza
             </h2>
-            <p class="mb-4 text-right"> En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y
-                fisioterapeutas comprometidos
-                con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y
-                personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el
-                cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más
-                personas a recuperar su bienestar.</p>
+            <p class="mb-4 text-right"> En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si eres un profesional en estas áreas y compartes nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte a nuestro círculo y trabajar con nosotros para ayudar a más personas a recuperar su bienestar.</p>
             <div class="flex justify-center w-full ">
                 <button class="invisible lg:visible fade-in text-sm bg-[#0051A7] hover:bg-blue-700 text-white px-5  py-2 rounded-[10px] font-Poppins "><a href="../quienes/index.blade.php">Quiero ser parte</a></button>
             </div>
@@ -143,12 +127,7 @@ class="w-full">
                         <h1 class="text-[50px] font-bold text-white">CLUB</h1><br>
                     </div>
                     <div class="flex justify-center text-white font-Poppins text-justify px-8 text-lg">
-                        <p>Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando
-                            continuamente para generar beneficios y facilidades para nuestros socios.
-                            Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para
-                            los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos
-                            y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y
-                            deporte, indumentaria, estética, salud y bienestar.</p>
+                        <p>Desde el CKFM trabajamos continuamente para generar beneficios y facilidades para nuestros socios. Es por eso que creamos KineClub: una tarjeta de descuentos exclusiva para los asociados. Con KineClub, podrás acceder a importantes descuentos y promociones en insumos profesionales. Además, hay beneficios en servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.</p>
                     </div>
                     <div class="flex justify-center w-full mt-10 ">
                         <button class=" bg-[#0051A7] hover:bg-blue-500 text-white px-5  py-2 rounded-[10px] "><a href="{{ route('kine.index') }}" class="font-Poppins">Quiero mi KineClub</a></button>
@@ -163,11 +142,7 @@ class="w-full">
 <div class=" lg:hidden lg:w-0 lg:h-0 flex flex-col w-[95%] md:w-4/5 bg-[#3D3D3E] rounded-[40px] mx-auto items-center">
     <h1 class="mt-12 mb-9 font-bold"><span class="text-[#F28F1C] text-[2.5rem] md:text-[4rem]">KINE</span><span class="text-[#546EF3] text-[2.5rem] md:text-[4rem]">CLUB</span></h1>
     <p class="text-white text-justify px-5 md:px-12 md:leading-8">
-        Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar
-        beneficios y facilidades para nuestros socios.
-        Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del
-        CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios
-        de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.
+        Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos trabajando continuamente para generar beneficios y facilidades para nuestros socios. Para seguir sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.
     </p>
     <div class="my-6">
         <img class="skew-x-[10deg] absolute z-0 left-20 md:left-60 w-3/12" src="{{ asset('storage/png/geometric/rectangle.svg') }}" alt="">
@@ -185,15 +160,11 @@ class="w-full">
         </div>
         <div class=" md:7/12 lg:w-1/2">
             <h2 class="text-3xl text-center font-bold text-black md:text-5xl font-hammersmith">
-                El circulo te conecta
+                El círculo te conecta
             </h2>
             <div class="flex justify-center">
                 <p class=" w-[80%] my-8 text-gray-600 font-Poppins text-justify text-xl ">
-                    En C.K.F.M, contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas
-                    comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos
-                    soluciones integrales y personalizadas. Si eres un profesional en estas áreas y compartes nuestra
-                    pasión por la excelencia en el cuidado de la salud, te invitamos a unirte a nuestro círculo y
-                    trabajar con nosotros para ayudar a más personas a recuperar su bienestar
+                    En C.K.F.M. contamos con un equipo altamente capacitado de kinesiólogos y fisioterapeutas comprometidos con la salud física de nuestros pacientes. Con técnicas innovadoras, brindamos soluciones integrales y personalizadas. Si sos un profesional en estas áreas y compartís nuestra pasión por la excelencia en el cuidado de la salud, te invitamos a unirte y trabajar con nosotros para ayudar a más personas a recuperar su bienestar.
                 </p>
             </div>
             <div class="flex justify-center w-full ">

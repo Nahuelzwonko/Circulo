@@ -91,7 +91,7 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/editar-archivos/{id}', [UserFileController::class, 'editForm'])->name('user-files.edit');
     Route::put('/actualizar-archivos', [UserFileController::class, 'update'])->name('user-files.update');
     //New route for diario
-    Route::get('/diario', [App\Http\Controllers\DiarioController::class, 'index']);
+    Route::get('/user/diario', [DiarioController::class, 'index']);
     
 
 });

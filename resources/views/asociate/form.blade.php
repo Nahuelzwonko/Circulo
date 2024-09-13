@@ -3,7 +3,7 @@
         <div class=" w-[70%]">
             <h1 class="font-hammersmith text-center text-2xl lg:text-6xl mb-6">INSCRIPCIÓN</h1>
             <p class="text-md lg:text-3xl font-Poppins text-justify lg:text-center">
-                Para ser parte del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza tenés que presentar la siguiente documentación solicitada a continuación. <br>¡Gracias por elegir ser parte del Círculo!
+            Para ser parte del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza tenés que presentar la documentación solicitada a continuación.<br>¡Gracias por elegirnos!
             </p>
             <div class="w-100 flex justify-center mt-10">
                 <h2 class="font-hammersmith lg:text-3xl ">SE ADJUNTA EN FORMATO DIGITAL</h2>

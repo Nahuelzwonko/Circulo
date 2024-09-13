@@ -2,8 +2,8 @@
 @section('titulo', 'KINE CLUB | CKFM')
 
 @section('Encabezado', 'KineClub')
-@section('cont', 'Tarjeta de Beneficios Círculo de Kinesiólogos y Fisioterapeutas de Mendoza')
-@section('Boton', 'Conocéla')
+@section('cont', 'Tarjeta de beneficios del Círculo de Kinesiólogos y Fisioterapeutas de Mendoza.')
+@section('Boton', '¡Conocela!')
 
 
 
@@ -16,12 +16,7 @@
                     TARJETA DE BENEFICIOS</h1>
             </div>
             <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 flex flex-col justify-center items-center font-Poppins text-gray-900">
-                <p class="leading-relaxed mb-4 text-center">Desde el Círculo de Kinesiólogos y Fisioterapeutas de Mendoza estamos
-                    trabajando continuamente para generar beneficios y facilidades para nuestros socios. Para seguir
-                    sumando beneficios, creamos KineClub: una tarjeta de descuentos exclusiva para los miembros del
-                    CKFM. Con KineClub, nuestros socios podrán acceder a importantes descuentos y promociones en insumos
-                    y servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud
-                    y bienestar.</p>
+                <p class="leading-relaxed mb-4 text-center">Desde el CKFM trabajamos continuamente para generar beneficios y facilidades para nuestros socios. Es por eso que creamos KineClub: una tarjeta de descuentos exclusiva para los asociados. Con KineClub, podrás acceder a importantes descuentos y promociones en insumos profesionales. Además, hay beneficios en servicios de gastronomía, hotelería y turismo, recreación y deporte, indumentaria, estética, salud y bienestar.</p>
                 <div class="w-full mt-6 lg:mt-0 text-center">
                     <button class="bg-[#0051A7] hover:bg-blue-500 text-white  px-5 py-2 rounded-[10px] mx-auto">
                         <a href="{{ route('asociate.index') }}">Quiero ser parte</a>
@@ -35,8 +30,8 @@
     </div>
     <div class="px-5 py-24 mx-auto">
         <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Presentando tu tarjeta y DNI en los locales adheridos podrás acceder a los beneficios y descuentos.
-            ¡Pasa a retirar tu tarjeta por el círculo y súmate a kineclub!</p>
+            Presentando tu tarjeta y DNI en los locales adheridos podrás acceder a los beneficios y descuentos.<br>
+            ¡Retirala en la sede del Círculo y sumate a KineClub!</p>
     </div>
 </section>
 <section class="w-full h-full flex justify-center items-center ">

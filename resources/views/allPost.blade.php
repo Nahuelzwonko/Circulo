@@ -1,8 +1,8 @@
 @extends('master')
 @section('titulo', 'Noticias | CKFM')
 @section('contenido')
-@section('Encabezado', 'Nuestro blog')
-@section('cont', 'Explora nuestro blog de noticias para mantenerte actualizado sobre avances, descubrimientos y novedades en kinesiología y fisioterapia. Te brindamos información relevante y consejos prácticos para cuidar tu salud y bienestar de forma óptima. Únete a la conversación, comparte tus comentarios y juntos promovamos una vida activa y saludable. Aprendamos y crezcamos juntos.')
+@section('Encabezado', 'Nuestro espacio')
+@section('cont', 'En este espacio de noticias podés mantenerte actualizado sobre eventos del CKFM y novedades de nuestra profesión.')
 @section('content')
 @section('Boton', 'Informate!')
 <div class="mt-5 lg:mt-20">

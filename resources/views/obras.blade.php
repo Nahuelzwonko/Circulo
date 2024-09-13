@@ -1,6 +1,6 @@
 @extends('master')
 @section('titulo', 'Obras sociales | CKFM')
-@section('Encabezado', 'obras sociales')
+@section('Encabezado', 'Obra sociales y prepagas')
 @section('cont', '')
 @section('Boton', '')
 @section('content')

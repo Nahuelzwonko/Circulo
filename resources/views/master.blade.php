@@ -36,7 +36,7 @@
             </div>
         </div>
         <button
-            class="block lg:hidden text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none">@yield('Boton', 'boton generico')</button>
+            class="block lg:hidden text-xl text-white p-4 lg:w-auto lg:rounded-full bg-[#0051A7] hover:bg-blue-700 self-center w-full rounded-none invisible">@yield('Boton', 'boton generico')</button>
     </header>
     @yield('content')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>

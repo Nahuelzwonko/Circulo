@@ -8,7 +8,7 @@
             <div
                 class="flex items-end invisible lg:visible lg:text-lg md:text-[0.9rem] sm:text-[0.5rem] 2xl:gap-10 xl:gap-6 lg:gap-14 lg:mt-0 md:mt-8">
                 <div class="mr-4">
-                    <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
+                    <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="mailto:contacto@kinesiologosmza.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white shrink-0" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
