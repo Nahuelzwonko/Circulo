@@ -24,6 +24,7 @@ use App\Http\Controllers\EventoController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SorteoController;
 use App\Http\Controllers\SorteoAdminController;
+use App\Http\Controllers\DiarioController;
 use App\Models\EvaluacionKinesica;
 
 
@@ -89,6 +90,10 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/ver-archivos/{id}', [UserFileController::class, 'show'])->name('user-files.show');
     Route::get('/editar-archivos/{id}', [UserFileController::class, 'editForm'])->name('user-files.edit');
     Route::put('/actualizar-archivos', [UserFileController::class, 'update'])->name('user-files.update');
+    //New route for diario
+    Route::get('/diario', [App\Http\Controllers\DiarioController::class, 'index']);
+    
+
 });
 
 // Rutas privadas para administrador
