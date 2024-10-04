@@ -18,6 +18,9 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    /* acces url */
+    'ajrpt_url' => env('AJRPT_URL'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

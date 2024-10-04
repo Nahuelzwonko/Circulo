@@ -30,27 +30,27 @@
                     </a>
                 </div>
                 @guest
-                    <button
-                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
-                        <a class="font-Poppins" href="{{ route('login') }}">Ingresar</a>
-                    </button>
+                <button
+                    class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                    <a class="font-Poppins" href="{{ route('login') }}">Ingresar</a>
+                </button>
                 @endguest
                 @auth
-                    <li>
-                        @if (auth()->check() &&
-                                auth()->user()->hasRole('user'))
-                            <a href="{{ route('user.home') }}"
-                                class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
-                                Mi panel
-                            </a>
-                        @elseif(auth()->check() &&
-                                auth()->user()->hasRole('admin'))
-                            <a href="{{ route('admin.dashboard') }}"
-                                class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
-                                Mi panel
-                            </a>
-                        @endif
-                    </li>
+                <li>
+                    @if (auth()->check() &&
+                    auth()->user()->hasRole('user'))
+                    <a href="{{ route('user.home') }}"
+                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                        Mi panel
+                    </a>
+                    @elseif(auth()->check() &&
+                    auth()->user()->hasRole('admin'))
+                    <a href="{{ route('admin.dashboard') }}"
+                        class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-1  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                        Mi panel
+                    </a>
+                    @endif
+                </li>
                 @endauth
 
                 <button
@@ -58,6 +58,7 @@
 
                     <a class="font-Poppins" href="{{ route('asociate.index') }}">Asociate</a>
                 </button>
+
             </div>
         </div>
     </div>
@@ -73,18 +74,18 @@
                     somos</a>
                 <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('kineClub.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">KineClub</a>
+                    href="{{ route('kineClub.index') }}" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">KineClub</a>
                 <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('allPost') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Noticias</a>
+                    href="{{ route('allPost') }}" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Noticias</a>
                 <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <a
-                    href="{{ route('obras.index') }}"class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Obras
+                    href="{{ route('obras.index') }}" class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2 ">Obras
                     Sociales y Prepagas</a>
                 <div class="h-[60%] w-[1px] bg-white mt-3 invisible lg:visible"></div>
                 <div
                     class="font-Poppins  text-white px-3 py-2 lg:text-lg md:text-[0.9rem] mt-2   bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm  mr-2 mb-2">
-                    <a href="{{ route('profesionales.index') }}"class="">Profesionales
+                    <a href="{{ route('profesionales.index') }}" class="">Profesionales
                         Asociados</a>
                 </div>
             </div>
@@ -98,10 +99,28 @@
             <img src="{{ asset('storage/logo/logowhite.svg') }}" class="h-8 mr-3" alt="Logo">
         </a>
         <div class="flex gap-4">
+            @auth
+            <button
+                class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
+                <span class="font-Poppins"> <a href="{{ route('user.home') }}">Mi panel</a> </span>
+            </button>
+            @endauth
+            @guest
+                <button
+                    class="flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 hover:bg-blue-600 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg">
+                    <a class="font-Poppins" href="{{ route('login') }}">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+                        </svg>
+                    </a>
+                </button>
+                @endguest
+            @guest
             <button
                 class=" flex flex-row items-center gap-2 bg-[#0051A7] text-white px-3 py-0 rounded-lg  hover:bg-blue-600">
                 <span class="font-Poppins"> <a href="{{ route('asociate.index') }}">Asociate</a> </span>
             </button>
+            @endguest
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-sticky" aria-expanded="false">
